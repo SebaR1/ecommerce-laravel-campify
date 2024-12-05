@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- CSS  -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Fuente de Iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- NAVBAR -->
@@ -98,23 +101,24 @@
       </div>
     
     <!-- BANNER LLAMATIVO -->
-    <div class="container d-flex justify-content-center align-items-center banner">
+    <div class="container d-flex flex-column justify-content-center align-items-center banner">
         <!-- Texto -->
         <div class="container d-flex flex-column align-items-center justify-content-center text-center">
-            <h1>Espiritu Explorador</h1>
-            <h2>Productos de Campfy en accion</h2>
+            <h1 class="text-sahdow">Espiritu Explorador</h1>
+            <h2 class="text-sahdow fs-4">Productos de Campfy en accion</h2>
         </div>
+        <button class="btn btn-primary mt-3">Catalogo</button>
         <!-- Imagen -->
         <img src="images/carpa.png" alt="carpa">
     </div>
 
     <!-- DETALLES DE ENVIO -->
-<div class="container d-flex flex-column flex-md-row">
+<div class="container d-flex flex-column flex-md-row gap-3">
     <!-- CARTA 1 -->
     <div class="container carta d-flex flex-column align-items-center text-center">
         <!-- IMAGEN -->
         <div class="container imagen-carta">
-            <img src="images/gtr.jpg" alt="">
+            <i class="fab fa-whatsapp fa-4x text-success"></i>
         </div>
         <!-- INFO -->
         <div class="container">
@@ -127,7 +131,7 @@
     <div class="container carta d-flex flex-column align-items-center text-center">
         <!-- IMAGEN -->
         <div class="container imagen-carta">
-            <img src="images/gtr.jpg" alt="">
+            <i class="fas fa-credit-card fa-4x text-primary"></i>
         </div>
         <!-- INFO -->
         <div class="container">
@@ -140,11 +144,11 @@
     <div class="container carta d-flex flex-column align-items-center text-center">
         <!-- IMAGEN -->
         <div class="container imagen-carta">
-            <img src="images/gtr.jpg" alt="">
+            <i class="fas fa-truck fa-4x text-secondary"></i>
         </div>
         <!-- INFO -->
         <div class="container">
-            <h5>Envios a todo el país, 30 días de prueba</h5>
+            <h5>Envios a todo el país</h5>
             <p>Elegi la forma de entregar que quieras, ¡Y Listo!</p>
         </div>
     </div>
@@ -153,7 +157,7 @@
 
     
     <!-- MEDIOS DE PAGO -->
-<div class="container medios-de-pago d-flex flex-column justify-content-center align-items-center text-center">
+<div class="container medios-de-pago d-flex flex-column justify-content-center align-items-center text-center d-none d-md-flex">
     <h2>MEDIOS DE PAGO</h2>
     <h3>Todas las facilidades de pago</h3>
     <h4>Elegí la que más te convenga</h4>
@@ -203,7 +207,7 @@
 
 
 <!-- MEDIOS DE ENVÍO -->
-<div class="container medios-de-envio d-flex flex-column align-items-center text-center">
+<div class="container medios-de-envio d-flex flex-column align-items-center text-center d-none d-md-flex">
     <h2>MEDIOS DE ENVIO</h2>
     <h3>Todas las facilidades de pago</h3>
     <h4>Elegí la que más te convenga</h4>
@@ -249,7 +253,7 @@
         </div>
     </div>
 
-    <div class="container d-flex flex-column align-itemns-center text-center d-none d-md-flex">
+    <div class="container d-flex flex-column align-items-center text-center d-none d-md-flex">
         <h3>Tu compra está protegida</h3>
         <h4>Nos hacemos cargo si tenés un problema</h4>
 
@@ -396,14 +400,26 @@
 
     </div>
 
-    <div class="d-block d-md-none d-flex flex-column align-items-center text-center">
-        <h3>Tu compra está protegida</h3>
-        <h4>Nos hacemos cargo si tenés un problema</h4>
-
-        <p>Sitio Web seguro certificado por Mercado Pago</p>
-        <p>30 días de prueba. Si no es lo que esperabas, te devolvemos tu dinero</p>
-        <p>Garantía oficial de fábrica gestionada por nosotros</p>
+    <div class="d-block d-md-none d-flex flex-column align-items-center text-center p-4 border rounded shadow-lg">
+        <!-- Título llamativo -->
+        <h3 class="fw-bold text-success mb-3">Tu compra está protegida</h3>
+        <h4 class="text-dark mb-4">Nos hacemos cargo si tenés un problema</h4>
+    
+        <!-- Información con destacados -->
+        <p class="mb-2">
+            <i class="fas fa-shield-alt text-success me-2"></i> 
+            <strong>Sitio Web seguro</strong> certificado por <span class="text-primary fw-semibold">Mercado Pago</span>
+        </p>
+        <p class="mb-2">
+            <i class="fas fa-history text-warning me-2"></i> 
+            <strong>30 días de prueba:</strong> Si no es lo que esperabas, <span class="text-danger fw-semibold">te devolvemos tu dinero</span>
+        </p>
+        <p class="mb-0">
+            <i class="fas fa-tools text-secondary me-2"></i> 
+            <strong>Garantía oficial de fábrica:</strong> Gestionada directamente por nosotros
+        </p>
     </div>
+    
     
 
     <!-- Footer -->
