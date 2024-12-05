@@ -11,11 +11,11 @@ body{
 
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url("/images/carpa.png");
+                url("/images/carpa.svg");
     background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    height: 25vh; /* Ocupa un cuarto de la altura de la pantalla */
+    height: 35vh; /* Ocupa un cuarto de la altura de la pantalla */
     display: flex; /* Permite centrar contenido interno */
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
@@ -63,4 +63,9 @@ body{
 .footer .social-icons a {
     font-size: 1.5rem;
     margin: 0 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
 }
