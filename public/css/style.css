@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.logo img{
+    max-width: 100px;
+    height: auto;
+}
+
+.banner{
+    background-image: url(images/carpa.png);    /* Ver como poner de fondo la imagen de la carpa para movil*/
+}
+
+.banner img{
+    display: none;
+}
+
+.articulos{
+    background-color: #abdba3;
+}
+
+
+.imagen-carta img{
+    max-width: 200px;
+    height: auto;
+}
+
+.tarjeta-icono img{
+    max-width: 200px;
+    height: auto;
+}
+
+.navbar-toggler {
+    width: 200px; /* Ajusta el ancho según lo que necesites */
+}
+
+.footer {
+    background-color: #343a40; /* Color oscuro */
+    color: #f8f9fa; /* Texto claro */
+}
+
+.footer a {
+    color: #f8f9fa; /* Mantener enlaces visibles */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #adb5bd; /* Enlaces en hover */
+}
+
+.footer .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
