@@ -4,6 +4,10 @@ body{
     gap: 25px;
 }
 
+.navbar-custom {
+    background-color: #5a2c0c; /* Marrón (Puedes ajustar el tono si lo deseas) */
+}
+
 .logo img{
     max-width: 100px;
     height: auto;

@@ -20,7 +20,7 @@
         //               NAVBAR                 //
         /////////////////////////////////////////-->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand logo" href="#">
