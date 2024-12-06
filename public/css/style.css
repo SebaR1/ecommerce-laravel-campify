@@ -35,10 +35,12 @@ body{
     background-color: #abdba3;
 }
 
+/*
 .imagen-carta img{
     max-width: 200px;
     height: auto;
 }
+*/
 
 .tarjeta-icono img{
     max-width: 200px;
@@ -71,4 +73,69 @@ body{
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: black;
+}
+
+.medios-de-pago {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+    border-radius: 8px;
+}
+
+.carta {
+    background-color: white;
+    max-width: 250px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-carta i {
+    transition: color 0.2s ease;
+}
+
+.carta:hover .imagen-carta i {
+    color: #007b55; /* Cambiar a un verde más oscuro en hover */
+}
+
+.medios-de-envio {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.contacto {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.btn {
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+    border-color: #dc3545;
+}
+
+.btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: #fff;
+    border-color: #ffc107;
 }

@@ -142,7 +142,7 @@
         //          DETALLES DEL ENVIO          //
         /////////////////////////////////////////-->
     <!-- DETALLES DE ENVIO -->
-    <div class="container d-flex flex-column flex-md-row gap-3">
+    <div class="container d-flex flex-column flex-md-row gap-3 mt-5">
         <!-- CARTA 1 -->
         <div class="container carta d-flex flex-column align-items-center text-center">
             <!-- IMAGEN -->
@@ -187,49 +187,42 @@
     <!-- /////////////////////////////////////////
         //           MEDIOS DE PAGO            //
         /////////////////////////////////////////-->
-    <div class="container medios-de-pago d-flex flex-column justify-content-center align-items-center text-center d-none d-md-flex">
-        <h2>MEDIOS DE PAGO</h2>
-        <h3>Todas las facilidades de pago</h3>
-        <h4>Elegí la que más te convenga</h4>
+    <div class="container medios-de-pago d-flex flex-column justify-content-center align-items-center text-center py-5 d-none d-md-flex">
+        <h2 class="mb-3 text-success fw-bold">MEDIOS DE PAGO</h2>
+        <h3 class="mb-5 text-secondary">Todas las facilidades de pago, Elegí la que más te convenga</h3>
 
-        <div class="container d-flex flex-column flex-md-row">
+        <div class="container d-flex flex-column flex-md-row gap-4 justify-content-center">
             <!-- CARTA 1 -->
-            <div class="container carta d-flex flex-column align-items-center text-center">
+            <div class="carta d-flex flex-column align-items-center text-center p-4 shadow rounded">
                 <!-- IMAGEN -->
-                <div class="container imagen-carta">
-                    <img src="images/aguera.jpg" alt="">
+                <div class="imagen-carta mb-3">
+                    <i class="fas fa-credit-card fa-4x text-success"></i>
                 </div>
                 <!-- INFO -->
-                <div class="container">
-                    <h5>Para consultas, cambios o devoluciones</h5>
-                    <p>Escribinos en nuestro whatsapp</p>
-                </div>
+                <h5 class="text-primary fw-bold">Tarjeta de Crédito</h5>
+                <p class="text-muted">Acreditación instantánea</p>
             </div>
-        
+
             <!-- CARTA 2 -->
-            <div class="container carta d-flex flex-column align-items-center text-center">
+            <div class="carta d-flex flex-column align-items-center text-center p-4 shadow rounded">
                 <!-- IMAGEN -->
-                <div class="container imagen-carta">
-                    <img src="images/aguera.jpg" alt="">
+                <div class="imagen-carta mb-3">
+                    <i class="fas fa-credit-card fa-4x text-warning"></i>
                 </div>
                 <!-- INFO -->
-                <div class="container">
-                    <h5>Paga con tarjeta y efectivo</h5>
-                    <p>Oferta en 3, 6 y 12 cuotas</p>
-                </div>
+                <h5 class="text-primary fw-bold">Tarjeta de Débito</h5>
+                <p class="text-muted">Acreditación instantánea</p>
             </div>
-        
+
             <!-- CARTA 3 -->
-            <div class="container carta d-flex flex-column align-items-center text-center">
+            <div class="carta d-flex flex-column align-items-center text-center p-4 shadow rounded">
                 <!-- IMAGEN -->
-                <div class="container imagen-carta">
-                    <img src="images/aguera.jpg" alt="">
+                <div class="imagen-carta mb-3">
+                    <i class="fas fa-wallet fa-4x text-dark"></i>
                 </div>
                 <!-- INFO -->
-                <div class="container">
-                    <h5>Envios a todo el país, 30 días de prueba</h5>
-                    <p>Elegi la forma de entregar que quieras, ¡Y Listo!</p>
-                </div>
+                <h5 class="text-primary fw-bold">Efectivo</h5>
+                <p class="text-muted">Acreditación instantánea</p>
             </div>
         </div>
     </div>
@@ -239,198 +232,126 @@
     <!-- /////////////////////////////////////////
         //           MEDIOS DE ENVIO           //
         /////////////////////////////////////////-->
-    <div class="container medios-de-envio d-flex flex-column align-items-center text-center d-none d-md-flex">
-        <h2>MEDIOS DE ENVIO</h2>
-        <h3>Todas las facilidades de pago</h3>
-        <h4>Elegí la que más te convenga</h4>
+    <div class="container medios-de-envio d-flex flex-column align-items-center text-center py-5 d-none d-md-flex">
+        <h2 class="mb-3 text-primary fw-bold">MEDIOS DE ENVÍO</h2>
+    <h3 class="mb-2 text-secondary">Elegí la forma que más te convenga</h3>
+    <h4 class="mb-5 text-muted">Compralo desde tu casa, nosotros te lo llevamos</h4>
 
-        <div class="container d-flex flex-column flex-md-row">
+    <!-- Cartas -->
+    <div class="container d-flex flex-column flex-md-row gap-4 justify-content-center">
             <!-- CARTA 1 -->
-            <div class="container carta d-flex flex-column align-items-center text-center">
+            <div class="carta d-flex flex-column align-items-center text-center p-4 shadow rounded">
                 <!-- IMAGEN -->
-                <div class="container imagen-carta">
-                    <img src="images/gtr.jpg" alt="">
+                <div class="imagen-carta mb-3">
+                    <i class="fas fa-motorcycle fa-4x text-warning"></i>
                 </div>
                 <!-- INFO -->
-                <div class="container">
-                    <h5>Para consultas, cambios o devoluciones</h5>
-                    <p>Escribinos en nuestro whatsapp</p>
-                </div>
+                <h5 class="text-primary fw-bold">Moto en el día</h5>
+                <p class="text-muted">CABA y GBA</p>
+                <p class="text-muted">Lunes a Sábados</p>
+                <p class="text-success fw-bold">¡Llega hoy!</p>
             </div>
-        
+
             <!-- CARTA 2 -->
-            <div class="container carta d-flex flex-column align-items-center text-center">
+            <div class="carta d-flex flex-column align-items-center text-center p-4 shadow rounded">
                 <!-- IMAGEN -->
-                <div class="container imagen-carta">
-                    <img src="images/gtr.jpg" alt="">
+                <div class="imagen-carta mb-3">
+                    <i class="fas fa-truck fa-4x text-danger"></i>
                 </div>
                 <!-- INFO -->
-                <div class="container">
-                    <h5>Paga con tarjeta y efectivo</h5>
-                    <p>Oferta en 3, 6 y 12 cuotas</p>
-                </div>
+                <h5 class="text-primary fw-bold">Entrega normal</h5>
+                <p class="text-muted">CABA y GBA</p>
+                <p class="text-muted">Envíos por OCA y Andreani</p>
             </div>
-        
+
             <!-- CARTA 3 -->
-            <div class="container carta d-flex flex-column align-items-center text-center">
+            <div class="carta d-flex flex-column align-items-center text-center p-4 shadow rounded">
                 <!-- IMAGEN -->
-                <div class="container imagen-carta">
-                    <img src="images/gtr.jpg" alt="">
+                <div class="imagen-carta mb-3">
+                    <i class="fas fa-store fa-4x text-success"></i>
                 </div>
                 <!-- INFO -->
-                <div class="container">
-                    <h5>Envios a todo el país, 30 días de prueba</h5>
-                    <p>Elegi la forma de entregar que quieras, ¡Y Listo!</p>
-                </div>
+                <h5 class="text-primary fw-bold">Retiro en sucursal</h5>
+                <p class="text-muted">Lunes a Viernes de 9 a 18hs</p>
+                <p class="text-muted">Sábados de 9 a 13hs</p>
             </div>
         </div>
 
-        <div class="container d-flex flex-column align-items-center text-center d-none d-md-flex">
-            <h3>Tu compra está protegida</h3>
-            <h4>Nos hacemos cargo si tenés un problema</h4>
-
-            <p>Sitio Web seguro certificado por Mercado Pago</p>
-            <p>30 días de prueba. Si no es lo que esperabas, te devolvemos tu dinero</p>
-            <p>Garantía oficial de fábrica gestionada por nosotros</p>
+        <!-- Información adicional -->
+        <div class="container text-center mt-5">
+            <h3 class="text-secondary">¡Tu envío está asegurado!</h3>
+            <h4 class="text-muted">No importa dónde estés, llegamos a vos</h4>
+            <p class="mt-3 text-success fw-bold">Envío gratis en casi todos nuestros productos</p>
+            <p class="text-muted">Todos nuestros envíos cuentan con seguro total</p>
         </div>
     </div>
 
-
-
-
-    <!-- /////////////////////////////////////////
-        //          COMPRA MAYORISTA            //
-        /////////////////////////////////////////-->
-    <div class="container d-flex flex-column align-items-center text-center d-none d-md-flex">
-
-        <h2>Queres hacer una compra mayorista ?</h2>
-        <h2>Te asesoramos</h2>
-
-        <h3>Escribinos</h3>
-        <h4>Estamos para ayudarte</h4>
-
-        <div class="container d-flex flex-column flex-md-row">
-            <!-- CARTA 1 -->
-            <div class="container carta d-flex flex-column align-items-center text-center">
-                <!-- IMAGEN -->
-                <div class="container imagen-carta">
-                    <img src="images/aguera.jpg" alt="">
-                </div>
-                <!-- INFO -->
-                <div class="container">
-                    <h5>Para consultas, cambios o devoluciones</h5>
-                </div>
-                <button>Boton</button>
-            </div>
-        
-            <!-- CARTA 2 -->
-            <div class="container carta d-flex flex-column align-items-center text-center">
-                <!-- IMAGEN -->
-                <div class="container imagen-carta">
-                    <img src="images/aguera.jpg" alt="">
-                </div>
-                <!-- INFO -->
-                <div class="container">
-                    <h5>Paga con tarjeta y efectivo</h5>
-                </div>
-                <button>Boton</button>
-            </div>
-        </div>
-    </div>
 
 
     <!-- /////////////////////////////////////////
         //               CONTACTO              //
         /////////////////////////////////////////-->
-    <div class="container d-flex flex-column align-items-center text-center contacto d-none d-md-flex">
-        <h2>CONTACTO</h2>
-        <h3>Queres hacer una compra ? Te asesoramos</h3>
-        <h4>Llamanos o escribinos, estamos para ayudarte</h4>
-
-         <!-- Tarjeta -->
-         <div class="container d-flex flex-column flex-md-row gap-3">
+    <div class="container d-flex flex-column align-items-center text-center contacto py-5 d-none d-md-flex">
+        <h2 class="text-primary fw-bold mb-3">CONTACTO</h2>
+        <h3 class="text-secondary mb-2">¿Querés hacer una compra? Te asesoramos</h3>
+        <h4 class="text-muted mb-4">Llamanos o escribinos, estamos para ayudarte</h4>
+    
+        <!-- Primera fila de cartas -->
+        <div class="container d-flex flex-column flex-md-row gap-4 justify-content-center">
             <!-- CARTA 1 -->
-            <div class="container carta d-flex flex-column align-items-center text-center">
-                <!-- IMAGEN -->
-                <div class="container imagen-carta">
-                    <img src="images/aguera.jpg" alt="">
-                </div>
-                <!-- INFO -->
-                <div class="container">
-                    <h5>Para consultas, cambios o devoluciones</h5>
-                </div>
-                <button>Boton</button>
+            <div class="carta p-4 shadow rounded text-center d-flex flex-column align-items-center">
+                <i class="fas fa-phone fa-4x text-warning mb-3"></i>
+                <h5 class="text-primary fw-bold">Venta Telefónica</h5>
+                <p class="text-muted">De lunes a viernes de 9 a 18hs</p>
+                <p class="text-muted">Sábados de 9 a 13hs</p>
+                <button class="btn btn-outline-primary mt-3">Llamar Ahora</button>
             </div>
-        
+    
             <!-- CARTA 2 -->
-            <div class="container carta d-flex flex-column align-items-center text-center">
-                <!-- IMAGEN -->
-                <div class="container imagen-carta">
-                    <img src="images/aguera.jpg" alt="">
-                </div>
-                <!-- INFO -->
-                <div class="container">
-                    <h5>Paga con tarjeta y efectivo</h5>
-                </div>
-                <button>Boton</button>
+            <div class="carta p-4 shadow rounded text-center d-flex flex-column align-items-center">
+                <i class="fab fa-whatsapp fa-4x text-success mb-3"></i>
+                <h5 class="text-primary fw-bold">Whatsapp</h5>
+                <p class="text-muted">De lunes a viernes de 9 a 18hs</p>
+                <p class="text-muted">Sábados de 9 a 13hs</p>
+                <button class="btn btn-outline-success mt-3">Escribir Ahora</button>
             </div>
-
+    
             <!-- CARTA 3 -->
-            <div class="container carta d-flex flex-column align-items-center text-center">
-                <!-- IMAGEN -->
-                <div class="container imagen-carta">
-                    <img src="images/aguera.jpg" alt="">
-                </div>
-                <!-- INFO -->
-                <div class="container">
-                    <h5>Paga con tarjeta y efectivo</h5>
-                </div>
-                <button>Boton</button>
+            <div class="carta p-4 shadow rounded text-center d-flex flex-column align-items-center">
+                <i class="fas fa-table fa-4x text-danger mb-3"></i>
+                <h5 class="text-primary fw-bold">Venta Mayorista</h5>
+                <p class="text-muted">De lunes a viernes de 9 a 18hs</p>
+                <p class="text-muted">Sábados de 9 a 13hs</p>
+                <button class="btn btn-outline-danger mt-3">Consultar</button>
             </div>
         </div>
-
-        <h3>Compraste ? Te ayudamos con tu consulta</h3>
-        <h4>Elegi el area con la que deseas hablar</h4>
-
-        <!-- Tarjeta -->
-        <div class="container d-flex flex-column flex-md-row gap-3">
-            <!-- CARTA 1 -->
-            <div class="container carta d-flex flex-column align-items-center text-center">
-                <!-- IMAGEN -->
-                <div class="container imagen-carta">
-                    <img src="images/aguera.jpg" alt="">
+    
+        <!-- Segunda fila de cartas -->
+        <div class="container text-center mt-5">
+            <h3 class="text-secondary mb-2">¿Compraste? Te ayudamos con tu consulta</h3>
+            <h4 class="text-muted mb-4">Elegí el área con la que deseas hablar</h4>
+    
+            <div class="d-flex flex-column flex-md-row gap-4 justify-content-center">
+                <!-- CARTA 1 -->
+                <div class="carta p-4 shadow rounded text-center d-flex flex-column align-items-center">
+                    <i class="fas fa-shopping-cart fa-4x text-primary mb-3"></i>
+                    <h5 class="text-primary fw-bold">Por una compra ya realizada</h5>
+                    <button class="btn btn-outline-primary mt-3">Consultar</button>
                 </div>
-                <!-- INFO -->
-                <div class="container">
-                    <h5>Para consultas, cambios o devoluciones</h5>
+    
+                <!-- CARTA 2 -->
+                <div class="carta p-4 shadow rounded text-center d-flex flex-column align-items-center">
+                    <i class="fas fa-box fa-4x text-warning mb-3"></i>
+                    <h5 class="text-primary fw-bold">Relacionada con tu envío</h5>
+                    <button class="btn btn-outline-warning mt-3">Rastrear Envío</button>
                 </div>
-                <button>Boton</button>
-            </div>
-        
-            <!-- CARTA 2 -->
-            <div class="container carta d-flex flex-column align-items-center text-center">
-                <!-- IMAGEN -->
-                <div class="container imagen-carta">
-                    <img src="images/aguera.jpg" alt="">
+    
+                <!-- CARTA 3 -->
+                <div class="carta p-4 shadow rounded text-center d-flex flex-column align-items-center">
+                    <i class="fas fa-headset fa-4x text-success mb-3"></i>
+                    <h5 class="text-primary fw-bold">Técnica o de funcionamiento</h5>
+                    <button class="btn btn-outline-success mt-3">Soporte Técnico</button>
                 </div>
-                <!-- INFO -->
-                <div class="container">
-                    <h5>Paga con tarjeta y efectivo</h5>
-                </div>
-                <button>Boton</button>
-            </div>
-
-            <!-- CARTA 3 -->
-            <div class="container carta d-flex flex-column align-items-center text-center">
-                <!-- IMAGEN -->
-                <div class="container imagen-carta">
-                    <img src="images/aguera.jpg" alt="">
-                </div>
-                <!-- INFO -->
-                <div class="container">
-                    <h5>Paga con tarjeta y efectivo</h5>
-                </div>
-                <button>Boton</button>
             </div>
         </div>
 
