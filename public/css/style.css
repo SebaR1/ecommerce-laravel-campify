@@ -5,7 +5,7 @@ body{
 }
 
 .navbar-custom {
-    background-color: #5a2c0c; /* Marrón (Puedes ajustar el tono si lo deseas) */
+    background-color: #5a2c0c; 
 }
 
 .logo img{
@@ -19,11 +19,11 @@ body{
     background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    height: 35vh; /* Ocupa un cuarto de la altura de la pantalla */
-    display: flex; /* Permite centrar contenido interno */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    text-align: center; /* Centra el texto internamente */
+    height: 35vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
     color: white;
 }
 
@@ -34,7 +34,6 @@ body{
 .articulos{
     background-color: #abdba3;
 }
-
 
 .imagen-carta img{
     max-width: 200px;
@@ -47,21 +46,21 @@ body{
 }
 
 .navbar-toggler {
-    width: 200px; /* Ajusta el ancho según lo que necesites */
+    width: 200px; 
 }
 
 .footer {
-    background-color: #343a40; /* Color oscuro */
-    color: #f8f9fa; /* Texto claro */
+    background-color: #343a40;
+    color: #f8f9fa; 
 }
 
 .footer a {
-    color: #f8f9fa; /* Mantener enlaces visibles */
+    color: #f8f9fa; 
     text-decoration: none;
 }
 
 .footer a:hover {
-    color: #adb5bd; /* Enlaces en hover */
+    color: #adb5bd;
 }
 
 .footer .social-icons a {
