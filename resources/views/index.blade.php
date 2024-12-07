@@ -1,84 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Añadir Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- CSS  -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Fuente de Iconos -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
-</head>
-<body>
-
-    <!-- /////////////////////////////////////////
-        //               NAVBAR                 //
-        /////////////////////////////////////////-->
-
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container">
-            <!-- Logo -->
-            <a class="navbar-brand logo" href="#">
-                <img src="images/logo-recortado.JPG" alt="Logo" class="d-inline-block align-text-top">
-            </a>
-        
-            <!-- Contenido del navbar -->
-                <!-- Botones de acción -->
-                <ul class="navbar-nav ms-auto d-flex align-items-center gap-3">
-                    <button class="btn btn-primary">Iniciar Sesion</button>
-                </ul>
-        </div>
-    </nav>
-
-    <!-- /////////////////////////////////////////
-        //    ARTUCLOS CON MENU DESPLEGABLE     //
-        /////////////////////////////////////////-->
-    
-    <div class="container d-flex flex-column align-items-center">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <!-- Botón de colapso para mobile -->
-                <button class="navbar-toggler w-100" type="button" data-bs-toggle="collapse" data-bs-target="#menuArticulos" aria-controls="menuArticulos" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Contenido del menú -->
-                <div class="collapse navbar-collapse" id="menuArticulos">
-                    <ul class="container navbar-nav d-flex flex-column align-items-center">
-                        <li class="nav-item"><a class="nav-link" href="">OFERTAS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">REGALOS EMPRESARIALES</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">CAMPING</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">JARDIN</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">ACCESORIOS PARA BICICLETAS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">ELECTROHOGAR</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">ACCESORIOS PARA VEHICULOS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">HERRAMIENTAS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">MATAFUEGOS</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-
+@include('header')
 
     <!-- /////////////////////////////////////////
         //               OFERTAS               //
         /////////////////////////////////////////-->
-    <div class="container ofertas p-0">
-        <a href="#" target="_blank">
-            <img src="images/promo.JPG" class="img-fluid" alt="oferta">
-        </a>
-    </div>
+        <div class="container ofertas p-0">
+            <a href="#" target="_blank" class="promo-link"></a>
+        </div>
+        
 
     <!-- /////////////////////////////////////////
         //               CARRUSEL               //
         /////////////////////////////////////////-->
-    <div id="carouselExampleIndicators" class="container carousel slide">
+    <div id="carouselExampleIndicators" class="container carousel slide custom-carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -381,42 +314,4 @@
     </div>
     
     
-
-    <!-- /////////////////////////////////////////
-         //               FOOTER               //
-        /////////////////////////////////////////-->    
-    <footer class="footer py-4">
-        <div class="container text-center">
-            <!-- Redes Sociales -->
-            <div class="social-icons mb-3">
-                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            </div>
-
-            <!-- Enlaces Rápidos -->
-            <div class="row">
-                <div class="col-12 mb-3">
-                    <a href="#">Términos y Condiciones</a> | 
-                    <a href="#">Política de Privacidad</a> | 
-                    <a href="#">Ayuda</a>
-                </div>
-            </div>
-
-            <!-- Información de Contacto -->
-            <div class="row">
-                <div class="col-12">
-                    <p class="mb-1">Tel: <a href="tel:+123456789">+1 234 567 89</a></p>
-                    <p>Email: <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a></p>
-                    <p>&copy; 2024 Campify. Todos los derechos reservados.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
+@include('footer')

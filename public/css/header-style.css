@@ -1,0 +1,50 @@
+.navbar-custom {
+    background-color: #5a2c0c; 
+}
+
+.logo img{
+    max-width: 100px;
+    height: auto;
+}
+
+.navbar-toggler {
+    width: 200px; 
+}
+
+.navbar-custom .btn,
+.navbar-custom .form-control {
+    padding: 4px 8px;
+    margin: 0;
+}
+
+.btn {
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    padding: 5px 12px; /* Ajusta el espacio interno si es necesario */
+    font-size: 18px; /* Opcional: ajusta el tamaño del texto */
+}
+
+
+
+/* Estilo para pantallas grandes */
+@media (min-width: 768px) {
+    #menuArticulos {
+        display: flex !important; 
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        gap: 15px; 
+    }
+
+    #menuArticulos ul li{
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .navbar-toggler {
+        display: none; /* Ocultar el botón de colapso */
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem; /* Ajustar el padding de los enlaces */
+    }
+}
