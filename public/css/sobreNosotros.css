@@ -1,0 +1,94 @@
+.sobreNosotros {
+    background-image: linear-gradient(
+            rgba(166, 196, 247, 0.37),
+            rgb(171, 214, 255)
+        ),
+        url("../images/sobreNosotros/sobrenosotros.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 392px;
+    overflow: hidden;
+}
+
+.filtroBorroso {
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.123);
+    height: 100%;
+    width: 100%;
+}
+
+.vecTam {
+    height: 370px;
+    width: auto;
+}
+
+.vectorIzq {
+    padding-right: 100px;
+    padding-bottom: 120px;
+}
+
+.vectorDer {
+    padding-left: 100px;
+    padding-top: 120px;
+}
+
+.fotoParticipante {
+    height: 200px;
+    width: 200px;
+}
+
+@media (max-width: 768px) {
+    #introSobreNos {
+        width: 75% !important;
+    }
+
+    .vecTam {
+        height: 350px;
+        width: auto;
+    }
+
+    .vectorIzq {
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
+        position: relative !important;
+        margin: 0 auto !important;
+    }
+
+    .vectorDer {
+        display: none !important;
+    }
+
+    .perfil {
+        width: 80% !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .vecTam {
+        height: 270px;
+        width: auto;
+    }
+
+    .perfilsm {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 988px) {
+    .vecTam {
+        height: 320px;
+        width: auto;
+    }
+
+    .paddingxl {
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 988px) {
+    .paddingxl {
+        padding-top: 40px;
+    }
+}
