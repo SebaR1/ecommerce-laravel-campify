@@ -1,14 +1,23 @@
 .navbar-custom {
-    background-color: #5a2c0c; 
+    background-color: #f8f6ee;
 }
 
-.logo img{
-    max-width: 100px;
-    height: auto;
+.bg-nav2 {
+    background-color: #e1fcad;
+}
+
+.logo {
+    width: 62x;
+    height: 62px;
+}
+
+.navbar-brand {
+    height: 50px;
+    display: flex;
 }
 
 .navbar-toggler {
-    width: 200px; 
+    width: 200px;
 }
 
 .navbar-custom .btn,
@@ -23,19 +32,17 @@
     font-size: 18px; /* Opcional: ajusta el tamaño del texto */
 }
 
-
-
 /* Estilo para pantallas grandes */
 @media (min-width: 768px) {
     #menuArticulos {
-        display: flex !important; 
-        flex-direction: row; 
+        display: flex !important;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 15px; 
+        gap: 15px;
     }
 
-    #menuArticulos ul li{
+    #menuArticulos ul li {
         font-size: 13px;
         font-weight: bold;
     }
