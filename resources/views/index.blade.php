@@ -233,7 +233,7 @@
         <div class="container d-flex flex-column flex-md-row gap-4 justify-content-center">
             <!-- CARTA 1 -->
             <div class="carta p-4 shadow rounded text-center d-flex flex-column align-items-center">
-                <i class="fas fa-phone fa-4x text-warning mb-3"></i>
+                <i class="fas fa-phone fa-4x text-primary mb-3"></i>
                 <h5 class="text-primary fw-bold">Venta Telefónica</h5>
                 <p class="text-muted">De lunes a viernes de 9 a 18hs</p>
                 <p class="text-muted">Sábados de 9 a 13hs</p>
