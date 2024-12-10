@@ -10,7 +10,7 @@
     width: 62x;
     height: 62px;
 }
-
+/*
 .navbar-brand {
     height: 50px;
     display: flex;
@@ -27,12 +27,12 @@
 }
 
 .btn {
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    padding: 5px 12px; /* Ajusta el espacio interno si es necesario */
-    font-size: 18px; /* Opcional: ajusta el tamaño del texto */
+    white-space: nowrap; // Evita que el texto se divida en varias líneas 
+    padding: 5px 12px; // Ajusta el espacio interno si es necesario 
+    font-size: 18px; // Opcional: ajusta el tamaño del texto 
 }
 
-/* Estilo para pantallas grandes */
+// Estilo para pantallas grandes 
 @media (min-width: 768px) {
     #menuArticulos {
         display: flex !important;
@@ -48,10 +48,23 @@
     }
 
     .navbar-toggler {
-        display: none; /* Ocultar el botón de colapso */
+        display: none; // Ocultar el botón de colapso 
     }
 
     .nav-link {
-        padding: 0.5rem 1rem; /* Ajustar el padding de los enlaces */
+        padding: 0.5rem 1rem; // Ajustar el padding de los enlaces 
+    }
+}
+*/
+
+@media (max-width: 620px) {
+    #menuArticulos {
+        display: none !important;
+    }
+}
+
+@media (min-width: 620px) {
+    #linksAdicionales {
+        display: none !important;
     }
 }
