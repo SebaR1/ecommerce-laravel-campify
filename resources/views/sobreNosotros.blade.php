@@ -1,6 +1,4 @@
 @include('header')
-
-<body>
     <div class = 'sobreNosotros mb-1'>
         <div class="filtroBorroso d-flex justify-content-evenly align-items-center">
                 <div class="vectorIzq position-relative me-5 d-flex justify-content-center align-items-center">
@@ -53,8 +51,6 @@
         </div>
         
     </div>
-    
-</body>
 
 
 
