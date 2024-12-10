@@ -69,3 +69,38 @@
     font-size: 1.2rem; 
     color: #000102;
   }
+
+  .sinMargen {
+    margin: 0px !important;
+}
+
+.color-fondo:hover{
+  background-color: #0056b3;
+  color: white;
+}
+
+
+/* Cosas de prueba*/
+.cv {
+  position: relative;
+  overflow: hidden;
+  background-color: #509ee2;
+  color: white;
+  width: 100%;
+  font-size: 25px;
+}
+
+.cv:hover{
+  background-color: #3376b1;
+  color: white;
+}
+
+.cv input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

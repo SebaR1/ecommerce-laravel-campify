@@ -29,23 +29,23 @@
 <!-- FORM -->
 <div class="container mt-5 mb-5">
     <form action="#" method="POST">
-        <div class="row">
+        <div class="row ">
           <div class="col-md-6">
             <label for="nombre" class="form-label text-white">Nombre</label>
             <input type="text" class="form-control color-fondo tamanio" id="nombre" placeholder="Ingresa tu nombre">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 ">
             <label for="apellido" class="form-label text-white">Apellido</label>
             <input type="text" class="form-control color-fondo tamanio" id="apellido" placeholder="Ingresa tu apellido">
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row ">
+          <div class="col-md-6 ">
             <label for="telefono" class="form-label text-white">Teléfono</label>
             <input type="tel" class="form-control color-fondo tamanio" id="telefono" placeholder="Ingresa tu teléfono">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 ">
             <label for="localidad" class="form-label text-white">Localidad</label>
             <input type="text" class="form-control color-fondo tamanio" id="localidad" placeholder="Ingresa tu localidad">
           </div>
@@ -78,14 +78,17 @@
           </div>
         </div>
 
-        <div class="row mb-3">
-            <div class="col-md-12">
-              <div class="custom-file-upload d-flex align-items-center">
-                <input type="file" class="form-control color-fondo" id="cv" hidden>
-                <label for="cv" class="text-white" id="cv-label">Subir CV</label>
-              </div>
-            </div>
-          </div>
+
+        <!-- Subir CV -->
+        <div class="container mt-2 mb-3">
+          <button class="btn cv">
+              <label for="">Subir CV</label>
+              <input type="file">
+          </button>
+        </div>
+
+
+
 
         <div class="d-flex justify-content-center">
           <button type="submit" class="btn btn-primary boton-enviar">Enviar</button>
