@@ -1,5 +1,5 @@
 @include('header')
 
-<h2>Pagina de contacto</h2>
+<h2>trabaja con nosotros</h2>
     
 @include('footer')
