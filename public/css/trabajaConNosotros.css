@@ -1,0 +1,67 @@
+.trabajaConNosotros {
+    background-image: linear-gradient(
+            rgba(166, 196, 247, 0.37),
+            rgb(171, 214, 255)
+        ),
+        url("../images/trabajaConNosotros/fondo.svg");
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    overflow: hidden;
+}
+
+/* Cambiar color de fondo de los campos de entrada */
+.color-fondo {
+    background-color: #509ee2; /* Color de fondo personalizado */
+    border-radius: 5px; /* Opcional: agregar bordes redondeados */
+  }
+  
+  /* Cambiar color del placeholder */
+  .form-control::placeholder {
+    color: #ffffff; /* Color del placeholder */
+  }
+  
+/* Cambiar color del texto en el campo select */
+#puesto_interes {
+    color: #ffffff; /* Color del texto */
+  }
+  
+  /* Cambiar color del texto en el campo de fecha */
+  #fecha_nacimiento {
+    color: #ffffff; /* Color del texto */
+  }
+
+   .custom-file-upload {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Ocultar el input original */
+  .custom-file-upload input[type="file"] {
+    display: none;
+  }
+
+  /* Cambiar el color del texto */
+  .custom-file-upload label {
+    color: white;
+    line-height: 45px; /* Centrar el texto verticalmente */
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  /* Efecto al pasar el mouse sobre el botón */
+  .custom-file-upload:hover {
+    background-color: #0056b3;
+  }
+
+  .tamanio{
+    font-size: 30px;
+  }
