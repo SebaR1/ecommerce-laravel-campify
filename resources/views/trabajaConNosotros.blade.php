@@ -17,13 +17,14 @@
 </div>
 
 <!-- Texto -->
-<div class="container d-flex text-center">
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ea a ipsam fugiat
-        sunt iusto ullam itaque, asperiores aut labore consequatur dolore similique. 
-        Incidunt perspiciatis nisi optio velit placeat unde?
+<div class="container d-flex justify-content-center text-center mt-5">
+    <p class="lead text-muted" style="font-family: 'Arial', sans-serif;">
+        En Campify somos más que una empresa, somos una familia. Desde nuestros inicios, hace más de 10 años,
+        hemos crecido y evolucionado gracias a la dedicación y pasión de nuestro equipo.
+        <span class="font-weight-bold negrita">Dejanos tu CV y descubrí cómo podés contribuir al éxito de Campify, ¡Te esperamos!</span>
     </p>
 </div>
+
 
 <!-- FORM -->
 <div class="container mt-5 mb-5">

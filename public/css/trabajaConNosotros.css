@@ -64,3 +64,8 @@
   .boton-enviar{
     padding: 15px 70px;
   }
+
+  .negrita{
+    font-size: 1.2rem; 
+    color: #000102;
+  }
