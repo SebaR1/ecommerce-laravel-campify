@@ -13,7 +13,7 @@
 /* Cambiar color de fondo de los campos de entrada */
 .color-fondo {
     background-color: #509ee2; /* Color de fondo personalizado */
-    border-radius: 5px; /* Opcional: agregar bordes redondeados */
+    border-radius: 15px; /* Opcional: agregar bordes redondeados */
   }
   
   /* Cambiar color del placeholder */
@@ -32,14 +32,12 @@
   }
 
    .custom-file-upload {
-    position: relative;
-    display: inline-block;
     width: 100%;
-    height: 45px;
-    background-color: #007bff;
-    border: 2px solid #007bff;
-    border-radius: 5px;
+    height: 55px;
+    background-color: #509ee2;
+    border-radius: 15px;
     cursor: pointer;
+    padding: 30px 10px;
   }
 
   /* Ocultar el input original */
@@ -47,14 +45,11 @@
     display: none;
   }
 
-  /* Cambiar el color del texto */
   .custom-file-upload label {
     color: white;
-    line-height: 45px; /* Centrar el texto verticalmente */
+    font-size: 30px;
+    font-weight: 500;
     padding-left: 10px;
-    padding-right: 10px;
-    font-size: 16px;
-    font-weight: bold;
   }
 
   /* Efecto al pasar el mouse sobre el botón */
@@ -64,4 +59,8 @@
 
   .tamanio{
     font-size: 30px;
+  }
+
+  .boton-enviar{
+    padding: 15px 70px;
   }

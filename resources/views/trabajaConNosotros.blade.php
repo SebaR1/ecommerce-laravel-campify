@@ -28,7 +28,7 @@
 <!-- FORM -->
 <div class="container mt-5 mb-5">
     <form action="#" method="POST">
-        <div class="row mb-1">
+        <div class="row">
           <div class="col-md-6">
             <label for="nombre" class="form-label text-white">Nombre</label>
             <input type="text" class="form-control color-fondo tamanio" id="nombre" placeholder="Ingresa tu nombre">
@@ -39,7 +39,7 @@
           </div>
         </div>
 
-        <div class="row mb-1">
+        <div class="row">
           <div class="col-md-6">
             <label for="telefono" class="form-label text-white">Teléfono</label>
             <input type="tel" class="form-control color-fondo tamanio" id="telefono" placeholder="Ingresa tu teléfono">
@@ -50,7 +50,7 @@
           </div>
         </div>
 
-        <div class="row mb-1">
+        <div class="row">
           <div class="col-md-6">
             <label for="codigo_postal" class="form-label text-white">Código Postal</label>
             <input type="text" class="form-control color-fondo tamanio" id="codigo_postal" placeholder="Ingresa tu código postal">
@@ -79,15 +79,15 @@
 
         <div class="row mb-3">
             <div class="col-md-12">
-              <div class="custom-file-upload">
+              <div class="custom-file-upload d-flex align-items-center">
                 <input type="file" class="form-control color-fondo" id="cv" hidden>
                 <label for="cv" class="text-white" id="cv-label">Subir CV</label>
               </div>
             </div>
           </div>
 
-        <div class="d-grid">
-          <button type="submit" class="btn btn-primary">Enviar</button>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary boton-enviar">Enviar</button>
         </div>
       </form>
 </div>
