@@ -23,44 +23,66 @@
         //               NAVBAR                 //
         /////////////////////////////////////////-->
 
-        <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <nav class="navbar navbar-expand-md bg-body-tertiary p-ajuste-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand p-ajuste-logo" href="#">
+                    <img src="images/logosinbg.png" alt="Logo" class="m-ajuste-logo logo">
+                </a>
+                <button class="navbar-toggler m-ajuste-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars colorhamburger"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul id="linksAdicionales" class="navbar-nav me-auto mb-2 mb-lg-0 order-md-1 order 1">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <ul id="linksAdicionales" class="navbar-nav me-auto mb-2 mb-lg-0 border-top-ajuste">
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link" href="#">Sobre Nosotros</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link" href="#">Trabaja con nosotros</a>
+                        </li>
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link" href="#">Catalogo</a>
+                        </li>
+                        <li class="nav-item dropdown ajuste-item-nav-md">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                                Categorias
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Regalos empresariales</a></li>
+                                <li><a class="dropdown-item" href="#">Camping</a></li>
+                                <li><a class="dropdown-item" href="#">Jardin</a></li>
+                                <li><a class="dropdown-item" href="#">Accesorios para bicicletas</a></li>
+                                <li><a class="dropdown-item" href="#">Electrohogar</a></li>
+                                <li><a class="dropdown-item" href="#">Accesorios para vehiculos</a></li>
+                                <li><a class="dropdown-item" href="#">Herramientas</a></li>
+                                <li><a class="dropdown-item" href="#">Matafuegos</a></li>
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex mx-auto order-2 order-md-1 order-3 order-md-2" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 order-2 order-md-3 d-flex">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="">Iniciar Sesion</a>
+                    <ul class="navbar-nav mb-lg-0 order-md-3 d-flex border-top-ajuste m-ajuste-sesion">
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link active colorLetras" href="">Crear Cuenta</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="">Crear Cuenta</a>
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link active colorLetras" href="">Iniciar Sesion</a>
                         </li>
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link colorhamburger ajuste-carrito" href="">
+                                <i class="fa-solid fa-cart-shopping colorhamburger"></i>
+                            </a>
+                        </li>
+                        
                     </ul>
+                    
+                    <form class="d-flex justify-content-center align-items-center mx-auto m-ajuste-form correccion w-ajuste" role="search">
+                        
+                        <input class="form-control me-2 correccion" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit" style="border: 2px solid #a6c4f7; background-color: white; color: #a6c4f7;">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #a6c4f7;"></i>
+                        </button>                   
+                    </form>             
                 </div>
             </div>
         </nav>
