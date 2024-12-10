@@ -12,65 +12,64 @@
 
 /* Cambiar color de fondo de los campos de entrada */
 .color-fondo {
-    background-color: #509ee2; /* Color de fondo personalizado */
-    border-radius: 15px; /* Opcional: agregar bordes redondeados */
-  }
+    background-color: #509ee2; 
+    border-radius: 15px; 
+}
   
-  /* Cambiar color del placeholder */
-  .form-control::placeholder {
-    color: #ffffff; /* Color del placeholder */
-  }
+/* Cambiar color del placeholder */
+.form-control::placeholder {
+    color: #ffffff; 
+}
   
 /* Cambiar color del texto en el campo select */
 #puesto_interes {
-    color: #ffffff; /* Color del texto */
-  }
+    color: #ffffff;
+}
   
-  /* Cambiar color del texto en el campo de fecha */
-  #fecha_nacimiento {
-    color: #ffffff; /* Color del texto */
-  }
+/* Cambiar color del texto en el campo de fecha */
+#fecha_nacimiento {
+    color: #ffffff; 
+}
 
-   .custom-file-upload {
+.custom-file-upload {
     width: 100%;
     height: 55px;
     background-color: #509ee2;
     border-radius: 15px;
     cursor: pointer;
     padding: 30px 10px;
-  }
+}
 
-  /* Ocultar el input original */
-  .custom-file-upload input[type="file"] {
+/* Ocultar el input original */
+.custom-file-upload input[type="file"] {
     display: none;
-  }
+}
 
-  .custom-file-upload label {
+.custom-file-upload label {
     color: white;
     font-size: 30px;
     font-weight: 500;
     padding-left: 10px;
-  }
+}
 
-  /* Efecto al pasar el mouse sobre el botón */
-  .custom-file-upload:hover {
+.custom-file-upload:hover {
     background-color: #0056b3;
-  }
+}
 
-  .tamanio{
+.tamanio{
     font-size: 30px;
-  }
+}
 
-  .boton-enviar{
+.boton-enviar{
     padding: 15px 70px;
-  }
+}
 
-  .negrita{
+.negrita{
     font-size: 1.2rem; 
     color: #000102;
-  }
+}
 
-  .sinMargen {
+.sinMargen {
     margin: 0px !important;
 }
 
@@ -79,8 +78,6 @@
   color: white;
 }
 
-
-/* Cosas de prueba*/
 .cv {
   position: relative;
   overflow: hidden;
