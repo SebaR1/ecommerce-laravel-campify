@@ -31,3 +31,9 @@
     color: rgb(123, 137, 168);
 }
 
+.linea-divisoria{
+    width: 100%; /* Ancho completo */
+    height: 1px; /* Grosor de la línea */
+    background-color: #000; /* Color negro (puedes cambiarlo) */
+    margin: 20px 0; /* Espaciado vertical */
+}
