@@ -20,7 +20,7 @@
                 <input type="password" class="form-control borde-form-sesion" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Contraseña</label>
               </div>
-              <button class="w-100 btn btn-lg mt-3 fs-5" type="button">Iniciar sesión</button>
+              <button class="w-100 btn btn-lg mt-3 fs-5 color-fondo" type="button">Iniciar sesión</button>
             </form>
           </div>
         </div>

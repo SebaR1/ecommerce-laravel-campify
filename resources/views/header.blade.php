@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/sobreNosotros.css">
     <link rel="stylesheet" href="css/trabajaConNosotros.css">
     <link rel="stylesheet" href="css/inicioSesion.css">
+    <link rel="stylesheet" href="css/vistaProducto.css">
     <!-- Fuente de Iconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
