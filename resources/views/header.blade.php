@@ -35,13 +35,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul id="linksAdicionales" class="navbar-nav me-auto mb-2 mb-lg-0 border-top-ajuste">
                         <li class="nav-item ajuste-item-nav-md">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="{{ route('/') }}">Home</a>
                         </li>
                         <li class="nav-item ajuste-item-nav-md">
-                            <a class="nav-link" href="{{route('sobreNosotros')}}">Sobre Nosotros</a>
+
+                            <a class="nav-link" href="{{ route('sobreNosotros') }}">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item ajuste-item-nav-md">
-                            <a class="nav-link" href="#">Trabaja con nosotros</a>
+                            <a class="nav-link" href="{{ route('trabajaConNosotros') }}">Trabaja con nosotros</a>
                         </li>
                         <li class="nav-item ajuste-item-nav-md">
                             <a class="nav-link" href="#">Catalogo</a>
@@ -120,7 +121,7 @@
                                 </ul>
                               </li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('sobreNosotros') }}">Sobre nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">Trabaja con nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('trabajaConNosotros') }}">Trabaja con nosotros</a></li>
                             <li class="nav-item"><a class="nav-link" href="">Catalogo</a></li>
                         </ul>
                     </div>
