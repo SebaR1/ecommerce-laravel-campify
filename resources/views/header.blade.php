@@ -26,7 +26,7 @@
 
         <nav class="navbar navbar-expand-md bg-body-tertiary p-ajuste-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand p-ajuste-logo" href="#">
+                <a class="navbar-brand p-ajuste-logo" href="{{route('/')}}">
                     <img src="images/logosinbg.png" alt="Logo" class="m-ajuste-logo logo">
                 </a>
                 <button class="navbar-toggler m-ajuste-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,6 +38,7 @@
                             <a class="nav-link" aria-current="page" href="{{ route('/') }}">Home</a>
                         </li>
                         <li class="nav-item ajuste-item-nav-md">
+
                             <a class="nav-link" href="{{ route('sobreNosotros') }}">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item ajuste-item-nav-md">
@@ -87,7 +88,6 @@
                 </div>
             </div>
         </nav>
-        
 
             <!-- /////////////////////////////////////////
         //    ARTUCLOS CON MENU DESPLEGABLE     //
