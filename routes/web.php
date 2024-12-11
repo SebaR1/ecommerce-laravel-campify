@@ -10,3 +10,6 @@ Route::get('/sobreNosotros', function() {
     return view('sobreNosotros');
 })->name('sobreNosotros');
 
+Route::get('/trabajaConNosotros', function() {
+    return view('trabajaConNosotros');
+})->name('trabajaConNosotros');
