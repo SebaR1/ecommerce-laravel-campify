@@ -1,0 +1,19 @@
+.imagen-principal img {
+    width: 100%;
+    height: auto;
+}
+
+.imagenes-chicas img{
+    width: 100px;
+    height: auto;
+}
+
+.tarjetas-chicas img{
+    width: 30px;
+    height: auto;
+}
+
+.datos button{
+    background-color:rgb(155, 123, 192);
+    color: white;
+}
