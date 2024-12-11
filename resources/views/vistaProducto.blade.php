@@ -1,7 +1,7 @@
 @include('header')
 
 <!-- Contenedor general -->
-<div class="container d-flex flex-column flex-md-row justify-content-center align-items-center margenes gap-3 overflow-auto">
+<div class="container-fluid d-flex flex-column flex-lg-row justify-content-center align-items-center margenes gap-3 espacio">
     <!-- Contenedor de imágenes ilustrativas -->
     <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center gap-3 order-1 order-md-1">
         <!-- Imagen -->
@@ -9,12 +9,13 @@
             <img src="images/aguera.jpg" alt="" class="img-fluid">
         </div> 
         <!-- Sub imágenes -->
-        <div class="d-flex justify-content-center align-items-center imagenes-chicas gap-3">
-            <img src="images/ferrari.jpg" alt="" class="img-fluid">
-            <img src="images/ferrari.jpg" alt="" class="img-fluid">
-            <img src="images/ferrari.jpg" alt="" class="img-fluid">
-            <img src="images/ferrari.jpg" alt="" class="img-fluid">
-            <img src="images/ferrari.jpg" alt="" class="img-fluid">
+        <div class="d-flex justify-content-center align-items-center imagenes-chicas gap-3 overflow-auto">
+            <img src="images/gtr.JPG" alt="" class="img-fluid">
+            <img src="images/gtr.JPG" alt="" class="img-fluid">
+            <img src="images/gtr.JPG" alt="" class="img-fluid">
+            <img src="images/gtr.JPG" alt="" class="img-fluid">
+            <img src="images/gtr.JPG" alt="" class="img-fluid">
+            <img src="images/gtr.JPG" alt="" class="img-fluid">
         </div>
     </div>
 
@@ -32,12 +33,12 @@
             <h4 class="fs-6 color-cuotas">12 Cuotas sin interés de $...</h4>
             <!-- Tarjetas en miniatura -->
             <div class="tarjetas-chicas d-flex justify-content-start align-items-center gap-1">
-                <img src="images/gtr.jpg" alt="" class="img-fluid">
-                <img src="images/gtr.jpg" alt="" class="img-fluid">
-                <img src="images/gtr.jpg" alt="" class="img-fluid">
-                <img src="images/gtr.jpg" alt="" class="img-fluid">
-                <img src="images/gtr.jpg" alt="" class="img-fluid">
-                <img src="images/gtr.jpg" alt="" class="img-fluid">
+                <img src="images/tarjetas/american-express.JPG" alt="" class="img-fluid">
+                <img src="images/tarjetas/bbva.JPG" alt="" class="img-fluid">
+                <img src="images/tarjetas/cabal.JPG" alt="" class="img-fluid">
+                <img src="images/tarjetas/mastercard.jpg" alt="" class="img-fluid">
+                <img src="images/tarjetas/naranja.jpg" alt="" class="img-fluid">
+                <img src="images/tarjetas/visa.jpg" alt="" class="img-fluid">
             </div>
         </div>
 
