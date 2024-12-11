@@ -13,7 +13,21 @@
     height: auto;
 }
 
+.datos{
+    max-width: 500px;
+}
+
 .datos button{
     background-color:rgb(155, 123, 192);
     color: white;
 }
+
+.margenes{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.color-cuotas{
+    color: rgb(123, 137, 168);
+}
+
