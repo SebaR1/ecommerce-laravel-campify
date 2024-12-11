@@ -13,3 +13,11 @@ Route::get('/sobreNosotros', function() {
 Route::get('/trabajaConNosotros', function() {
     return view('trabajaConNosotros');
 })->name('trabajaConNosotros');
+
+Route::get('/inicioSesion', function() {
+    return view('inicioSesion');
+})->name('inicioSesion');
+
+Route::get('/crearCuenta', function() {
+    return view('crearCuenta');
+})->name('crearCuenta');
