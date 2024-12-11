@@ -6,29 +6,29 @@
         url("../images/trabajaConNosotros/fondo.svg");
     background-size: cover;
     background-position: center;
-    height: 45vh;
+    height: 392px;
     overflow: hidden;
 }
 
 /* Cambiar color de fondo de los campos de entrada */
 .color-fondo {
-    background-color: #509ee2; 
-    border-radius: 15px; 
+    background-color: #509ee2;
+    border-radius: 15px;
 }
-  
+
 /* Cambiar color del placeholder */
 .form-control::placeholder {
-    color: #ffffff; 
+    color: #ffffff;
 }
-  
+
 /* Cambiar color del texto en el campo select */
 #puesto_interes {
     color: #ffffff;
 }
-  
+
 /* Cambiar color del texto en el campo de fecha */
 #fecha_nacimiento {
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .custom-file-upload {
@@ -56,16 +56,16 @@
     background-color: #0056b3;
 }
 
-.tamanio{
+.tamanio {
     font-size: 30px;
 }
 
-.boton-enviar{
+.boton-enviar {
     padding: 15px 70px;
 }
 
-.negrita{
-    font-size: 1.2rem; 
+.negrita {
+    font-size: 1.2rem;
     color: #000102;
 }
 
@@ -73,31 +73,31 @@
     margin: 0px !important;
 }
 
-.color-fondo:hover{
-  background-color: #0056b3;
-  color: white;
+.color-fondo:hover {
+    background-color: #0056b3;
+    color: white;
 }
 
 .cv {
-  position: relative;
-  overflow: hidden;
-  background-color: #509ee2;
-  color: white;
-  width: 100%;
-  font-size: 25px;
+    position: relative;
+    overflow: hidden;
+    background-color: #509ee2;
+    color: white;
+    width: 100%;
+    font-size: 25px;
 }
 
-.cv:hover{
-  background-color: #3376b1;
-  color: white;
+.cv:hover {
+    background-color: #3376b1;
+    color: white;
 }
 
 .cv input[type="file"] {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
