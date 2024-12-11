@@ -28,6 +28,10 @@
     width: 200px;
 }
 
+.color-fondo{
+    background-color: #659bf8 !important;
+}
+
 @media (max-width: 988px) {
     .login-container {
         grid-template-columns: 100%;

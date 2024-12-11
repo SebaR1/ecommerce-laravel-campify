@@ -21,3 +21,7 @@ Route::get('/inicioSesion', function() {
 Route::get('/crearCuenta', function() {
     return view('crearCuenta');
 })->name('crearCuenta');
+
+Route::get('/vistaProducto', function() {
+    return view('vistaProducto');
+})->name('vistaProducto');
