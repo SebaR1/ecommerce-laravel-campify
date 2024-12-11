@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/header-style.css">
     <link rel="stylesheet" href="css/sobreNosotros.css">
     <link rel="stylesheet" href="css/trabajaConNosotros.css">
+    <link rel="stylesheet" href="css/inicioSesion.css">
     <!-- Fuente de Iconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
@@ -65,10 +66,10 @@
                     </ul>
                     <ul class="navbar-nav mb-lg-0 order-md-3 d-flex border-top-ajuste m-ajuste-sesion">
                         <li class="nav-item ajuste-item-nav-md">
-                            <a class="nav-link active colorLetras" href="">Crear Cuenta</a>
+                            <a class="nav-link active colorLetras" href=" {{ route('crearCuenta') }} ">Crear Cuenta</a>
                         </li>
                         <li class="nav-item ajuste-item-nav-md">
-                            <a class="nav-link active colorLetras" href="">Iniciar Sesion</a>
+                            <a class="nav-link active colorLetras" href=" {{ route('inicioSesion') }} ">Iniciar Sesion</a>
                         </li>
                         <li class="nav-item ajuste-item-nav-md">
                             <a class="nav-link colorhamburger ajuste-carrito" href="">

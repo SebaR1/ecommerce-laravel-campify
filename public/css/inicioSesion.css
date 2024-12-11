@@ -1,0 +1,44 @@
+.login-container {
+    display: grid;
+    grid-template-columns: 48.7% 51.3%;
+    height: 87.4vh;
+    width: 100%;
+}
+
+.vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    background-color: #ffd867;
+}
+.logo-container img {
+    max-width: 300px;
+}
+
+.borde-form-sesion {
+    border: 1px solid #659bf8;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.w-imagen-inicio {
+    width: 200px;
+}
+
+@media (max-width: 988px) {
+    .login-container {
+        grid-template-columns: 100%;
+    }
+    .logo-container {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    .login-container {
+        height: 93.4vh;
+    }
+}
