@@ -1,32 +1,31 @@
-body{
+body {
     display: flex;
     flex-direction: column;
-    gap: 25px;
 }
 
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url("/images/carpa.svg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/carpa.svg");
     background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     height: 35vh;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
     color: white;
 }
 
-.banner img{
+.banner img {
     display: none;
 }
 
-.articulos{
+.articulos {
     background-color: #abdba3;
 }
 
-.tarjeta-icono img{
+.tarjeta-icono img {
     max-width: 200px;
     height: auto;
 }
@@ -58,7 +57,7 @@ body{
 }
 
 .carta:hover .imagen-carta i {
-    color: #007b55; 
+    color: #007b55;
 }
 
 .medios-de-envio {
@@ -75,6 +74,7 @@ body{
     border-radius: 20px;
     font-weight: bold;
     padding: 10px 20px;
+    border-color: #659bf8;
 }
 
 .btn-outline-primary:hover {
@@ -102,20 +102,19 @@ body{
 }
 
 .promo-link {
-    display: block; 
-    width: 100%; 
+    display: block;
+    width: 100%;
     height: 70vh;
-    background-image: url("/images/promo.JPG"); 
-    background-size: cover; 
-    background-position: center; 
-    text-decoration: none; 
+    background-image: url("../images/promo.JPG");
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
 }
-
 
 /* Estilo para pantallas grandes */
 @media (min-width: 768px) {
     .promo-link {
-        background-image: url("/images/promo-grande.JPG");
+        background-image: url("../images/promo-grande.JPG");
     }
 
     .custom-carousel {
@@ -123,13 +122,26 @@ body{
         height: 40vh;
         margin: 0 auto;
     }
-    
-    .custom-carousel .carousel-inner .carousel-item img {
+
+    .custom-carousel .carousel-inner .carousel-item {
         object-fit: cover;
         width: 100%;
         height: 100%;
     }
-    
-
 }
 
+/* Estilo para tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .promo-link {
+        background-image: url("../images/promo.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        width: 100%;
+        margin-top: 20px;
+    }
+}

@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer-style.css">
     <link rel="stylesheet" href="css/header-style.css">
+    <link rel="stylesheet" href="css/sobreNosotros.css">
+    <link rel="stylesheet" href="css/trabajaConNosotros.css">
+    <link rel="stylesheet" href="css/inicioSesion.css">
+    <link rel="stylesheet" href="css/vistaProducto.css">
+    <link rel="stylesheet" href="css/catalogo.css">
     <!-- Fuente de Iconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
@@ -22,33 +27,77 @@
         //               NAVBAR                 //
         /////////////////////////////////////////-->
 
-        <nav class="navbar navbar-expand-lg navbar-custom">
-            <div class="container d-flex align-items-center justify-content-between p-0">
-                <!-- Logo -->
-                <a class="navbar-brand logo" href="#">
-                    <img src="images/logo-recortado.JPG" alt="Logo" class="d-inline-block align-text-top" style="max-height: 50px;">
+        <nav class="navbar navbar-expand-md bg-body-tertiary p-ajuste-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand p-ajuste-logo" href="{{route('/')}}">
+                    <img src="images/logosinbg.png" alt="Logo" class="m-ajuste-logo logo">
                 </a>
-                
-                <!-- Contenido del navbar -->
-                <div class="d-flex align-items-center gap-3 flex-grow-1 justify-content-end">
-                    <!-- Barra de búsqueda visible solo en pantallas grandes -->
-                    <div class="input-group d-none d-md-flex">
-                        <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar">
-                        <button class="btn btn-primary" type="button">Buscar</button>
-                    </div>
-                    <!-- Botón Iniciar Sesión -->
-                    <button class="btn btn-primary" style="white-space: nowrap;">Iniciar Sesión</button>
+                <button class="navbar-toggler m-ajuste-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars colorhamburger"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="linksAdicionales" class="navbar-nav me-auto mb-2 mb-lg-0 border-top-ajuste">
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link" aria-current="page" href="{{ route('/') }}">Home</a>
+                        </li>
+                        <li class="nav-item ajuste-item-nav-md">
+
+                            <a class="nav-link" href="{{ route('sobreNosotros') }}">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link" href="{{ route('trabajaConNosotros') }}">Trabaja con nosotros</a>
+                        </li>
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link" href="#">Catalogo</a>
+                        </li>
+                        <li class="nav-item dropdown ajuste-item-nav-md">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Regalos empresariales</a></li>
+                                <li><a class="dropdown-item" href="#">Camping</a></li>
+                                <li><a class="dropdown-item" href="#">Jardin</a></li>
+                                <li><a class="dropdown-item" href="#">Accesorios para bicicletas</a></li>
+                                <li><a class="dropdown-item" href="#">Electrohogar</a></li>
+                                <li><a class="dropdown-item" href="#">Accesorios para vehiculos</a></li>
+                                <li><a class="dropdown-item" href="#">Herramientas</a></li>
+                                <li><a class="dropdown-item" href="#">Matafuegos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-lg-0 order-md-3 d-flex border-top-ajuste m-ajuste-sesion">
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link active colorLetras" href=" {{ route('crearCuenta') }} ">Crear Cuenta</a>
+                        </li>
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link active colorLetras" href=" {{ route('inicioSesion') }} ">Iniciar Sesion</a>
+                        </li>
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link colorhamburger ajuste-carrito" href="">
+                                <i class="fa-solid fa-cart-shopping colorhamburger"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                    <form class="d-flex justify-content-center align-items-center mx-auto m-ajuste-form correccion w-ajuste" role="search">
+                        
+                        <input class="form-control me-2 correccion" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit" style="border: 2px solid #a6c4f7; background-color: white; color: #a6c4f7;">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #a6c4f7;"></i>
+                        </button>                   
+                    </form>             
                 </div>
             </div>
         </nav>
-        
 
-    <!-- /////////////////////////////////////////
+            <!-- /////////////////////////////////////////
         //    ARTUCLOS CON MENU DESPLEGABLE     //
         /////////////////////////////////////////-->
     
-        <div class="container d-flex flex-column align-items-center">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div id="menuArticulos" class="d-flex flex-column align-items-center bg-nav2 nav-sm">
+            <nav class="navbar navbar-expand-sm">
                 <div class="container-fluid">
                     <!-- Botón de colapso para mobile -->
                     <button class="navbar-toggler w-100" type="button" data-bs-toggle="collapse" data-bs-target="#menuArticulos" aria-controls="menuArticulos" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,20 +105,31 @@
                     </button>
         
                     <!-- Contenido del menú -->
-                    <div class="collapse navbar-collapse" id="menuArticulos">
-                        <ul class="container navbar-nav d-flex flex-column flex-md-row align-items-center justify-content-center">
+                    <div class="collapse navbar-collapse" >
+                        <ul class="navbar-nav d-flex align-items-center justify-content-center">
                             <li class="nav-item"><a class="nav-link" href="">OFERTAS</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">REGALOS EMPRESARIALES</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">CAMPING</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">JARDIN</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">ACCESORIOS PARA BICICLETAS</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">ELECTROHOGAR</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">ACCESORIOS PARA VEHICULOS</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">HERRAMIENTAS</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">MATAFUEGOS</a></li>
+                            <li class="nav-item dropdown bg-nav2">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Categorias
+                                </a>
+                                <ul class="dropdown-menu bg-nav2">
+                                  <li><a class="dropdown-item" href="#">REGALOS EMPRESARIALES</a></li>
+                                  <li><a class="dropdown-item" href="#">CAMPING</a></li>
+                                  <li><a class="dropdown-item" href="#">JARDIN</a></li>
+                                  <li><a class="dropdown-item" href="#">ACCESORIOS PARA BICICLETAS</a></li>
+                                  <li><a class="dropdown-item" href="#">ELECTROHOGAR</a></li>
+                                  <li><a class="dropdown-item" href="#">ACCESORIOS PARA VEHICULOS</a></li>
+                                  <li><a class="dropdown-item" href="#">HERRAMIENTAS</a></li>
+                                  <li><a class="dropdown-item" href="#">MATAFUEGOS</a></li>
+                                </ul>
+                              </li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('sobreNosotros') }}">Sobre nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('trabajaConNosotros') }}">Trabaja con nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Catalogo</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
+        
         
