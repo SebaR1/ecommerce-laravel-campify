@@ -40,7 +40,6 @@
                             <a class="nav-link" aria-current="page" href="{{ route('/') }}">Home</a>
                         </li>
                         <li class="nav-item ajuste-item-nav-md">
-
                             <a class="nav-link" href="{{ route('sobreNosotros') }}">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item ajuste-item-nav-md">
@@ -65,23 +64,24 @@
                             </ul>
                         </li>
                     </ul>
+
                     <ul class="navbar-nav mb-lg-0 order-md-3 d-flex border-top-ajuste m-ajuste-sesion">
-                        <li class="nav-item ajuste-item-nav-md">
-                            <a class="nav-link active colorLetras" href=" {{ route('crearCuenta') }} ">Crear Cuenta</a>
-                        </li>
-                        <li class="nav-item ajuste-item-nav-md">
-                            <a class="nav-link active colorLetras" href=" {{ route('inicioSesion') }} ">Iniciar Sesion</a>
-                        </li>
-                        <li class="nav-item ajuste-item-nav-md">
-                            <a class="nav-link colorhamburger ajuste-carrito" href="">
-                                <i class="fa-solid fa-cart-shopping colorhamburger"></i>
-                            </a>
-                        </li>
-                        
+                    @auth
+                            <li class="nav-item ajuste-item-nav-md">
+                                <a class="nav-link colorhamburger ajuste-carrito" href="">
+                                    <i class="fa-solid fa-cart-shopping colorhamburger"></i>
+                                </a>
+                            </li>
+                    @else
+                            <li class="nav-item ajuste-item-nav-md">
+                                <a class="nav-link active colorLetras" href=" {{ route('crearCuenta') }} ">Crear Cuenta</a>
+                            </li>
+                            <li class="nav-item ajuste-item-nav-md">
+                                <a class="nav-link active colorLetras" href=" {{ route('inicioSesion') }} ">Iniciar Sesion</a>
+                            </li>
+                    @endauth
                     </ul>
-                    
                     <form class="d-flex justify-content-center align-items-center mx-auto m-ajuste-form correccion w-ajuste" role="search">
-                        
                         <input class="form-control me-2 correccion" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn" type="submit" style="border: 2px solid #a6c4f7; background-color: white; color: #a6c4f7;">
                             <i class="fa-solid fa-magnifying-glass" style="color: #a6c4f7;"></i>
