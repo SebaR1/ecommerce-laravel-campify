@@ -29,3 +29,8 @@ Route::get('/vistaProducto', function() {
 
 Route::post('/registro', [LoginController::class, 'registro'])->name('registro'); 
 Route::post('/login', [LoginController::class, 'login'])->name('login'); 
+
+Route::get('/catalogo', function() {
+    return view('catalogo');
+})->name('catalogo');
+
