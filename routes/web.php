@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProductoController;
 
 Route::get('/', function () {
     return view('index');
@@ -23,9 +24,9 @@ Route::get('/crearCuenta', function() {
     return view('crearCuenta');
 })->name('crearCuenta');
 
-Route::get('/vistaProducto', function() {
+/*Route::get('/vistaProducto', function() {
     return view('vistaProducto');
-})->name('vistaProducto');
+})->name('vistaProducto');*/
 
 Route::post('/registro', [LoginController::class, 'registro'])->name('registro'); 
 Route::post('/login', [LoginController::class, 'login'])->name('login'); 
@@ -33,4 +34,9 @@ Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/catalogo', function() {
     return view('catalogo');
 })->name('catalogo');
+
+Route::get('/vistaproducto',[ProductoController::class, 'index'])->name('/vistaproducto');
+
+
+
 
