@@ -4,8 +4,9 @@
 <body>
 
     <div class="container-gral">
-        <div class="subtitulo-catalogo">
-            <h1>Productos </h1>
+        <h1 class="subtitulo-catalogo">Productos </h1>
+        <div >
+            
             
         </div>
         <!-- fila de 4 items -->

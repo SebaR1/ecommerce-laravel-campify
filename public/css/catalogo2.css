@@ -1,9 +1,14 @@
 .container-gral{
     padding: 40px 0px;
+    background-color: #333;
 }
 .subtitulo-catalogo{
-    padding-bottom: 60px;
+    text-align: center !important;
+    font-weight: 700 !important;
+    font-size: 80px;
 }
+
+
 .container_datos_tarjeta{
     display: flex;
     flex-direction: column;
@@ -67,24 +72,6 @@
     
 }
 
-.subtitulo-catalogo {
-    text-align: center;
-}
-
-.subtitulo-catalogo h1, .subtitulo-catalogo h2 {
-    margin: 0; 
-    font-weight: bold;
-}
-
-.subtitulo-catalogo h1 {
-    font-size: 2rem; 
-    color: #333; 
-}
-
-.subtitulo-catalogo h2 {
-    font-size: 1.5rem; 
-    color: #555; 
-}
 
 
 .tarjeta-link {
@@ -111,6 +98,7 @@
         justify-content: center;
         gap: 20px;
     }
+   
 }
 
 /* Estilo para tablets*/
@@ -142,3 +130,4 @@
         gap: 20px;
     }
 }
+
