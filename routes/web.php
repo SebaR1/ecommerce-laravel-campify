@@ -31,11 +31,18 @@ Route::get('/crearCuenta', function() {
 Route::post('/registro', [LoginController::class, 'registro'])->name('registro'); 
 Route::post('/login', [LoginController::class, 'login'])->name('login'); 
 
-Route::get('/catalogo', function() {
-    return view('catalogo');
-})->name('catalogo');
+//Route::get('/catalogo', [ProductoController::class,'mostrarCatalogo'])->name('catalogo');
 
-Route::get('/vistaproducto',[ProductoController::class, 'index'])->name('/vistaproducto');
+Route::get('/producto',[ProductoController::class, 'index'])->name('/producto');
+
+Route::get('/agregarproducto',[ProductoController::class, 'create'])->name('/agregarproducto');
+
+
+Route::post('/producto',[ProductoController::class, 'store']);
+
+
+
+
 
 
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ProductoModel;
 use Illuminate\Http\Request;
 
 class ProductoController extends Controller
@@ -11,7 +12,11 @@ class ProductoController extends Controller
      */
     public function index()
     {
-        return view('producto.vistaProducto');
+
+        $productos = ProductoModel::all();
+
+        
+        return view('catalogo', ["productos"=>$productos]);
     }
 
     /**
@@ -19,7 +24,7 @@ class ProductoController extends Controller
      */
     public function create()
     {
-        //
+        return view('producto.agregarproducto');
     }
 
     /**
@@ -27,7 +32,34 @@ class ProductoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+       $data = $request->validate([
+        "nombre_producto" => ['required'],
+        "precio_producto" => ['required'],
+        "stock_producto" => ['required'],
+        "descripcion_producto" => ['required'],
+        'categoria_id' => ['required', 'integer', 'not_in:""'],
+        //FALTA IMAGEN HACERLA OBLIGATORIA PERO LA SAQUE HASTA QUE HAGA LO DEL 64
+
+
+       ], [
+        "nombre_producto.required" => "Falta completar este campo!",
+        "precio_producto.required" => "Falta completar este campo!",
+
+        "stock_producto.required" => "Falta completar este campo!",
+
+        "descripcion_producto.required" => "Falta completar este campo!",
+        "categoria_producto.required" => "Falta completar este campo!",
+        "categoria_producto.not_in" => "Falta completar este campo!",
+
+    
+       ]);
+       
+       //echo var_dump($data);
+       
+       //ProductoModel::create($data);
+
+       return response()->redirectTo("/producto");
     }
 
     /**
@@ -61,4 +93,6 @@ class ProductoController extends Controller
     {
         //
     }
+
+    
 }

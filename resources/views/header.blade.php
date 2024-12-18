@@ -13,6 +13,7 @@
     <!-- Añadir Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- CSS  -->
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer-style.css">
     <link rel="stylesheet" href="css/header-style.css">
@@ -20,7 +21,10 @@
     <link rel="stylesheet" href="css/trabajaConNosotros.css">
     <link rel="stylesheet" href="css/inicioSesion.css">
     <link rel="stylesheet" href="css/vistaProducto.css">
-    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/catalogo2.css">
+   
+
+    
     <!-- Fuente de Iconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
