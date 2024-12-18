@@ -24,6 +24,10 @@ Route::get('/crearCuenta', function() {
     return view('crearCuenta');
 })->name('crearCuenta');
 
+Route::get('/catalogo', function() {
+    return view('catalogo');
+})->name('catalogo2');
+
 /*Route::get('/vistaProducto', function() {
     return view('vistaProducto');
 })->name('vistaProducto');*/
@@ -32,14 +36,15 @@ Route::post('/registro', [LoginController::class, 'registro'])->name('registro')
 Route::post('/login', [LoginController::class, 'login'])->name('login'); 
 
 
-Route::post('/catalogo', [ProductoController::class,'index'])->name('catalogo');
+Route::post('/catalogo', [ProductoController::class,'store'])->name('catalogo');
+
+Route::get('/catalogo', [ProductoController::class,'index'])->name('catalogo2');
 
 
 
-Route::get('/agregarproducto',[ProductoController::class, 'create'])->name('/agregarproducto');
+Route::get('/agregarproducto',[ProductoController::class, 'create'])->name('agregarproducto');
 
 
-Route::post('/producto',[ProductoController::class, 'store']);
 
 
 
