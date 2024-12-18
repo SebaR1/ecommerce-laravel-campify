@@ -17,7 +17,10 @@
     
                 
                     <div class="tarjeta-producto">
-                        <img src="images/gtr.jpg" alt="Imagen del producto" class="img-fluid">
+
+                        <img src="{{ asset('storage/' . $producto->imagen_producto) }}" alt="Imagen del producto">
+
+                        <!--     <img src="images/gtr.jpg" alt="Imagen del producto" class="img-fluid">    -->     <!-- Esto esta de momento para visualizar la foto -->
                         <div class="container_datos_tarjeta">
                             <h3>{{$producto->nombre_producto}}</h3>
                             <p>{{$producto->categoria->nombre_categoria}}</p>

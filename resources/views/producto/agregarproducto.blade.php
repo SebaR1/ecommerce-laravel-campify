@@ -8,7 +8,7 @@
         <div class="container_form_agregar_producto">
             <h2 class="titulo_form">AGREGA TU PRODUCTO</h2>
 
-            <form class="form_agregar_producto" action="{{route('/producto')}}" method="post" >
+            <form class="form_agregar_producto" action="{{route('/producto')}}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
                     
