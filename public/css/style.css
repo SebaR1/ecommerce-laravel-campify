@@ -210,11 +210,13 @@ body {
     .container-banner-llamativo-txt h2 {
         font-size: 65px;
         font-weight: 700;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
 
     .container-banner-llamativo-txt h3{
         font-size: 35px;
         font-weight: 400;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
 
       /*ESTILOS PARA LA CARTAS*/

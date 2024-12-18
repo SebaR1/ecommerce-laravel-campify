@@ -59,7 +59,7 @@ class ProductoController extends Controller
 
         ProductoModel::create($data);
 
-       return response()->redirectTo("catalogo")->with('success', 'Producto creado exitosamente!');
+       return response()->redirectTo("producto")->with('success', 'Producto creado exitosamente!');
     }
 
     /**
