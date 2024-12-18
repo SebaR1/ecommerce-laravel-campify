@@ -57,7 +57,7 @@ class ProductoController extends Controller
        
        //echo var_dump($data);
        
-       //ProductoModel::create($data);
+       ProductoModel::create($data);
 
        return response()->redirectTo("/producto");
     }
