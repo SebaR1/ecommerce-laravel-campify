@@ -31,6 +31,7 @@ Route::get('/crearCuenta', function() {
 Route::post('/registro', [LoginController::class, 'registro'])->name('registro'); 
 Route::post('/login', [LoginController::class, 'login'])->name('login'); 
 
+
 Route::post('/catalogo', [ProductoController::class,'index'])->name('catalogo');
 
 
