@@ -49,7 +49,3 @@ Route::get('/agregarproducto',[ProductoController::class, 'create'])->name('agre
 
 
 
-
-
-
-

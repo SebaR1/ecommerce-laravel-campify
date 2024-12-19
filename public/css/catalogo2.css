@@ -46,11 +46,11 @@
     justify-content: space-around;
 }
 
-/*.tarjeta-producto:hover {
+.tarjeta-producto:hover {
     transform: scale(1.05); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-*/
+
 .tarjeta-producto img {
     width: 90%;
     height: auto;
@@ -80,6 +80,20 @@
     transform: scale(1.03);
     transition: all 0.3s ease-in-out;
 }
+
+
+/* Cosas del filtro */
+.filtro{
+    margin-top: 80px;
+}
+
+/* Estilo para bordes de los checkboxes */
+.form-check-input {
+    border: 2px solid black;
+    width: 1.2rem; /* Aumenta el tamaño si lo deseas */
+    height: 1.2rem;
+}
+
 
 /* Estilo para pantallas grandes */
 @media (min-width: 1025px) {
