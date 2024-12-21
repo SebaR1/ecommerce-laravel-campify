@@ -105,6 +105,10 @@
     margin-top: 80px;
 }
 
+.filtro label, input{
+    margin-top: 15px;
+}
+
 /* Estilo para bordes de los checkboxes */
 .form-check-input {
     border: 2px solid black;
