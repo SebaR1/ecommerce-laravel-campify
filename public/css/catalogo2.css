@@ -10,12 +10,29 @@
 .container_datos_tarjeta {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 .container_btn_tarjeta {
     display: flex;
     justify-content: center;
 }
+
+.container_btn_tarjeta_2 a{
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: #ffff;
+    font-weight: 700;
+    background-color: #2e5ba8;
+    border: #071733;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 15px;
+}
+.container_btn_tarjeta_2 a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .container_btn_tarjeta a {
     text-decoration: none;
     padding: 10px;
@@ -44,15 +61,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
-/*.tarjeta-producto:hover {
+.tarjeta-producto:hover {
     transform: scale(1.05); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-*/
+
 .tarjeta-producto img {
-    width: 90%;
+    width: 60%;
     height: auto;
     border-bottom: 2px solid #ddd;
 }
@@ -80,6 +98,24 @@
     transform: scale(1.03);
     transition: all 0.3s ease-in-out;
 }
+
+
+/* Cosas del filtro */
+.filtro{
+    margin-top: 80px;
+}
+
+.filtro label, input{
+    margin-top: 15px;
+}
+
+/* Estilo para bordes de los checkboxes */
+.form-check-input {
+    border: 2px solid black;
+    width: 1.2rem; /* Aumenta el tamaño si lo deseas */
+    height: 1.2rem;
+}
+
 
 /* Estilo para pantallas grandes */
 @media (min-width: 1025px) {
