@@ -50,7 +50,6 @@
                         <img src="{{ asset('storage/' . $producto->imagen_producto) }}" alt="Imagen del producto">
                         <div class="container_datos_tarjeta">
                             <h3>{{$producto->nombre_producto}}</h3>
-                            <p>{{$producto->categoria->nombre_categoria}}</p>
                             <p>${{$producto->precio_producto}}</p>
                             <div class="container_btn_tarjeta">
                                 <a href="#" class="btn_comprar">Comprar</a>

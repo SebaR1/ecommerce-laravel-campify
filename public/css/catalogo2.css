@@ -10,7 +10,7 @@
 .container_datos_tarjeta {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 .container_btn_tarjeta {
     display: flex;
@@ -70,7 +70,7 @@
 }
 
 .tarjeta-producto img {
-    width: 90%;
+    width: 60%;
     height: auto;
     border-bottom: 2px solid #ddd;
 }
