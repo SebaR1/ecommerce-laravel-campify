@@ -1,25 +1,5 @@
 @include('header')
 
-    @if (session()->has("success"))
-        <div class="container">
-            <div class="alert alert-success text-center"> {{ session("success") }} </div>
-        </div>
-    @endif
-
-    @if (session()->has("fail"))
-        <div class="container">
-            <div class="alert alert-success text-center"> {{ session("fail") }} </div>
-        </div>
-    @endif
-
-
-    @if(Auth::check())
-    <p>El usuario está autenticado.</p>
-@else
-    <p>No hay usuario autenticado.</p>
-@endif
-
-
     <!-- /////////////////////////////////////////
         //               OFERTAS               //
         /////////////////////////////////////////-->

@@ -29,10 +29,24 @@
                             <p>
                                 ${{$producto->precio_producto}}
                             </p>
-                            
-                            <div class="container_btn_tarjeta">
-                                <a href="#" class="btn_comprar">Comprar</a>
-                            </div>
+                            <div class="d-flex justify-content-evenly align-items-center">
+                                <div class="botonMeGusta">
+                                    <form method="POST" action="{{ route('me-gusta.toggle', ['producto_id' => $producto->id_producto]) }}">
+                                        @csrf
+                                        <button type="submit" class="btn_meGusta d-flex justify-content-center align-items-center {{ $producto->meGustas->contains('usuario_id', auth()->id()) ? 'active' : '' }}">
+                                            <i class="fa-solid fa-heart "></i>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="container_btn_tarjeta">
+                                    <a href="#" class="btn_comprar">Comprar</a>
+                                </div>
+                                <div class="botonMeGusta">
+                                        <button type="submit" class="btn_meGusta d-flex justify-content-center align-items-center">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                </div>
+                            </div> 
                         </div>
                         
                         

@@ -28,6 +28,7 @@
     <!-- Fuente de Iconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
+
 </head>
 <body>
 
@@ -77,9 +78,16 @@
                     <ul class="navbar-nav mb-lg-0 order-md-3 d-flex border-top-ajuste m-ajuste-sesion">
                     @auth
                             <li class="nav-item ajuste-item-nav-md">
-                                <a class="nav-link colorhamburger ajuste-carrito" href="">
-                                    <i class="fa-solid fa-cart-shopping colorhamburger"></i>
-                                </a>
+                                <a class="nav-link active colorLetras" href=" {{ route('/') }} ">Carrito</a>
+                            </li>
+                            <li class="nav-item ajuste-item-nav-md">
+                                    <a class="nav-link active colorLetras" href=" {{ route('meGustas') }} ">Me gustas</a>
+                            </li>
+                            <li>
+                                <form action="/logout" method="POST" class="nav-item ajuste-item-nav-md">
+                                    @csrf
+                                    <button class="nav-link active colorLetras" type="submit">Salir</button>
+                                </form>
                             </li>
                     @else
                             <li class="nav-item ajuste-item-nav-md">

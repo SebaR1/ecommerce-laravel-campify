@@ -6,6 +6,9 @@
     <div class="alert alert-success text-center"> {{ session("success") }} </div>
   </div>
   @endif
+  @error('noSession')
+<div class="alert alert-danger"> {{$message}} </div>
+@enderrors
     <div class="logo-container vertical-center">
       <img src="images/logosinbg.png" alt="">
     </div>
