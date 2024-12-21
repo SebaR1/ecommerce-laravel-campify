@@ -51,10 +51,12 @@
                         <div class="container_datos_tarjeta">
                             <h3>{{$producto->nombre_producto}}</h3>
                             <p>{{$producto->categoria->nombre_categoria}}</p>
-                            <p>{{$producto->descripcion_producto}}</p>
                             <p>${{$producto->precio_producto}}</p>
                             <div class="container_btn_tarjeta">
                                 <a href="#" class="btn_comprar">Comprar</a>
+                            </div>
+                            <div class="d-flex aligns-items-center justify-content-center mt-2 container_btn_tarjeta_2">
+                                <a href="#" class="btn_comprar">Agregar al Carrito</a>
                             </div>
                         </div>
                     </div>

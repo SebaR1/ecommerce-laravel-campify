@@ -16,6 +16,23 @@
     display: flex;
     justify-content: center;
 }
+
+.container_btn_tarjeta_2 a{
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: #ffff;
+    font-weight: 700;
+    background-color: #2e5ba8;
+    border: #071733;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 15px;
+}
+.container_btn_tarjeta_2 a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .container_btn_tarjeta a {
     text-decoration: none;
     padding: 10px;
