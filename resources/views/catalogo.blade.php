@@ -5,40 +5,45 @@
         <!-- Contenedor de Filtros -->
         <div class="col-12 col-md-2 d-flex flex-column gap-3 filtro">
             <h2 class="fw-bold border-bottom">Filtrar por:</h2>
-            <form action="">
+            <form action="{{ route('catalogo') }}" method="GET"">
+                @csrf
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" value="regalos-empresariales">
-                    <span class="form-check-label">REGALOS EMPRESARIALES</span>
-                </label>
-                <label class="form-check">
-                    <input class="form-check-input" type="checkbox" value="camping">
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Camping"
+                           {{ in_array('Camping', request()->input('categorias', [])) ? 'checked' : '' }}>
                     <span class="form-check-label">CAMPING</span>
                 </label>
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" value="jardin">
-                    <span class="form-check-label">JARDÍN</span>
-                </label>
-                <label class="form-check">
-                    <input class="form-check-input" type="checkbox" value="accesorios-bicicletas">
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Accesorios para bicicletas"
+                           {{ in_array('Accesorios para bicicletas', request()->input('categorias', [])) ? 'checked' : '' }}>
                     <span class="form-check-label">ACCESORIOS PARA BICICLETAS</span>
                 </label>
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" value="electrohogar">
-                    <span class="form-check-label">ELECTROHOGAR</span>
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Jardin"
+                           {{ in_array('Jardin', request()->input('categorias', [])) ? 'checked' : '' }}>
+                    <span class="form-check-label">JARDIN</span>
                 </label>
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" value="accesorios-vehiculos">
-                    <span class="form-check-label">ACCESORIOS PARA VEHÍCULOS</span>
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Accesorios para vehiculos"
+                           {{ in_array('Accesorios para vehiculos', request()->input('categorias', [])) ? 'checked' : '' }}>
+                    <span class="form-check-label">ACCESORIOS PARA VEHICULOS</span>
                 </label>
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" value="herramientas">
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Herramientas"
+                           {{ in_array('Herramientas', request()->input('categorias', [])) ? 'checked' : '' }}>
                     <span class="form-check-label">HERRAMIENTAS</span>
                 </label>
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" value="matafuegos">
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Electrohogar"
+                           {{ in_array('Electrohogar', request()->input('categorias', [])) ? 'checked' : '' }}>
+                    <span class="form-check-label">ELECTROHOGAR</span>
+                </label>
+                <label class="form-check">
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Matafuegos"
+                           {{ in_array('Matafuegos', request()->input('categorias', [])) ? 'checked' : '' }}>
                     <span class="form-check-label">MATAFUEGOS</span>
                 </label>
-                <button type="submit" class="btn btn-primary mt-4">Aplicar Filtros</button>
+
+                <button type="submit" class="btn btn-primary mt-4 boton-filtros">Aplicar Filtros</button>
             </form>
         </div>
 

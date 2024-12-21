@@ -10,14 +10,23 @@ class ProductoController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
+        $categorias = $request->input('categorias', []); // Obtiene las categorías seleccionadas
 
-        $productos = ProductoModel::all();
+        if (!empty($categorias)) {
+            // Filtra los productos por las categorías seleccionadas
+            $productos = ProductoModel::whereHas('categoria', function ($query) use ($categorias) {
+                $query->whereIn('nombre_categoria', $categorias);
+            })->get();
+        } else {
+            // Si no hay filtros, devuelve todos los productos
+            $productos = ProductoModel::all();
+        }
 
-        
-        return view('catalogo', ["productos"=>$productos]);
+        return view('catalogo', compact('productos'));
     }
+
 
     /**
      * Show the form for creating a new resource.

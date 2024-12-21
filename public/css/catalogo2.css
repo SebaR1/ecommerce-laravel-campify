@@ -116,6 +116,10 @@
     height: 1.2rem;
 }
 
+.boton-filtros{
+    margin-bottom: 80px;
+}
+
 
 /* Estilo para pantallas grandes */
 @media (min-width: 1025px) {
