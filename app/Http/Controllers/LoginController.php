@@ -57,4 +57,9 @@ class LoginController extends Controller
             return response()->redirectTo("/")->with("fail", "NO FUNCIONOOOOOOOO, OSEA SI PERO NO LO ENCONTRO!");
         }
     }
+    
+    public function logout(){
+        Auth::logout();
+        return response()->redirectTo("/");
+    }
 }

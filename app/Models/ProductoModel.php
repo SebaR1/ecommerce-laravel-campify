@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
+use App\Models\MeGustaModel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class ProductoModel extends Model
 {
@@ -15,5 +17,10 @@ class ProductoModel extends Model
 
     public function categoria():BelongsTo{
         return $this->belongsTo(CategoriaModel::class, 'categoria_id', 'id_categoria');
+    }
+
+    public function meGustas():HasMany
+    {
+        return $this->hasMany(MeGustaModel::class, 'producto_id', 'id_producto');
     }
 }
