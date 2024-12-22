@@ -24,7 +24,7 @@ class ProductoController extends Controller
             $productos = ProductoModel::all();
         }
 
-        return view('catalogo', compact('productos'));
+        return view('catalogo', compact('productos'));  // ["productos"=>$productros] es lo mismo
     }
 
 
