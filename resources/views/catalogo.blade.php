@@ -5,7 +5,7 @@
         <!-- Contenedor de Filtros -->
         <div class="col-12 col-md-2 d-flex flex-column gap-3 filtro">
             <h2 class="fw-bold border-bottom">Filtrar por:</h2>
-            <form action="">
+            <form action="" method="">
                 <label class="form-check">
                     <input class="form-check-input" type="checkbox" value="regalos-empresariales">
                     <span class="form-check-label">REGALOS EMPRESARIALES</span>
