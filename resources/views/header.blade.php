@@ -56,7 +56,7 @@
                             <a class="nav-link" href="{{ route('trabajaConNosotros') }}">Trabaja con nosotros</a>
                         </li>
                         <li class="nav-item ajuste-item-nav-md">
-                            <a class="nav-link" href="#">Catalogo</a>
+                            <a class="nav-link" href="{{ route('catalogo') }}">Catalogo</a>
                         </li>
                         <li class="nav-item dropdown ajuste-item-nav-md">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -141,7 +141,7 @@
                               </li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('sobreNosotros') }}">Sobre nosotros</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('trabajaConNosotros') }}">Trabaja con nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">Catalogo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('catalogo') }}">Catalogo</a></li>
                         </ul>
                     </div>
                 </div>

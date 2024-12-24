@@ -79,7 +79,7 @@
         align-items: center;
     }
     .contenedor-imagenes{
-       width: 40%;
+       
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -88,7 +88,7 @@
     }
 
     .contenedor-datos{
-        width: 450px;
+        width: 30%;
         padding: 20px;
         border-radius: 10px;
         background-color:white ;
@@ -103,7 +103,7 @@
     }
 
     .contenedor-imagen-principal{
-        width: 30%;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -155,13 +155,13 @@
     }
    
     .contenedor-imagen-principal img{
-        width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+        width: 50%; /* La imagen ocupará todo el ancho del contenedor */
         height: auto; /* La altura será proporcional al ancho */
         object-fit: contain; /* Asegura que toda la imagen esté visible dentro del contenedor */
     }
 
     .contenedor-imagen-principal{
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -193,6 +193,7 @@
     .contenedor-contenedor-gral{
         padding: 20px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -216,17 +217,25 @@
         align-items: center;
     }
 
+    .contenedor-datos{
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color:white ;
+        color: black;
+        border: 1px solid #A7C5F8;
+    }
     .txt-categoria{
         font-size: 16px;
         
     }
     .txt-titulo{
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 700;
     }
 
     .txt-precio{
-        font-size: 25px;
+        font-size: 20px;
     }
     
 
