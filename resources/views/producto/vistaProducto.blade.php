@@ -8,7 +8,7 @@
 <body>
     <div class=" contenedor-contenedor-gral  ">
         <!-- Contenedor de imágenes ilustrativas -->
-        <div class="contenedor-gral">
+        <div class="contenedor-imagenes">
             <!-- Imagen -->
             <div class="contenedor-imagen-principal">
                 <img src={{ asset('storage/' . $producto->imagen_producto) }} alt="" class="img-fluid">
