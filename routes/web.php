@@ -29,6 +29,8 @@ Route::get('/catalogo', function() {
     return view('catalogo');
 })->name('catalogo');
 
+Route::get('/producto/{id}', [ProductoController::class, 'show'])->name('producto.vistaProducto');
+
 Route::get("/meGustas", function(){
     return view('meGustas');
 });
