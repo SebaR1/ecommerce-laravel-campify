@@ -14,14 +14,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- CSS  -->
     
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer-style.css">
-    <link rel="stylesheet" href="css/header-style.css">
-    <link rel="stylesheet" href="css/sobreNosotros.css">
-    <link rel="stylesheet" href="css/trabajaConNosotros.css">
-    <link rel="stylesheet" href="css/inicioSesion.css">
-    <link rel="stylesheet" href="css/vistaProducto.css">
-    <link rel="stylesheet" href="css/catalogo2.css">
+    <link rel="stylesheet" href={{ asset('css/style.css') }}>
+    <link rel="stylesheet" href={{ asset('css/footer-style.css') }}>
+    <link rel="stylesheet" href={{ asset('css/header-style.css') }}>
+    <link rel="stylesheet" href={{ asset('css/sobreNosotros.css') }}>
+    <link rel="stylesheet" href={{ asset('css/trabajaConNosotros.css') }}>
+    <link rel="stylesheet" href={{ asset('css/inicioSesion.css') }}>
+    <link rel="stylesheet" href={{ asset('css/producto/vistaProducto.css') }}>
+    <link rel="stylesheet" href={{ asset('css/catalogo2.css') }}>
    
 
     
@@ -39,7 +39,7 @@
         <nav class="navbar navbar-expand-md bg-body-tertiary p-ajuste-navbar">
             <div class="container-fluid">
                 <a class="navbar-brand p-ajuste-logo" href="{{route('/')}}">
-                    <img src="images/logosinbg.png" alt="Logo" class="m-ajuste-logo logo">
+                    <img src={{ asset('images/logosinbg.png') }} alt="Logo" class="m-ajuste-logo logo">
                 </a>
                 <button class="navbar-toggler m-ajuste-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars colorhamburger"></i>
