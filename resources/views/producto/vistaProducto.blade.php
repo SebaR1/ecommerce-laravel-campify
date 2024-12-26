@@ -1,11 +1,6 @@
 @include('header')
-<head>
-
-    <link rel="stylesheet" href="{{ asset('css/vistaProducto.css') }}">
-</head>
 <!-- Contenedor general -->
 
-<body>
     <div class=" contenedor-contenedor-gral  ">
         <!-- Contenedor de imágenes ilustrativas -->
         <div class="contenedor-imagenes">
@@ -77,6 +72,5 @@
     
     
 
-</body>
 
 @include('footer')

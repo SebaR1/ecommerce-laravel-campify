@@ -1,7 +1,4 @@
 @include ('header');
-<head>
-    <link rel="stylesheet" href="css/agregarProducto.css">
-</head>
 
     <body>
 
