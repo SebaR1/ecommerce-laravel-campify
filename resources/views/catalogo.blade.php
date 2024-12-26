@@ -54,7 +54,7 @@
             <div class="row container_tarjetas">
                 @foreach ($productos as $producto)
                 <div class="col-12 col-sm-6 col-lg-4 mb-4">
-                    <a href="{{route('producto.vistaProducto',$producto->id_producto)}}">
+                    
                         <div class="tarjeta-producto">
                             <img src="{{ asset('storage/' . $producto->imagen_producto) }}" alt="Imagen del producto">
                             <div class="container_datos_tarjeta">
@@ -64,7 +64,7 @@
                                 <p>
                                     ${{$producto->precio_producto}}
                                 </p>
-                                <div class="d-flex justify-content-evenly align-items-center">
+                                <div class="d-flex justify-content-evenly align-items-center gap-3">
                                     <div class="botonMeGusta">
                                         <form method="POST" action="{{ route('me-gusta.toggle', ['producto_id' => $producto->id_producto]) }}">
                                             @csrf
@@ -74,7 +74,7 @@
                                         </form>
                                     </div>
                                     <div class="container_btn_tarjeta">
-                                        <a href="#" class="btn_comprar">Comprar</a>
+                                        <a href="{{route('producto.vistaProducto',$producto->id_producto)}}" class="btn_comprar">Ver</a>
                                     </div>
                                     <div class="botonMeGusta">
                                             <button type="submit" class="btn_meGusta d-flex justify-content-center align-items-center">
@@ -85,7 +85,7 @@
                             </div>
                         </div>
 
-                    </a>
+                    
                     
                 </div>
                 @endforeach

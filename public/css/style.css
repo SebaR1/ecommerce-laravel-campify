@@ -120,6 +120,79 @@ body {
 
 */
 
+
+
+/* Carousel Container */
+.custom-carousel-container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Carousel Buttons */
+.custom-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.custom-carousel-btn.prev {
+    left: 10px;
+}
+
+.custom-carousel-btn.next {
+    right: 10px;
+}
+
+/* Carousel Track */
+.custom-carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.custom-carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Carousel Slide */
+.custom-carousel-slide {
+    min-width: 25%; /* 4 slides on desktop */
+    text-align: center;
+    padding: 5px;
+}
+
+.custom-carousel-slide a {
+    text-decoration: none;
+}
+
+.custom-carousel-slide {
+    list-style: none; /* Elimina el marcador */
+}
+
+.custom-carousel-slide img {
+    width: 200px;
+    border-radius: 8px;
+}
+
+.slide-title {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+
+
 /* Estilo para pantallas grandes */
 @media (min-width: 1025px) {
    
@@ -315,7 +388,9 @@ body {
 /* Estilo para tablets*/
 @media (min-width: 768px) and (max-width: 1024px) {
  
-
+    .custom-carousel-slide {
+        min-width: 50%; /* 2 slides on tablet */
+    }
     /*ESTILOS BANNER INDEX*/
     .container-banner{
         background-image: url("../images/fondo-banner.png");
@@ -406,8 +481,8 @@ body {
       }
       .container-cartas-detalle-envio{
         display: flex;
-        flex-direction: row;
-        
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         text-align: center;
         padding: 80px 20px;
@@ -433,6 +508,10 @@ body {
     .container-carta:hover {
         transform: translateY(-5px);
         box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .container-carta a{
+        text-decoration: none;
     }
     /*ESTILOS PARA LA CARTAS*/
     .img-carta img{
@@ -465,7 +544,7 @@ body {
 }
 .container-cartas-medios-pago{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -491,6 +570,9 @@ body {
 
 /* Estilo mobile*/
 @media (max-width: 767px) {
+    .custom-carousel-slide {
+        min-width: 100%; /* 1 slide on mobile */
+    }
     .promo-link {
         background-image: url("../images/promo.JPG");
         background-position: center;
