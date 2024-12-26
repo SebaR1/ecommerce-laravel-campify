@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MeGustasController;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\FormularioController;
 
 Route::get('/', function () {
     return view('index');
@@ -56,4 +57,5 @@ Route::get('/meGustas', [MeGustasController::class, 'index'])->name('meGustas');
 
 
 
-
+// Esto es para que envie la info del formulario a un correo
+Route::post('/enviar-formulario', [FormularioController::class, 'enviarFormulario'])->name('enviar.formulario');
