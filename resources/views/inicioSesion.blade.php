@@ -8,7 +8,7 @@
   @endif
   @error('noSession')
 <div class="alert alert-danger"> {{$message}} </div>
-@enderrors
+@enderror
     <div class="logo-container vertical-center">
       <img src="images/logosinbg.png" alt="">
     </div>
