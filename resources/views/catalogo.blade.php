@@ -74,7 +74,7 @@
                                         </form>
                                     </div>
                                     <div class="container_btn_tarjeta">
-                                        <a href="{{route('producto.vistaProducto',$producto->id_producto)}}" class="btn_comprar">Comprar</a>
+                                        <a href="{{route('producto.vistaProducto',$producto->id_producto)}}" class="btn_comprar">Ver</a>
                                     </div>
                                     <div class="botonMeGusta">
                                             <button type="submit" class="btn_meGusta d-flex justify-content-center align-items-center">
