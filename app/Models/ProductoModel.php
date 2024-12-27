@@ -3,9 +3,10 @@
 namespace App\Models;
 
 use App\Models\MeGustaModel;
+use App\Models\ComentarioModel;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class ProductoModel extends Model
 {
@@ -22,5 +23,10 @@ class ProductoModel extends Model
     public function meGustas():HasMany
     {
         return $this->hasMany(MeGustaModel::class, 'producto_id', 'id_producto');
+    }
+
+
+    public function comentarios():HasMany{
+        return $this->hasMany(ComentarioModel::class,'producto_id' );
     }
 }

@@ -52,6 +52,9 @@ Route::get('/agregarproducto',[ProductoController::class, 'create'])->name('agre
 Route::post('/me-gusta/destroy/{producto_id}', [MeGustasController::class, 'destroy'])->name('me-gusta.destroy');
 
 Route::post('/me-gusta/toggle/{producto_id}', [MeGustasController::class, 'toggle'])->name('me-gusta.toggle');
+
+
+
 Route::get('/meGustas', [MeGustasController::class, 'index'])->name('meGustas');
 
 

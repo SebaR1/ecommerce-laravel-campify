@@ -69,6 +69,34 @@
         <h1>Descripcion:</h1>
         <p>{{$producto->descripcion_producto}}</p>
     </div>
+
+    <div class="contenedor-comentarios">
+        <h1>Comentarios:</h1>
+        <div class="contenedor-mensajes">
+            {{-- ACA VA FOR EACH  --}}
+            <div class="comentario">
+                <h3 class="header-comentario">Elias Olivencia</h3>
+                <p class="cuerpo-comentario">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae et voluptates, laboriosam nam excepturi nulla eligendi rem, iusto earum dolor culpa! Numquam et aliquid nobis iusto nam nesciunt accusantium nostrum!
+                </p>
+            </div>
+            <div class="contenedor-agregar-comentario">
+                <form action="" method="post">
+                    @csrf
+                    <textarea name="descripcion_producto" id="descripcion_producto" cols="60" rows="5" placeholder="Escriba un comentario..."></textarea>
+                    @error('descripcion_producto')
+                    <div class="error_form">{{$message}}</div>
+                    @enderror
+
+                    <button type="submit">Agregar Comentario</button>
+                </form>
+                
+            </div>
+        </div>
+
+        
+        
+    </div>
     
     
 
