@@ -62,14 +62,13 @@
                                 Categorias
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Regalos empresariales</a></li>
-                                <li><a class="dropdown-item" href="#">Camping</a></li>
-                                <li><a class="dropdown-item" href="#">Jardin</a></li>
-                                <li><a class="dropdown-item" href="#">Accesorios para bicicletas</a></li>
-                                <li><a class="dropdown-item" href="#">Electrohogar</a></li>
-                                <li><a class="dropdown-item" href="#">Accesorios para vehiculos</a></li>
-                                <li><a class="dropdown-item" href="#">Herramientas</a></li>
-                                <li><a class="dropdown-item" href="#">Matafuegos</a></li>
+                                <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Campamentos">Campamento</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Reposeras+y+sombrillas">Reposeras y sombrillas</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Accesorios+para+bicicletas">Accesorios para bicicletas</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">Travel</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">Accesorios para vehiculos</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
+                                
                             </ul>
                         </li>
                     </ul>
@@ -128,14 +127,12 @@
                                   Categorias
                                 </a>
                                 <ul class="dropdown-menu bg-nav2">
-                                  <li><a class="dropdown-item" href="#">REGALOS EMPRESARIALES</a></li>
-                                  <li><a class="dropdown-item" href="#">CAMPING</a></li>
-                                  <li><a class="dropdown-item" href="#">JARDIN</a></li>
-                                  <li><a class="dropdown-item" href="#">ACCESORIOS PARA BICICLETAS</a></li>
-                                  <li><a class="dropdown-item" href="#">ELECTROHOGAR</a></li>
-                                  <li><a class="dropdown-item" href="#">ACCESORIOS PARA VEHICULOS</a></li>
-                                  <li><a class="dropdown-item" href="#">HERRAMIENTAS</a></li>
-                                  <li><a class="dropdown-item" href="#">MATAFUEGOS</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Campamentos">Campamento</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Reposeras+y+sombrillas">Reposeras y sombrillas</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Accesorios+para+bicicletas">Accesorios para bicicletas</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">Travel</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">Accesorios para vehiculos</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
                                 </ul>
                               </li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('sobreNosotros') }}">Sobre nosotros</a></li>
