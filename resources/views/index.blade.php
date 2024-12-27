@@ -30,7 +30,7 @@
                 <li class="custom-carousel-slide">
                     <a href="#">
                         <img src="images/stock/termo.png" alt="Camping">
-                        <p class="slide-title">Camping</p>
+                        <p class="slide-title">Campamentos</p>
                     </a>
                 </li>
                 <li class="custom-carousel-slide">
@@ -55,8 +55,15 @@
               
                 <li class="custom-carousel-slide">
                     <a href="#">
-                        <img src="images/stock/bebesCategoria.png" alt="Bebes">
-                        <p class="slide-title">Bebes</p>
+                        <img src="images/stock/sombrilla1.svg" alt="Reposeras y sombrillas">
+                        <p class="slide-title">Reposeras y sombrillas</p>
+                    </a>
+                </li>
+                
+                <li class="custom-carousel-slide">
+                    <a href="#">
+                        <img src="images/stock/mochilaTravel.png" alt="Travel">
+                        <p class="slide-title">Travel</p>
                     </a>
                 </li>
             </ul>

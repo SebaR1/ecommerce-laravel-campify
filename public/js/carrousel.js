@@ -80,7 +80,7 @@ const resetAutoMove = () => {
         clearInterval(autoMove);
         setTimeout(() => {
             userInteracted = false;
-            setInterval(moveToNextSlide, 4000);
+            setInterval(moveToNextSlide, 6000);
         }, 1000); // Reiniciar el auto-movimiento después de 1 segundo de interacción
     }
 };
