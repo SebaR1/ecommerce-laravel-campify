@@ -49,7 +49,7 @@
 
         <!-- Contenedor de Productos -->
         <div class="col-12 col-md-10 productos-container d-flex flex-column justify-content-center align-items-center">
-            <h1 class="text-uppercase fw-bold my-4 border-bottom pb-2">Productos</h1>
+            <h1 class="text-uppercase fw-bold my-4 border-bottom pb-2 productos-titulo"></h1>
             <!-- Fila de Tarjetas -->
             <div class="row container_tarjetas">
                 @foreach ($productos as $producto)
@@ -93,5 +93,6 @@
         </div>
     </div>
 </div>
+
 
 @include('footer')

@@ -143,6 +143,10 @@ input {
     height: 1.2rem;
 }
 
+/* Animaciones con js */
+
+
+
 /* Estilo para pantallas grandes */
 @media (min-width: 1025px) {
     .container_tarjetas {

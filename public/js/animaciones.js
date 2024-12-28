@@ -60,15 +60,11 @@ document.querySelector(".boton-enviar").addEventListener("click", (e) => {
 
 
 
-
-
-
-
 // Animacion sobre un titulo para que cargue como maquina de escribir (h-o-l-a)
 /*
 document.addEventListener('DOMContentLoaded', function () {
-    const text = "Sobre Nosotros";
-    const target = document.querySelector('.sobreNosotrosTitulo');
+    const text = "Productos";
+    const target = document.querySelector('.productos-titulo');
     let index = 0;
 
     function typeWriter() {
