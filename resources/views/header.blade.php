@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Home</title>
 
     <!--Font-->
@@ -28,7 +29,7 @@
     <!-- Fuente de Iconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -77,7 +78,7 @@
                     <ul class="navbar-nav mb-lg-0 order-md-3 d-flex border-top-ajuste m-ajuste-sesion">
                     @auth
                             <li class="nav-item ajuste-item-nav-md">
-                                <a class="nav-link active colorLetras" href=" {{ route('/') }} ">Carrito</a>
+                                <a class="nav-link active colorLetras" href=" {{ route('carrito.index') }} ">Carrito</a>
                             </li>
                             <li class="nav-item ajuste-item-nav-md">
                                     <a class="nav-link active colorLetras" href=" {{ route('meGustas') }} ">Me gustas</a>

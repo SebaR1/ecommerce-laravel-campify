@@ -73,16 +73,20 @@
                                         <a href="{{route('producto.vistaProducto',$producto->id_producto)}}" class="btn_comprar">Ver</a>
                                     </div>
                                     <div class="botonMeGusta">
-                                            <button type="submit" class="btn_meGusta d-flex justify-content-center align-items-center">
+                                        <form class="formAgregarProducto" method="POST" action="{{route('carrito.agregar', $producto->id_producto)}}">
+                                            @csrf
+                                            <input type="text" name="id_producto" id="{{$producto->id_producto}}" style="display: none">
+                                            <button
+                                                type="submit"
+                                                data-producto-id="{{ $producto->id_producto }}"
+                                                class="btn_Carrito d-flex justify-content-center align-items-center">
                                                 <i class="fa-solid fa-cart-shopping"></i>
                                             </button>
-                                    </div>
+                                        </form>
+                                    </div>                                    
                                 </div> 
                             </div>
                         </div>
-
-                    
-                    
                 </div>
                 @endforeach
             </div>

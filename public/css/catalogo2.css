@@ -57,6 +57,23 @@
     border-radius: 15px;
 }
 
+.btn_Carrito {
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.89);
+    font-weight: 700;
+    background-color: #a7c5f8;
+    border: #a7c5f8;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 15px;
+}
+
+.btn_Carrito:hover {
+    transform: scale(1.2); /* Efecto de zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .btn_corazonRoto {
     color: #ff5454 !important;
 }
