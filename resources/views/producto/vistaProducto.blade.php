@@ -65,7 +65,7 @@
             
         </div>
     </div>
-    <div class="contenedor-descripcion">
+    <div class="container contenedor-descripcion">
         <h1>Descripcion:</h1>
         <p>{{$producto->descripcion_producto}}</p>
     </div>

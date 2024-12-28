@@ -67,7 +67,7 @@
     <!-- /////////////////////////////////////////
         //          BANNER LLAMATIVO           //
         /////////////////////////////////////////-->
-    <section class="container-banner-llamativo">
+    <section class="container-banner-llamativo fade-in">
         <div class="container-banner-llamativo-txt ">
             <h2>ESPIRITU EXPLORADOR</h2>
             <h3>PRODUCTOS DE CAMPIFY</h3>
@@ -78,7 +78,7 @@
         //          DETALLES DEL ENVIO          //
         /////////////////////////////////////////-->
     <!-- DETALLES DE ENVIO -->
-    <div class="container-cartas-detalle-envio">
+    <div class="container-cartas-detalle-envio fade-in">
         <!-- CARTA 1 -->
      
             <div class="container-carta">
@@ -131,7 +131,7 @@
         /////////////////////////////////////////-->
        
 
-        <div class="container-medios-pago">
+        <div class="container-medios-pago fade-in">
             <h2 class="titulo-container-tarjetas-blanco">MEDIOS DE PAGO</h2>
             <h3 class="subtitulo-blanco">Todas las facilidades de pago, Elegí la que más te convenga</h3>
 
@@ -188,7 +188,7 @@
     <!-- /////////////////////////////////////////
         //          CONTACTO        //
         /////////////////////////////////////////-->
-        <div class="container-contacto">
+        <div class="container-contacto fade-in">
             <h2 class="titulo-container-tarjetas">CONTACTO</h2>
             
             <h3 class="subtitulo-gris">¿Querés hacer una compra?<br> Te asesoramos
