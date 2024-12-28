@@ -13,14 +13,18 @@ use Illuminate\Queue\SerializesModels;
 class OrderShipped extends Mailable
 {
     use Queueable, SerializesModels;
-    public string $nombre;
+    public string $nombre, $apellido, $telefono, $puesto, $email;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($nombre)
+    public function __construct($nombre, $apellido, $telefono, $email, $puesto)
     {
         $this->nombre = $nombre;
+        $this->apellido = $apellido;
+        $this->email = $email;
+        $this->telefono = $telefono;
+        $this->puesto = $puesto;
     }
 
     /**
@@ -41,7 +45,13 @@ class OrderShipped extends Mailable
     {
         return new Content(
             view: 'emails.formulario',
-            with: ['nombre' => $this->nombre],
+            with: [
+                'nombre' => $this->nombre,
+                'apellido' => $this->apellido,
+                'telefono' => $this->telefono,
+                'email' => $this->email,
+                'puesto' => $this->puesto,
+        ],
         );
     }
 
