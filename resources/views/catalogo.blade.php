@@ -45,7 +45,7 @@
 
         <!-- Contenedor de Productos -->
         <div class="col-12 col-md-10 productos-container d-flex flex-column justify-content-center align-items-center">
-            <h1 class="text-uppercase fw-bold my-4 border-bottom pb-2">Productos</h1>
+            <h1 class="text-uppercase fw-bold my-4 border-bottom pb-2 productos-titulo"></h1>
             <!-- Fila de Tarjetas -->
             <div class="row container_tarjetas">
                 @foreach ($productos as $producto)
@@ -89,5 +89,48 @@
         </div>
     </div>
 </div>
+
+<script>
+    // Hace aparecer el titulo "Productos" de a una letra a la vez
+    document.addEventListener('DOMContentLoaded', function () {
+    const text = "Productos";
+    const target = document.querySelector('.productos-titulo');
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            target.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100);
+        }
+    }
+
+    typeWriter();
+});
+
+    // Hace el efecto de carga en el boton
+    document.addEventListener("DOMContentLoaded", () => {
+        const botonFiltros = document.querySelector(".boton-filtros");
+
+        if (botonFiltros) {
+            botonFiltros.addEventListener("click", (e) => {
+                // Mostrar el spinner y deshabilitar el botón
+                botonFiltros.innerHTML = `
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Aplicando...
+                `;
+                botonFiltros.disabled = true;
+
+                // Espera un tiempo breve antes de enviar el formulario
+                setTimeout(() => {
+                    // Enviar el formulario
+                    botonFiltros.closest("form").submit();
+                }, 500); // 500ms para mostrar el spinner (ajusta según necesidad)
+            });
+        }
+    });
+
+</script>
+
 
 @include('footer')

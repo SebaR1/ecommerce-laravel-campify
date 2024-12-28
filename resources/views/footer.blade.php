@@ -37,6 +37,8 @@
         <!-- Scripts de Carrousel-->
         <script src="/js/carrousel.js"></script>
 
+        <!-- Animaciones con JS -->
+        <script src="js/animaciones.js"></script>
     </body>
     
     </html>

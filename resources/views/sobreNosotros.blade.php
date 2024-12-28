@@ -10,7 +10,7 @@
                     <img class="vecTam opacity-50 me-4 position-absolute" src="images/sobreNosotros/vector2.png" alt="vector" />    
                 </div>
            
-            <h1 class="text-white fs-1 position-absolute">Sobre Nosotros</h1> 
+            <h1 class="text-white fs-1 position-absolute">Sobre Nosotros</h1>
         </div>
     </div>
     <div id="introSobreNos" class="w-50 text-center mx-auto border-top border-4 mt-5">
