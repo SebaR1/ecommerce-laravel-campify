@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComentarioController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MeGustasController;
@@ -52,6 +53,11 @@ Route::get('/agregarproducto',[ProductoController::class, 'create'])->name('agre
 Route::post('/me-gusta/destroy/{producto_id}', [MeGustasController::class, 'destroy'])->name('me-gusta.destroy');
 
 Route::post('/me-gusta/toggle/{producto_id}', [MeGustasController::class, 'toggle'])->name('me-gusta.toggle');
+
+
+
+Route::post('/producto/{producto_id}', [ComentarioController::class,'store']);
+
 Route::get('/meGustas', [MeGustasController::class, 'index'])->name('meGustas');
 
 

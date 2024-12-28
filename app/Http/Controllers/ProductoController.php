@@ -73,12 +73,23 @@ class ProductoController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    /*public function show(string $id)
     {
         $producto = ProductoModel::findOrFail($id);
 
+        
+
+        return view('producto.vistaProducto', compact('producto'));
+    }*/
+
+
+    public function show(string $id)
+    {
+        $producto = ProductoModel::with('comentarios.usuario')->findOrFail($id); // Carga también los usuarios de cada comentario
+
         return view('producto.vistaProducto', compact('producto'));
     }
+
 
     /**
      * Show the form for editing the specified resource.

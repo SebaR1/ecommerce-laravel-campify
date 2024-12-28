@@ -8,9 +8,9 @@
             <form action="{{ route('catalogo') }}" method="GET"">
                 @csrf
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Camping"
-                           {{ in_array('Camping', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">CAMPING</span>
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Campamentos"
+                           {{ in_array('Campamento', request()->input('categorias', [])) ? 'checked' : '' }}>
+                    <span class="form-check-label">CAMPAMENTOS</span>
                 </label>
                 <label class="form-check">
                     <input class="form-check-input" type="checkbox" name="categorias[]" value="Accesorios para bicicletas"
@@ -18,9 +18,9 @@
                     <span class="form-check-label">ACCESORIOS PARA BICICLETAS</span>
                 </label>
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Jardin"
-                           {{ in_array('Jardin', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">JARDIN</span>
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Reposeras y sombrillas"
+                           {{ in_array('Reposeras y sombrillas', request()->input('categorias', [])) ? 'checked' : '' }}>
+                    <span class="form-check-label">REPOSERAS Y SOMBRILLAS</span>
                 </label>
                 <label class="form-check">
                     <input class="form-check-input" type="checkbox" name="categorias[]" value="Accesorios para vehiculos"
@@ -28,20 +28,16 @@
                     <span class="form-check-label">ACCESORIOS PARA VEHICULOS</span>
                 </label>
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Herramientas"
-                           {{ in_array('Herramientas', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">HERRAMIENTAS</span>
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Hogar y Herramientas"
+                           {{ in_array('Hogar y Herramientas', request()->input('categorias', [])) ? 'checked' : '' }}>
+                    <span class="form-check-label">HOGAR Y HERRAMIENTAS</span>
                 </label>
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Electrohogar"
-                           {{ in_array('Electrohogar', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">ELECTROHOGAR</span>
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Travel"
+                           {{ in_array('Travel', request()->input('categorias', [])) ? 'checked' : '' }}>
+                    <span class="form-check-label">TRAVEL</span>
                 </label>
-                <label class="form-check">
-                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Matafuegos"
-                           {{ in_array('Matafuegos', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">MATAFUEGOS</span>
-                </label>
+                
 
                 <button type="submit" class="btn btn-primary mt-4 boton-filtros">Aplicar Filtros</button>
             </form>
