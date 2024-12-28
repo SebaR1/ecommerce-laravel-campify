@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\CarritoController;
 use App\Http\Controllers\MeGustasController;
 use App\Http\Controllers\ProductoController;
 
@@ -54,6 +55,6 @@ Route::post('/me-gusta/destroy/{producto_id}', [MeGustasController::class, 'dest
 Route::post('/me-gusta/toggle/{producto_id}', [MeGustasController::class, 'toggle'])->name('me-gusta.toggle');
 Route::get('/meGustas', [MeGustasController::class, 'index'])->name('meGustas');
 
-
-
-
+Route::post('/carrito/agregar/{productoId}', [CarritoController::class, 'store'])->name('carrito.agregar');
+Route::get('/carrito', [CarritoController::class, 'index'])->name('carrito.index');
+Route::delete('/carrito/eliminar', [CarritoController::class, 'eliminar'])->name('carrito.eliminar');
