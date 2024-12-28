@@ -136,6 +136,10 @@ input {
     margin-top: 15px;
 }
 
+.boton-filtros{
+    margin-bottom: 70px;
+}
+
 /* Estilo para bordes de los checkboxes */
 .form-check-input {
     border: 2px solid black;
@@ -144,6 +148,11 @@ input {
 }
 
 /* Animaciones con js */
+.spinner-border {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-width: 0.2em;
+}
 
 
 
