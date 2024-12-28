@@ -8,13 +8,21 @@ body {
     background-color: black;
 }
 
-
 /* Carousel Container */
 .custom-carousel-container {
     position: relative;
     width: 90%;
     margin: 0 auto;
+    padding-top: 40px;
     overflow: hidden;
+}
+
+.custom-carousel-container h2{
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 60px;
+  color: #A6C4F7;
+  font-size: 32px;
 }
 
 /* Carousel Buttons */
@@ -67,7 +75,7 @@ body {
 }
 
 .custom-carousel-slide img {
-    width: 200px;
+    max-width: 150px;
     border-radius: 8px;
 }
 
@@ -118,7 +126,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: 100vh;
         width: 100%;
         
         padding: 0px 20px;
@@ -298,7 +306,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: 100vh;
         width: 100%;
         
         padding: 0px 20px;
@@ -493,7 +501,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: 100vh;
         width: 100%;
         
         padding: 0px 20px;
