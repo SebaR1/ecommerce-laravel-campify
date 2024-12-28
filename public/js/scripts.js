@@ -120,9 +120,6 @@ $(".btn_eliminar").on("click", function (e) {
     const productoId = $(this).data("producto-id");
     const filaProducto = $(`#producto-${productoId}`);
 
-    console.log(productoId);
-    console.log(filaProducto);
-
     // Enviar la solicitud AJAX
     $.ajax({
         url: "/carrito/eliminar", // Ruta definida en tus rutas de Laravel
@@ -132,14 +129,11 @@ $(".btn_eliminar").on("click", function (e) {
         }),
         contentType: "application/json",
         success: function (response) {
-            alert(response.mensaje); // Mostrar mensaje de éxito
-            filaProducto.remove(); // Eliminar la fila del producto dinámicamente
+            alert(response.mensaje);
+            filaProducto.remove();
         },
-        error: function (xhr, status, error) {
-            console.error(xhr.responseText); // Log para depuración
-            alert(
-                "Hubo un error al eliminar el producto. Por favor, inténtalo de nuevo."
-            );
+        error: function () {
+            alert("Hubo un error eliminando el producto!");
         },
     });
 });
@@ -147,18 +141,16 @@ $(".btn_eliminar").on("click", function (e) {
 $(".btn_disminuir").on("click", function (e) {
     e.preventDefault();
 
-    // Obtener el ID del producto
     const productoId = $(this).data("producto-id");
-    const cantidadContainer = $(this).siblings("p"); // Contenedor donde se muestra la cantidad
-    const filaProducto = $(`#producto-${productoId}`); // Fila completa
+    const cantidadContainer = $(this).siblings("p");
+    const filaProducto = $(`#producto-${productoId}`);
     const precioProducto = parseFloat(
         filaProducto.find(".precio-producto").text().replace("$", "")
-    ); // Obtener precio
-    const totalContainer = filaProducto.find(".total-producto"); // Contenedor del total
+    );
+    const totalContainer = filaProducto.find(".total-producto");
 
-    // Enviar solicitud AJAX para disminuir cantidad
     $.ajax({
-        url: "/carrito/disminuir", // Ruta para disminuir cantidad
+        url: "/carrito/disminuir",
         method: "PATCH",
         data: JSON.stringify({
             producto_id: productoId,
@@ -166,17 +158,15 @@ $(".btn_disminuir").on("click", function (e) {
         contentType: "application/json",
         success: function (response) {
             if (response.cantidad > 0) {
-                cantidadContainer.text(response.cantidad); // Actualizar cantidad visualmente
+                cantidadContainer.text(response.cantidad);
 
-                // Recalcular y actualizar el total
                 const nuevoTotal = precioProducto * response.cantidad;
                 totalContainer.text(`$${nuevoTotal}`);
             } else {
-                filaProducto.remove(); // Eliminar fila si cantidad es 0
+                filaProducto.remove();
             }
         },
-        error: function (xhr, status, error) {
-            console.error(xhr.responseText); // Mostrar errores en consola
+        error: function () {
             alert("Hubo un error al actualizar la cantidad.");
         },
     });

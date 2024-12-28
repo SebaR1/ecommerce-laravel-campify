@@ -96,16 +96,15 @@ class CarritoController extends Controller
         $carrito[$productoId]['cantidad']--;
     
         if ($carrito[$productoId]['cantidad'] <= 0) {
-            unset($carrito[$productoId]); // Eliminar el producto si la cantidad es 0
+            unset($carrito[$productoId]);
         }
     
-        // Guardar el carrito actualizado en la sesión
         session()->put('carrito', $carrito);
     
         return response()->json([
             'mensaje' => 'Cantidad actualizada.',
             'producto_id' => $productoId,
-            'cantidad' => $carrito[$productoId]['cantidad'] ?? 0, // Si fue eliminado, cantidad será 0
+            'cantidad' => $carrito[$productoId]['cantidad'] ?? 0,
         ]);
     }
     
