@@ -31,6 +31,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(MeGustaModel::class, 'user_id', 'id');
     }
+
+    public function Comentarios(){
+        return $this->hasMany(ComentarioModel::class, 'usuario_id', 'id');
+    }
 }
 
 

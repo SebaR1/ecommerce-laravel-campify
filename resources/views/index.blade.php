@@ -24,39 +24,48 @@
 
     
     <div class="custom-carousel-container">
+
+        <h2>NUESTAS CATEGORIAS</h2>
         <button class="custom-carousel-btn prev">&lt;</button>
         <div class="custom-carousel-track-container">
             <ul class="custom-carousel-track">
                 <li class="custom-carousel-slide">
-                    <a href="#">
+                    <a href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Campamentos">
                         <img src="images/stock/termo.png" alt="Camping">
-                        <p class="slide-title">Camping</p>
+                        <p class="slide-title">Campamentos</p>
                     </a>
                 </li>
                 <li class="custom-carousel-slide">
-                    <a href="#">
+                    <a href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Accesorios+para+bicicletas">
                         <img src="images/stock/cascoBici.png" alt="Accesorios para bicicletas">
                         <p class="slide-title">Accesorios para bicicletas</p>
                     </a>
                 </li>
              
                 <li class="custom-carousel-slide">
-                    <a href="#">
+                    <a href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Accesorios+para+vehiculos">
                         <img src="images/stock/autoCategoria.png" alt="Accesorios para vehiculos">
                         <p class="slide-title">Accesorios para vehiculos</p>
                     </a>
                 </li>
                 <li class="custom-carousel-slide">
-                    <a href="#">
+                    <a href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Hogar+y+Herramientas">
                         <img src="images/stock/sillaNegra.png" alt="Herramientas y hogar">
-                        <p class="slide-title">Herramientas y hogar</p>
+                        <p class="slide-title">Hogar y herramientas</p>
                     </a>
                 </li>
               
                 <li class="custom-carousel-slide">
-                    <a href="#">
-                        <img src="images/stock/bebesCategoria.png" alt="Bebes">
-                        <p class="slide-title">Bebes</p>
+                    <a href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Reposeras+y+sombrillas">
+                        <img src="images/stock/sombrilla1.svg" alt="Reposeras y sombrillas">
+                        <p class="slide-title">Reposeras y sombrillas</p>
+                    </a>
+                </li>
+                
+                <li class="custom-carousel-slide">
+                    <a href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">
+                        <img src="images/stock/mochilaTravel.png" alt="Travel">
+                        <p class="slide-title">Travel</p>
                     </a>
                 </li>
             </ul>
@@ -67,7 +76,7 @@
     <!-- /////////////////////////////////////////
         //          BANNER LLAMATIVO           //
         /////////////////////////////////////////-->
-    <section class="container-banner-llamativo">
+    <section class="container-banner-llamativo fade-in">
         <div class="container-banner-llamativo-txt ">
             <h2>ESPIRITU EXPLORADOR</h2>
             <h3>PRODUCTOS DE CAMPIFY</h3>
@@ -78,7 +87,7 @@
         //          DETALLES DEL ENVIO          //
         /////////////////////////////////////////-->
     <!-- DETALLES DE ENVIO -->
-    <div class="container-cartas-detalle-envio">
+    <div class="container-cartas-detalle-envio fade-in">
         <!-- CARTA 1 -->
      
             <div class="container-carta">
@@ -131,7 +140,7 @@
         /////////////////////////////////////////-->
        
 
-        <div class="container-medios-pago">
+        <div class="container-medios-pago fade-in">
             <h2 class="titulo-container-tarjetas-blanco">MEDIOS DE PAGO</h2>
             <h3 class="subtitulo-blanco">Todas las facilidades de pago, Elegí la que más te convenga</h3>
 
@@ -188,7 +197,7 @@
     <!-- /////////////////////////////////////////
         //          CONTACTO        //
         /////////////////////////////////////////-->
-        <div class="container-contacto">
+        <div class="container-contacto fade-in">
             <h2 class="titulo-container-tarjetas">CONTACTO</h2>
             
             <h3 class="subtitulo-gris">¿Querés hacer una compra?<br> Te asesoramos

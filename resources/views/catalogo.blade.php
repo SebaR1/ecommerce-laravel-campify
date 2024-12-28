@@ -8,9 +8,9 @@
             <form action="{{ route('catalogo') }}" method="GET"">
                 @csrf
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Camping"
-                           {{ in_array('Camping', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">CAMPING</span>
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Campamentos"
+                           {{ in_array('Campamento', request()->input('categorias', [])) ? 'checked' : '' }}>
+                    <span class="form-check-label">CAMPAMENTOS</span>
                 </label>
                 <label class="form-check">
                     <input class="form-check-input" type="checkbox" name="categorias[]" value="Accesorios para bicicletas"
@@ -18,9 +18,9 @@
                     <span class="form-check-label">ACCESORIOS PARA BICICLETAS</span>
                 </label>
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Jardin"
-                           {{ in_array('Jardin', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">JARDIN</span>
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Reposeras y sombrillas"
+                           {{ in_array('Reposeras y sombrillas', request()->input('categorias', [])) ? 'checked' : '' }}>
+                    <span class="form-check-label">REPOSERAS Y SOMBRILLAS</span>
                 </label>
                 <label class="form-check">
                     <input class="form-check-input" type="checkbox" name="categorias[]" value="Accesorios para vehiculos"
@@ -28,20 +28,16 @@
                     <span class="form-check-label">ACCESORIOS PARA VEHICULOS</span>
                 </label>
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Herramientas"
-                           {{ in_array('Herramientas', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">HERRAMIENTAS</span>
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Hogar y Herramientas"
+                           {{ in_array('Hogar y Herramientas', request()->input('categorias', [])) ? 'checked' : '' }}>
+                    <span class="form-check-label">HOGAR Y HERRAMIENTAS</span>
                 </label>
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Electrohogar"
-                           {{ in_array('Electrohogar', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">ELECTROHOGAR</span>
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Travel"
+                           {{ in_array('Travel', request()->input('categorias', [])) ? 'checked' : '' }}>
+                    <span class="form-check-label">TRAVEL</span>
                 </label>
-                <label class="form-check">
-                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Matafuegos"
-                           {{ in_array('Matafuegos', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">MATAFUEGOS</span>
-                </label>
+                
 
                 <button type="submit" class="btn btn-primary mt-4 boton-filtros">Aplicar Filtros</button>
             </form>
@@ -49,7 +45,7 @@
 
         <!-- Contenedor de Productos -->
         <div class="col-12 col-md-10 productos-container d-flex flex-column justify-content-center align-items-center">
-            <h1 class="text-uppercase fw-bold my-4 border-bottom pb-2">Productos</h1>
+            <h1 class="text-uppercase fw-bold my-4 border-bottom pb-2 productos-titulo"></h1>
             <!-- Fila de Tarjetas -->
             <div class="row container_tarjetas">
                 @foreach ($productos as $producto)
@@ -97,5 +93,48 @@
         </div>
     </div>
 </div>
+
+<script>
+    // Hace aparecer el titulo "Productos" de a una letra a la vez
+    document.addEventListener('DOMContentLoaded', function () {
+    const text = "Productos";
+    const target = document.querySelector('.productos-titulo');
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            target.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100);
+        }
+    }
+
+    typeWriter();
+});
+
+    // Hace el efecto de carga en el boton
+    document.addEventListener("DOMContentLoaded", () => {
+        const botonFiltros = document.querySelector(".boton-filtros");
+
+        if (botonFiltros) {
+            botonFiltros.addEventListener("click", (e) => {
+                // Mostrar el spinner y deshabilitar el botón
+                botonFiltros.innerHTML = `
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Aplicando...
+                `;
+                botonFiltros.disabled = true;
+
+                // Espera un tiempo breve antes de enviar el formulario
+                setTimeout(() => {
+                    // Enviar el formulario
+                    botonFiltros.closest("form").submit();
+                }, 500); // 500ms para mostrar el spinner (ajusta según necesidad)
+            });
+        }
+    });
+
+</script>
+
 
 @include('footer')

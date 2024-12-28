@@ -2,132 +2,27 @@ body {
     font-family: 'Montserrat', sans-serif;
   }
 
-/*body {
-    display: flex;
-    flex-direction: column;
-}
 
-.banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../images/carpa.svg");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    height: 35vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-
-
-.banner img {
-    display: none;
-}
-
-.articulos {
-    background-color: #abdba3;
-}
-
-.tarjeta-icono img {
-    max-width: 200px;
-    height: auto;
-}
-*/
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: black;
 }
-/*
-.medios-de-pago {
-    background-color: #f9f9f9;
-    padding: 2rem 0;
-    border-radius: 8px;
-}
-
-.carta {
-    background-color: white;
-    max-width: 250px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.carta:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.imagen-carta i {
-    transition: color 0.2s ease;
-}
-
-.carta:hover .imagen-carta i {
-    color: #007b55;
-}
-
-.medios-de-envio {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-}
-
-.contacto {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-}
-
-.btn {
-    border-radius: 20px;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-color: #659bf8;
-}
-
-.btn-outline-primary:hover {
-    background-color: #007bff;
-    color: #fff;
-    border-color: #007bff;
-}
-
-.btn-outline-success:hover {
-    background-color: #28a745;
-    color: #fff;
-    border-color: #28a745;
-}
-
-.btn-outline-danger:hover {
-    background-color: #dc3545;
-    color: #fff;
-    border-color: #dc3545;
-}
-
-.btn-outline-warning:hover {
-    background-color: #ffc107;
-    color: #fff;
-    border-color: #ffc107;
-}
-
-.promo-link {
-    display: block;
-    width: 100%;
-    height: 70vh;
-    background-image: url("../images/promo.JPG");
-    background-size: cover;
-    background-position: center;
-    text-decoration: none;
-}
-
-
-*/
-
-
 
 /* Carousel Container */
 .custom-carousel-container {
     position: relative;
     width: 90%;
     margin: 0 auto;
+    padding-top: 40px;
     overflow: hidden;
+}
+
+.custom-carousel-container h2{
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 60px;
+  color: #A6C4F7;
+  font-size: 32px;
 }
 
 /* Carousel Buttons */
@@ -180,7 +75,7 @@ body {
 }
 
 .custom-carousel-slide img {
-    width: 200px;
+    max-width: 150px;
     border-radius: 8px;
 }
 
@@ -190,7 +85,17 @@ body {
     color: #333;
 }
 
+/* animaciones con js */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Desplazamiento inicial */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0); /* Posición final */
+}
 
 
 /* Estilo para pantallas grandes */
@@ -221,7 +126,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: 100vh;
         width: 100%;
         
         padding: 0px 20px;
@@ -401,7 +306,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: 100vh;
         width: 100%;
         
         padding: 0px 20px;
@@ -596,7 +501,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: 100vh;
         width: 100%;
         
         padding: 0px 20px;
