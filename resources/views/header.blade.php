@@ -78,7 +78,7 @@
                     <ul class="navbar-nav mb-lg-0 order-md-3 d-flex border-top-ajuste m-ajuste-sesion">
                     @auth
                             <li class="nav-item ajuste-item-nav-md">
-                                <a class="nav-link active colorLetras" href=" {{ route('/') }} ">Carrito</a>
+                                <a class="nav-link active colorLetras" href=" {{ route('carrito.index') }} ">Carrito</a>
                             </li>
                             <li class="nav-item ajuste-item-nav-md">
                                     <a class="nav-link active colorLetras" href=" {{ route('meGustas') }} ">Me gustas</a>

@@ -1,37 +1,40 @@
 @include('header')
 
-<div class="container">
-    <h1>Carrito de Compras</h1>
+<h1 class="titulo_form d-flex justify-content-center align-items-center mt-5">
+    CARRITO
+</h1>
 
-    @if($productosEnCarrito->isEmpty())
-        <p>No hay productos en el carrito.</p>
-    @else
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Producto</th>
-                    <th>Cantidad</th>
-                    <th>Precio</th>
-                    <th>Total</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach($productosEnCarrito as $item)
-                    <tr id="producto-{{ $item['producto']->id_producto }}">
-                        <td>{{ $item['producto']->nombre_producto }}</td>
-                        <td>{{ $item['cantidad'] }}</td>
-                        <td>${{ $item['producto']->precio_producto }}</td>
-                        <td>${{ $item['producto']->precio_producto * $item['cantidad'] }}</td>
-                        <td>
-                            <button class="btn btn-danger btn-eliminar" data-producto-id="{{ $item['producto']->id_producto }}">
-                                Eliminar
-                            </button>
-                        </td>
-                    </tr>
-                @endforeach
-            </tbody>
-        </table>
-    @endif
+<div id="" class="container-fluid w-correccionMegustas my-5">
+    <div class="row border bg-light">
+        <div class="col-3 px-2 text-center">Producto</div>
+        <div class="col-2 px-2 text-center">Cantidad</div>
+        <div class="col-2 px-2 text-center">Precio</div>
+        <div class="col-2 px-2 text-center">Total</div>
+        <div class="col-3 px-2 text-center">Acciones</div>
+    </div>
+    @foreach($productosEnCarrito as $item)
+        <div class="row border align-items-center" id="producto-{{ $item['producto']->id_producto }}">
+            <div class="col-3 text-center">{{ $item['producto']->nombre_producto }}</div>
+            <div class="col-2 text-center d-flex justify-content-center align-items-center gap-2">
+                <p style="width:10px; margin:0px;" class="">{{ $item['cantidad'] }}</p>
+                <button type="button" class="btn_disminuir" data-producto-id="{{ $item['producto']->id_producto }}">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </button>
+            </div>
+            <div class="col-2 text-center precio-producto">${{ $item['producto']->precio_producto }}</div>
+            <div class="col-2 text-center total-producto">${{ $item['producto']->precio_producto * $item['cantidad'] }}</div>
+            <div class="col-3 text-center  d-flex justify-content-center align-items-center">
+                <button 
+                    type="button" 
+                    class="btn_meGusta btn-danger btn_eliminar  d-flex justify-content-center align-items-center" 
+                    data-producto-id="{{ $item['producto']->id_producto }}">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+            
+        </div>
+        
+    @endforeach
 </div>
+
 @include('footer')
