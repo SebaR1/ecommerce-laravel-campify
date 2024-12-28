@@ -10,24 +10,20 @@ class CarritoController extends Controller
 {
     public function store(Request $request)
     {
-        $productoId = $request->json('producto_id');  // Asegúrate de usar 'input' para datos JSON
+        $productoId = $request->json('producto_id');
         $cantidad = 1;
         
-        // Obtener el carrito actual de la sesión
         $carrito = session()->get('carrito', []);
 
         if (isset($carrito[$productoId])) {
-            // Si el producto ya está en el carrito, incrementa la cantidad
             $carrito[$productoId]['cantidad'] += $cantidad;
         } else {
-            // Obtener el producto de la base de datos
             $producto = ProductoModel::find($productoId);
 
             if (!$producto) {
                 return response()->json(['error' => 'Producto no encontrado'], 404);
             }
 
-            // Agregar el producto al carrito
             $carrito[$productoId] = [
                 'id' => $producto->id_producto,
                 'nombre' => $producto->nombre_producto,
@@ -37,7 +33,6 @@ class CarritoController extends Controller
             ];
         }
 
-        // Guardar el carrito en la sesión
         session()->put('carrito', $carrito);
 
         return response()->json(['mensaje' => 'Producto agregado al carrito', 'carrito' => $carrito]);
@@ -45,12 +40,9 @@ class CarritoController extends Controller
 
     public function index()
     {
-        // Obtén el carrito desde la sesión
         $carrito = session()->get('carrito', []);
     
-        // Formatea los productos en un arreglo
         $productosEnCarrito = collect($carrito)->map(function ($item) {
-            // Encuentra el producto en la base de datos para obtener información actualizada
             $producto = ProductoModel::find($item['id']);
     
             return [
@@ -65,7 +57,7 @@ class CarritoController extends Controller
 
     public function eliminar(Request $request)
     {
-        $productoId = $request->json('producto_id');  // Asegúrate de usar 'input' para datos JSON
+        $productoId = $request->json('producto_id');  
     
         $carrito = session()->get('carrito', []);
     
@@ -73,7 +65,7 @@ class CarritoController extends Controller
             unset($carrito[$productoId]);
             session()->put('carrito', $carrito);
         } else {
-            return response()->json(['error' => 'Producto no encontrado en el carrito.'], 404);
+            return response()->json(['error' => 'Producto no encontrado en el carrito.']);
         }
     
         return response()->json([
@@ -89,10 +81,9 @@ class CarritoController extends Controller
         $carrito = session()->get('carrito', []);
     
         if (!isset($carrito[$productoId])) {
-            return response()->json(['error' => 'Producto no encontrado en el carrito.'], 404);
+            return response()->json(['error' => 'Producto no encontrado en el carrito.']);
         }
     
-        // Disminuir la cantidad
         $carrito[$productoId]['cantidad']--;
     
         if ($carrito[$productoId]['cantidad'] <= 0) {
