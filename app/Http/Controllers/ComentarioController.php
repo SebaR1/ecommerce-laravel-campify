@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ComentariosModel;
+use id;
 use Illuminate\Http\Request;
+use App\Models\ComentarioModel;
+use App\Models\ComentariosModel;
+use Illuminate\Support\Facades\Auth;
 
 class ComentarioController extends Controller
 {
@@ -28,13 +31,22 @@ class ComentarioController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request-> validate([
-            "descripcion_comentario"=>['request']
+        $request-> validate([
+            "descripcion_comentario"=>['required']
         ],[
-            "descripcion_comentario.request"=>"Ingresar Comentario"
+            "descripcion_comentario.required"=>"Ingresar Comentario"
         ]);
 
-        ComentariosModel::create($data);
+        
+        $user_id = Auth::id(); 
+
+        ComentarioModel::create([
+            'usuario_id' => $user_id,
+            'producto_id' => $request['id_producto'],
+            'descripcion_comentario' => $request['descripcion_comentario']
+        ]);
+
+        return back();
     }
 
     /**
@@ -42,7 +54,7 @@ class ComentarioController extends Controller
      */
     public function show(string $id)
     {
-        //
+        
     }
 
     /**

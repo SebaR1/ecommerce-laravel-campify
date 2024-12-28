@@ -13,7 +13,8 @@
     <!-- Añadir Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- CSS  -->
-    
+    <link rel="icon" href={{ asset('images/logosinbg.png') }} type="image/png">
+
     <link rel="stylesheet" href={{ asset('css/style.css') }}>
     <link rel="stylesheet" href={{ asset('css/footer-style.css') }}>
     <link rel="stylesheet" href={{ asset('css/header-style.css') }}>

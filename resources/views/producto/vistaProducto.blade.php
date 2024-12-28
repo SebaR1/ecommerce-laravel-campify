@@ -74,24 +74,46 @@
         <h1>Comentarios:</h1>
         <div class="contenedor-mensajes">
             {{-- ACA VA FOR EACH  --}}
-            <div class="comentario">
-                <h3 class="header-comentario">Elias Olivencia</h3>
-                <p class="cuerpo-comentario">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae et voluptates, laboriosam nam excepturi nulla eligendi rem, iusto earum dolor culpa! Numquam et aliquid nobis iusto nam nesciunt accusantium nostrum!
-                </p>
-            </div>
-            <div class="contenedor-agregar-comentario">
-                <form action="" method="post">
-                    @csrf
-                    <textarea name="descripcion_producto" id="descripcion_producto" cols="60" rows="5" placeholder="Escriba un comentario..."></textarea>
-                    @error('descripcion_producto')
-                    <div class="error_form">{{$message}}</div>
-                    @enderror
+            @forelse($producto->comentarios as $comentario)
+                <div class="comentario burbuja">
+                    <h3 class="header-comentario">{{$comentario->usuario->username}}</h3>
+                    <p class="cuerpo-comentario">
+                        {{$comentario->descripcion_comentario}}
+                    </p>
+                </div>
+                @empty
+                <p>No hay comentarios aún. ¡Sé el primero en comentar!</p>
+            @endforelse
 
-                    <button type="submit">Agregar Comentario</button>
-                </form>
-                
-            </div>
+            @auth
+                <div class="contenedor-agregar-comentario">
+                    <form action="" method="post">
+                        @csrf
+                        <textarea name="descripcion_comentario" id="descripcion_comentario"  placeholder="Escriba un comentario..."></textarea>
+                        @error('descripcion_comentario')
+                        <div class="error_form">{{$message}}</div>
+                        @enderror
+                        <input type="text" style="display: none" value="{{$producto->id_producto}}" name="id_producto">
+                        <button type="submit">Agregar Comentario</button>
+                    </form>
+                    
+                </div>
+            @else
+                <div class="contenedor-inicia-sesion">
+                    <div class="titulo-subtitulo">
+                        <h4>¿Queres dejar un comentario?</h4>
+                        <a href="http://localhost:8000/inicioSesion"><p>Inicia sesión</p></a>
+                    </div>
+
+                    <div class="titulo-subtitulo">
+                        <p>¿No tenes cuenta? <a href="http://localhost:8000/crearCuenta">¡Registrate!</a></p>
+                    </div>
+                    
+                </div>
+            @endauth
+
+           
+            
         </div>
 
         
