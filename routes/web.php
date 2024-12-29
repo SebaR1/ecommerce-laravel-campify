@@ -51,3 +51,5 @@ Route::post('/carrito/agregar/{productoId}', [CarritoController::class, 'store']
 Route::get('/carrito', [CarritoController::class, 'index'])->name('carrito.index');
 Route::delete('/carrito/eliminar', [CarritoController::class, 'eliminar'])->name('carrito.eliminar');
 Route::patch('/carrito/disminuir', [CarritoController::class, 'disminuir'])->name('carrito.disminuir');
+
+

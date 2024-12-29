@@ -123,7 +123,7 @@
                     <!-- Contenido del menú -->
                     <div class="collapse navbar-collapse" >
                         <ul class="navbar-nav d-flex align-items-center justify-content-center">
-                            <li class="nav-item"><a class="nav-link" href="">OFERTAS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Inicio</a></li>
                             <li class="nav-item dropdown bg-nav2">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   Categorias

@@ -87,3 +87,43 @@ $(".btn_disminuir").on("click", function (e) {
         },
     });
 });
+
+
+// Hace aparecer el titulo "Productos" de a una letra a la vez
+document.addEventListener('DOMContentLoaded', function () {
+    const text = "Productos";
+    const target = document.querySelector('.productos-titulo');
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            target.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100);
+        }
+    }
+
+    typeWriter();
+});
+
+// Hace el efecto de carga en el boton
+document.addEventListener("DOMContentLoaded", () => {
+    const botonFiltros = document.querySelector(".btn-filtros");
+
+    if (botonFiltros) {
+        botonFiltros.addEventListener("click", (e) => {
+            // Mostrar el spinner y deshabilitar el botón
+            botonFiltros.innerHTML = `
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Aplicando...
+            `;
+            botonFiltros.disabled = true;
+
+            // Espera un tiempo breve antes de enviar el formulario
+            setTimeout(() => {
+                // Enviar el formulario
+                botonFiltros.closest("form").submit();
+            }, 500); 
+        });
+    }
+});

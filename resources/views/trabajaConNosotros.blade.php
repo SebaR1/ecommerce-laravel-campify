@@ -94,6 +94,7 @@
           <button type="submit" class="btn btn-primary boton-enviar">Enviar</button>
         </div>
       </form>
+
 </div>
     
 @include('footer')

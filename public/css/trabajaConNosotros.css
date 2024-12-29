@@ -61,7 +61,12 @@
 }
 
 .boton-enviar {
-    padding: 15px 70px;
+    
+    color:#5C5C5C ;
+    font-weight: 700;
+    background-color: #E1FCAD;
+    border: none;
+    padding: 15px 80px;
 }
 
 .negrita {
