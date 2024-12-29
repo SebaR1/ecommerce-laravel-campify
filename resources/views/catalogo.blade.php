@@ -62,15 +62,13 @@
                                 </p>
                                 <div class="d-flex justify-content-evenly align-items-center gap-3">
                                     <div class="botonMeGusta">
-                                        <form method="POST" action="{{ route('me-gusta.toggle', ['producto_id' => $producto->id_producto]) }}">
-                                            @csrf
-                                            <button type="submit" class="btn_meGusta d-flex justify-content-center align-items-center {{ $producto->meGustas->contains('usuario_id', auth()->id()) ? 'active' : '' }}">
-                                                <i class="fa-solid fa-heart "></i>
-                                            </button>
-                                        </form>
-                                    </div>
+                                        <button data-producto-id="{{ $producto->id_producto }}" 
+                                                class="btn_meGusta d-flex justify-content-center align-items-center {{ $producto->meGustas->contains('usuario_id', auth()->id()) ? 'active' : '' }}">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                    </div>                                    
                                     <div class="container_btn_tarjeta">
-                                        <a href="{{route('producto.vistaProducto',$producto->id_producto)}}" class="btn_comprar">Ver</a>
+                                        <a href="{{route('producto.vistaProducto', $producto->id_producto)}}" class="btn_comprar">Ver</a>
                                     </div>
                                     <div class="botonMeGusta">
                                         <form class="formAgregarProducto" method="POST" action="{{route('carrito.agregar', $producto->id_producto)}}">

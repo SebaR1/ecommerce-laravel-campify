@@ -21,7 +21,7 @@ class CarritoController extends Controller
             $producto = ProductoModel::find($productoId);
 
             if (!$producto) {
-                return response()->json(['error' => 'Producto no encontrado'], 404);
+                return response()->json(['message' => 'Producto no encontrado']);
             }
 
             $carrito[$productoId] = [
@@ -35,7 +35,7 @@ class CarritoController extends Controller
 
         session()->put('carrito', $carrito);
 
-        return response()->json(['mensaje' => 'Producto agregado al carrito', 'carrito' => $carrito]);
+        return response()->json(['mensaje' => 'Producto agregado al carrito']);
     }
 
     public function index()
@@ -53,7 +53,7 @@ class CarritoController extends Controller
     
         return view('carrito', compact('productosEnCarrito'));
     }
-    
+
 
     public function eliminar(Request $request)
     {
@@ -70,8 +70,6 @@ class CarritoController extends Controller
     
         return response()->json([
             'mensaje' => 'Producto eliminado del carrito.',
-            'producto_id' => $productoId,
-            'carrito' => $carrito,
         ]);
     }
     
@@ -94,7 +92,6 @@ class CarritoController extends Controller
     
         return response()->json([
             'mensaje' => 'Cantidad actualizada.',
-            'producto_id' => $productoId,
             'cantidad' => $carrito[$productoId]['cantidad'] ?? 0,
         ]);
     }
