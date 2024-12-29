@@ -45,8 +45,7 @@
 <!-- FORM -->
 <!--
 <div class="container mt-5 mb-5">
-    <form action="{{ route('enviar.formulario') }}" method="POST">
-      @csrf
+    <form action="" method="POST">
         <div class="row ">
           <div class="col-md-6">
             <label for="nombre" class="form-label text-white">Nombre</label>
