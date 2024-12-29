@@ -37,6 +37,21 @@
     width: 200px;
 }
 
+
+/* Clases para JS */
+
+.perfilsm {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.vectorIzq, .vectorDer {
+    transition: transform 0.1s ease-out;
+}
+
+
+
 @media (max-width: 768px) {
     #introSobreNos {
         width: 75% !important;

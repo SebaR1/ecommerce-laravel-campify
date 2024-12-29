@@ -17,7 +17,7 @@
     justify-content: center;
 }
 
-.container_btn_tarjeta_2 a{
+.container_btn_tarjeta_2 a {
     text-decoration: none;
     padding: 10px;
     text-align: center;
@@ -57,6 +57,27 @@
     border-radius: 15px;
 }
 
+.btn_Carrito {
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.89);
+    font-weight: 700;
+    background-color: #a7c5f8;
+    border: #a7c5f8;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 15px;
+}
+
+.btn_Carrito:hover {
+    transform: scale(1.2); /* Efecto de zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn_corazonRoto {
+    color: #ff5454 !important;
+}
+
 /* Estado activo: ícono rojo */
 .btn_meGusta.active {
     background-color: #a7c5f8;
@@ -75,7 +96,6 @@
 }
 .tarjeta-producto {
     width: 300px;
-    height: 400px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -89,7 +109,7 @@
 }
 
 .tarjeta-producto:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -123,14 +143,18 @@
     transition: all 0.3s ease-in-out;
 }
 
-
 /* Cosas del filtro */
-.filtro{
+.filtro {
     margin-top: 80px;
 }
 
-.filtro label, input{
+.filtro label,
+input {
     margin-top: 15px;
+}
+
+.boton-filtros{
+    margin-bottom: 70px;
 }
 
 /* Estilo para bordes de los checkboxes */
@@ -139,6 +163,14 @@
     width: 1.2rem; /* Aumenta el tamaño si lo deseas */
     height: 1.2rem;
 }
+
+/* Animaciones con js */
+.spinner-border {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-width: 0.2em;
+}
+
 
 
 /* Estilo para pantallas grandes */
@@ -172,5 +204,29 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .w-correccionMegustas {
+        width: 95%;
+    }
+}
+
+@media (min-width: 999px) {
+    .w-correccionMegustas {
+        width: 90%;
+    }
+}
+
+@media (max-width: 620px) {
+    #listaMeGustas {
+        display: none !important;
+    }
+}
+
+@media (min-width: 621px) {
+    #tarjetasMeGustas {
+        display: none !important;
     }
 }

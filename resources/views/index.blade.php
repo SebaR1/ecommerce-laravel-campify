@@ -21,117 +21,126 @@
         </section>
         
 
-    <!-- /////////////////////////////////////////
-        //               CARRUSEL               //
-        /////////////////////////////////////////-->
-    <div id="carouselExampleIndicators" class="container carousel slide custom-carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
 
+    
+    <div class="custom-carousel-container">
+
+        <h2>NUESTAS CATEGORIAS</h2>
+        <button class="custom-carousel-btn prev">&lt;</button>
+        <div class="custom-carousel-track-container">
+            <ul class="custom-carousel-track">
+                <li class="custom-carousel-slide">
+                    <a href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Campamentos">
+                        <img src="images/stock/termo.png" alt="Camping">
+                        <p class="slide-title">Campamentos</p>
+                    </a>
+                </li>
+                <li class="custom-carousel-slide">
+                    <a href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Accesorios+para+bicicletas">
+                        <img src="images/stock/cascoBici.png" alt="Accesorios para bicicletas">
+                        <p class="slide-title">Accesorios para bicicletas</p>
+                    </a>
+                </li>
+             
+                <li class="custom-carousel-slide">
+                    <a href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Accesorios+para+vehiculos">
+                        <img src="images/stock/autoCategoria.png" alt="Accesorios para vehiculos">
+                        <p class="slide-title">Accesorios para vehiculos</p>
+                    </a>
+                </li>
+                <li class="custom-carousel-slide">
+                    <a href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Hogar+y+Herramientas">
+                        <img src="images/stock/sillaNegra.png" alt="Herramientas y hogar">
+                        <p class="slide-title">Hogar y herramientas</p>
+                    </a>
+                </li>
+              
+                <li class="custom-carousel-slide">
+                    <a href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Reposeras+y+sombrillas">
+                        <img src="images/stock/sombrilla1.svg" alt="Reposeras y sombrillas">
+                        <p class="slide-title">Reposeras y sombrillas</p>
+                    </a>
+                </li>
+                
+                <li class="custom-carousel-slide">
+                    <a href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">
+                        <img src="images/stock/mochilaTravel.png" alt="Travel">
+                        <p class="slide-title">Travel</p>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a href="" target="_blank">
-                    <img src="images/stock/silla1.svg" class="d-block w-100" alt="...">
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a href="" target="_blank">
-                    <img src="images/stock/congeladora1.svg" class="d-block w-100" alt="...">
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a href="" target="_blank">
-                    <img src="images/stock/sombrilla1.svg" class="d-block w-100" alt="...">
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a href="" target="_blank">
-                    <img src="images/stock/silla2.svg" class="d-block w-100" alt="...">
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a href="" target="_blank">
-                    <img src="images/stock/bolsa_de_dormir1.svg" class="d-block w-100" alt="...">
-                </a>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <button class="custom-carousel-btn next">&gt;</button>
     </div>
-
+    
     <!-- /////////////////////////////////////////
         //          BANNER LLAMATIVO           //
         /////////////////////////////////////////-->
-    <section class="container-banner-llamativo">
+    <section class="container-banner-llamativo fade-in">
         <div class="container-banner-llamativo-txt ">
             <h2>ESPIRITU EXPLORADOR</h2>
             <h3>PRODUCTOS DE CAMPIFY</h3>
         </div>
     </section>
-
+    
     <!-- /////////////////////////////////////////
         //          DETALLES DEL ENVIO          //
         /////////////////////////////////////////-->
     <!-- DETALLES DE ENVIO -->
-    <div class="container-cartas-detalle-envio">
+    <div class="container-cartas-detalle-envio fade-in">
         <!-- CARTA 1 -->
-        <div class="container-carta">
-            <!-- IMAGEN -->
-            <div class="img-carta">
-                <img src="/images/ws_logo.png" alt="Logo de WhatsApp">
+     
+            <div class="container-carta">
+                <!-- IMAGEN -->
+                <div class="img-carta">
+                    <img src="/images/ws_logo.png" alt="Logo de WhatsApp">
+                </div>
+                <!-- INFO -->
+                <div class="info-carta">
+                    <h5>Para consultas, cambios o devoluciones</h5>
+                    <p>Escribinos en nuestro whatsapp</p>
+                </div>
             </div>
-            <!-- INFO -->
-            <div class="info-carta">
-                <h5>Para consultas, cambios o devoluciones</h5>
-                <p>Escribinos en nuestro whatsapp</p>
-            </div>
-        </div>
-
+        
+    
         <!-- CARTA 2 -->
-        <div class="container-carta">
-            <!-- IMAGEN -->
-            <div class="img-carta">
-                <img src="/images/tarjeta.png" alt="Logo de WhatsApp">
+        
+            <div class="container-carta">
+                <!-- IMAGEN -->
+                <div class="img-carta">
+                    <img src="/images/tarjeta.png" alt="Logo de Tarjeta">
+                </div>
+                <!-- INFO -->
+                <div class="info-carta">
+                    <h5>Paga con tarjeta y efectivo</h5>
+                    <p>Oferta en 3, 6 y 12 cuotas</p>
+                </div>
             </div>
-            <!-- INFO -->
-            <div class="info-carta">
-                <h5>Paga con tarjeta y efectivo</h5>
-                <p>Oferta en 3, 6 y 12 cuotas</p>
-            </div>
-        </div>
-
+        
+    
         <!-- CARTA 3 -->
-        <div class="container-carta">
-            <!-- IMAGEN -->
-            <div class=" img-carta">
-                <img src="/images/camion.png" alt="Logo de WhatsApp">
+      
+            <div class="container-carta">
+                <!-- IMAGEN -->
+                <div class="img-carta">
+                    <img src="/images/camion.png" alt="Logo de Envío">
+                </div>
+                <!-- INFO -->
+                <div class="info-carta">
+                    <h5>Envios a todo el país</h5>
+                    <p>Elegi la forma de entregar que quieras, ¡Y Listo!</p>
+                </div>
             </div>
-            <!-- INFO -->
-            <div class="info-carta">
-                <h5>Envios a todo el país</h5>
-                <p>Elegi la forma de entregar que quieras, ¡Y Listo!</p>
-            </div>
-        </div>
+        
     </div>
-
+    
 
     <!-- /////////////////////////////////////////
         //           MEDIOS DE PAGO            //
         /////////////////////////////////////////-->
        
 
-        <div class="container-medios-pago">
+        <div class="container-medios-pago fade-in">
             <h2 class="titulo-container-tarjetas-blanco">MEDIOS DE PAGO</h2>
             <h3 class="subtitulo-blanco">Todas las facilidades de pago, Elegí la que más te convenga</h3>
 
@@ -188,7 +197,7 @@
     <!-- /////////////////////////////////////////
         //          CONTACTO        //
         /////////////////////////////////////////-->
-        <div class="container-contacto">
+        <div class="container-contacto fade-in">
             <h2 class="titulo-container-tarjetas">CONTACTO</h2>
             
             <h3 class="subtitulo-gris">¿Querés hacer una compra?<br> Te asesoramos

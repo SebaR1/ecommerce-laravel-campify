@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Home</title>
 
     <!--Font-->
@@ -13,20 +14,23 @@
     <!-- Añadir Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- CSS  -->
-    
+    <link rel="icon" href={{ asset('images/logosinbg.png') }} type="image/png">
+
     <link rel="stylesheet" href={{ asset('css/style.css') }}>
     <link rel="stylesheet" href={{ asset('css/footer-style.css') }}>
     <link rel="stylesheet" href={{ asset('css/header-style.css') }}>
     <link rel="stylesheet" href={{ asset('css/sobreNosotros.css') }}>
     <link rel="stylesheet" href={{ asset('css/trabajaConNosotros.css') }}>
     <link rel="stylesheet" href={{ asset('css/inicioSesion.css') }}>
-    <link rel="stylesheet" href={{ asset('css/producto/vistaProducto.css') }}>
     <link rel="stylesheet" href={{ asset('css/catalogo2.css') }}>
-   
+    <link rel="stylesheet" href={{ asset('css/vistaProducto.css') }}>
+    <link rel="stylesheet" href={{ asset('css/agregarProducto.css') }}>
 
-    
     <!-- Fuente de Iconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -61,14 +65,13 @@
                                 Categorias
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Regalos empresariales</a></li>
-                                <li><a class="dropdown-item" href="#">Camping</a></li>
-                                <li><a class="dropdown-item" href="#">Jardin</a></li>
-                                <li><a class="dropdown-item" href="#">Accesorios para bicicletas</a></li>
-                                <li><a class="dropdown-item" href="#">Electrohogar</a></li>
-                                <li><a class="dropdown-item" href="#">Accesorios para vehiculos</a></li>
-                                <li><a class="dropdown-item" href="#">Herramientas</a></li>
-                                <li><a class="dropdown-item" href="#">Matafuegos</a></li>
+                                <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Campamentos">Campamento</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Reposeras+y+sombrillas">Reposeras y sombrillas</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Accesorios+para+bicicletas">Accesorios para bicicletas</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">Travel</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">Accesorios para vehiculos</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
+                                
                             </ul>
                         </li>
                     </ul>
@@ -76,7 +79,7 @@
                     <ul class="navbar-nav mb-lg-0 order-md-3 d-flex border-top-ajuste m-ajuste-sesion">
                     @auth
                             <li class="nav-item ajuste-item-nav-md">
-                                <a class="nav-link active colorLetras" href=" {{ route('/') }} ">Carrito</a>
+                                <a class="nav-link active colorLetras" href=" {{ route('carrito.index') }} ">Carrito</a>
                             </li>
                             <li class="nav-item ajuste-item-nav-md">
                                     <a class="nav-link active colorLetras" href=" {{ route('meGustas') }} ">Me gustas</a>
@@ -97,7 +100,7 @@
                     @endauth
                     </ul>
                     <form class="d-flex justify-content-center align-items-center mx-auto m-ajuste-form correccion w-ajuste" role="search">
-                        <input class="form-control me-2 correccion" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2 correccion m-correccion" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn" type="submit" style="border: 2px solid #a6c4f7; background-color: white; color: #a6c4f7;">
                             <i class="fa-solid fa-magnifying-glass" style="color: #a6c4f7;"></i>
                         </button>                   
@@ -127,14 +130,12 @@
                                   Categorias
                                 </a>
                                 <ul class="dropdown-menu bg-nav2">
-                                  <li><a class="dropdown-item" href="#">REGALOS EMPRESARIALES</a></li>
-                                  <li><a class="dropdown-item" href="#">CAMPING</a></li>
-                                  <li><a class="dropdown-item" href="#">JARDIN</a></li>
-                                  <li><a class="dropdown-item" href="#">ACCESORIOS PARA BICICLETAS</a></li>
-                                  <li><a class="dropdown-item" href="#">ELECTROHOGAR</a></li>
-                                  <li><a class="dropdown-item" href="#">ACCESORIOS PARA VEHICULOS</a></li>
-                                  <li><a class="dropdown-item" href="#">HERRAMIENTAS</a></li>
-                                  <li><a class="dropdown-item" href="#">MATAFUEGOS</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Campamentos">Campamento</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Reposeras+y+sombrillas">Reposeras y sombrillas</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Accesorios+para+bicicletas">Accesorios para bicicletas</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">Travel</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">Accesorios para vehiculos</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
                                 </ul>
                               </li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('sobreNosotros') }}">Sobre nosotros</a></li>

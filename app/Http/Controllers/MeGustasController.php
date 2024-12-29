@@ -48,4 +48,17 @@ class MeGustasController extends Controller
         // Redirigir a la misma página
         return back();
     }
+
+    public function destroy($producto_id)
+    {
+        $userId = Auth::id();
+
+        $meGusta = MeGustaModel::where('usuario_id', $userId)
+                                ->where('producto_id', $producto_id)
+                                ->first();
+
+        $meGusta->delete();
+
+        return back();
+    }
 }
