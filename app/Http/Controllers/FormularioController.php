@@ -18,8 +18,12 @@ class FormularioController extends Controller
         $email = $request->input('email_postulado');
         $puesto = $request->input('puesto_solicitado');
         $telefono = $request->input('telefono_postulado');
+        $cv = $request->file('cv'); // Acceder al archivo
 
-        Mail::to("byboxer09@gmail.com")->send(new OrderShipped($nombre, $apellido, $telefono, $email, $puesto));
+        // Subir el archivo al sistema
+        $cvPath = $cv->store('cvs'); // Guardar en `storage/app/cvs`
+
+        Mail::to("byboxer09@gmail.com")->send(new OrderShipped($nombre, $apellido, $telefono, $email, $puesto, $cvPath));
 
         // Redirigir al formulario
         return response()->redirectTo('/');

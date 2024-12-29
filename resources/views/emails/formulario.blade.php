@@ -64,6 +64,10 @@
             <li><strong>Teléfono:</strong> {{ $telefono }}</li>
         </ul>
         <p>El CV del candidato está adjunto para su revisión.</p>
+        <div class="cv-link">
+            <p>Puedes descargar el CV aquí:</p>
+            <a href="{{ $cvPath }}" target="_blank">Descargar CV</a>
+        </div>
         <p>¡Esperamos que esta información sea de utilidad!</p>
         <div class="footer">
             Este mensaje fue enviado automáticamente desde el sistema de gestión de candidatos.
