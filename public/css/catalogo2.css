@@ -75,7 +75,15 @@
 }
 
 .btn_corazonRoto {
-    color: #ff5454 !important;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: #ff5454;
+    font-weight: 700;
+    background-color: #a7c5f8;
+    border: #ff5454;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 15px;
 }
 
 /* Estado activo: ícono rojo */

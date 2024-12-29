@@ -21,44 +21,44 @@ class MeGustasController extends Controller
         return view('meGustas', ["productos"=>$productos]);
     }
 
-
-    public function toggle($producto_id)
+    public function toggle(Request $request)
     {
         $userId = Auth::id();
         if (!$userId) {
-            return redirect()->route('inicioSesion')->withErrors(['noSession' => 'Debes iniciar sesión para dar Me Gusta.']);
+            return response()->json(['session' => false]);
         }
-
+    
+        $producto_id = $request->json('producto_id');
+    
         // Verificar si ya existe un registro en "Me Gustas"
         $meGusta = MeGustaModel::where('usuario_id', $userId)
                                ->where('producto_id', $producto_id)
                                ->first();
-
+    
         if ($meGusta) {
-            // Si existe, eliminarlo (desmarcar "Me Gusta")
             $meGusta->delete();
+            return response()->json(['session' => true, 'like' => false]);
         } else {
-            // Si no existe, crearlo (marcar "Me Gusta")
             MeGustaModel::create([
                 'usuario_id' => $userId,
                 'producto_id' => $producto_id,
             ]);
+            return response()->json(['session' => true, 'like' => true]);
         }
-
-        // Redirigir a la misma página
-        return back();
     }
-
-    public function destroy($producto_id)
+    
+    public function destroy(Request $request)
     {
         $userId = Auth::id();
 
-        $meGusta = MeGustaModel::where('usuario_id', $userId)
-                                ->where('producto_id', $producto_id)
+        $producto_id = $request->json("producto_id");
+
+        $meGusta = MeGustaModel::where("usuario_id", $userId)
+                                ->where("producto_id", $producto_id)
                                 ->first();
 
         $meGusta->delete();
 
-        return back();
+        return response()->json(["message" => "Producto eliminado."]);
     }
 }

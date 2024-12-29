@@ -16,17 +16,11 @@ $(".formAgregarProducto").submit(function (event) {
         url: "carrito/agregar/" + productoId,
         method: "POST",
         data: JSON.stringify({ producto_id: productoId }),
-        contentType: "application/json",
         success: function () {
             alert("Producto agregado al carrito");
         },
-
-        error: function (xhr) {
-            console.error("Error: ", xhr.responseJSON || xhr.responseText);
-            alert(
-                "Error al agregar al carrito: " +
-                    (xhr.responseJSON?.error || "Error desconocido")
-            );
+        error: function () {
+            alert("Hubo un error.");
         },
     });
 });
@@ -48,8 +42,8 @@ $(".btn_eliminar").on("click", function (e) {
             alert(response.mensaje);
             filaProducto.remove();
         },
-        error: function () {
-            alert("Hubo un error eliminando el producto!");
+        error: function (response) {
+            alert(response.error);
         },
     });
 });
