@@ -38,7 +38,7 @@
         <script src="/js/carrousel.js"></script>
 
         <!-- Scripts de Carrito-->
-        <script src="/js/scripts.js"></script>
+        <script src="/js/scriptsCarrito.js"></script>
 
         <!-- Scripts de MeGustas-->
         <script src="/js/scriptsMeGustas.js"></script>
