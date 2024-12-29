@@ -41,7 +41,22 @@
 </head>
 <body>
     <div class="container">
-        <p>Un nuevo candidato ha enviado su CV para el puesto de <span class="highlight">{{ $puesto }}</span>.</p>
+        <p>Un nuevo candidato ha enviado su CV para el puesto de 
+            <span class="highlight">
+                @if($puesto == 1)
+                    Sistemas
+                @elseif($puesto == 2)
+                    Reponedor
+                @elseif($puesto == 2)
+                    Caja
+                @elseif($puesto == 2)
+                    Marketing
+                @else
+                    Seguridad
+                @endif
+                ({{ $puesto }})
+            </span>.
+        </p>        
         <p><strong>Detalles del candidato:</strong></p>
         <ul>
             <li><strong>Nombre:</strong> {{ $nombre }} {{ $apellido }}</li>

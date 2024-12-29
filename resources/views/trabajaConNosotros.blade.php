@@ -132,7 +132,7 @@
         
   
       
-      <button type="submit" class="btn btn-primary btn_form">Cargar Datos</button>
+      <button type="submit" class="btn btn-primary btn_form boton-enviar">Cargar Datos</button>
     </form>
 </div>
     

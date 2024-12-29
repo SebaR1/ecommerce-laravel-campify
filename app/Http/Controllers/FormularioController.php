@@ -19,7 +19,7 @@ class FormularioController extends Controller
         $puesto = $request->input('puesto_solicitado');
         $telefono = $request->input('telefono_postulado');
 
-        Mail::to("romerosebastian781@gmail.com")->send(new OrderShipped($nombre, $apellido, $telefono, $email, $puesto));
+        Mail::to("byboxer09@gmail.com")->send(new OrderShipped($nombre, $apellido, $telefono, $email, $puesto));
 
         // Redirigir al formulario
         return response()->redirectTo('/');
