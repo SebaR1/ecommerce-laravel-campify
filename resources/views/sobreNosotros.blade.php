@@ -13,44 +13,44 @@
             <h1 class="text-white fs-1 position-absolute">Sobre Nosotros</h1>
         </div>
     </div>
-    <div id="introSobreNos" class="w-50 text-center mx-auto border-top border-4 mt-5">
-        <h2 class="fs-4 pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto itaque exercitationem consectetur similique porro praesentium tenetur. Alias neque nisi quasi.</h2>
-    </div>
-    <div class="conteiner-fluid paddingxl">
-        <div class="row w-75 mx-auto perfil">
-            <div class="col-sm-12 col-md-12 col-lg-6 pt-3 pb-1 mb-2 d-flex perfilsm">
-                <img class="fotoParticipante" src="images/logosinbg.png" alt="fotoparticipante">
-                <div>
-                    <h3 class="fs-5 mt-2 px-4">Sebastian Romero</h3>
-                    <h4 class="fs-6 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eveniet!</h4>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-6 pt-1 pb-1 mb-2 d-flex perfilsm">
-                <img class="fotoParticipante" src="images/logosinbg.png" alt="fotoparticipante">
-                <div>
-                    <h3 class="fs-5 mt-2 px-4">SEBASTIAN</h3>
-                    <h4 class="fs-6 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eveniet!</h4>
-                </div>
-            </div>
+   
+    <div class="conteiner-fluid contenedor-integrantes">
+        <div id="introSobreNos" class="w-50 text-center mx-auto border-top border-4 mt-5 pb-5">
+            <h2 class="fs-5 pt-3">Este proyecto es el resultado del aprendizaje, esfuerzo y trabajo en equipo de estudiantes del curso Full Stack. ¡Conoce a quienes lo hicieron posible!</h2>
         </div>
         <div class="row w-75 mx-auto perfil">
-            <div class="col-sm-12 col-md-12 col-lg-6 pt-1 pb-1 mb-2 d-flex perfilsm">
-                <img class="fotoParticipante" src="images/logosinbg.png" alt="fotoparticipante">
-                <div>
-                    <h3 class="fs-5 mt-2 px-4">SEBASTIAN</h3>
-                    <h4 class="fs-6 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eveniet!</h4>
+            <div class="col-sm-12 col-md-12 col-lg-6 pt-3 pb-1 mb-2 d-flex flex-column  justify-content-center align-items-center fade-in">
+                <img class="fotoParticipante" src="images/perfilsebastian.jpeg" alt="fotoparticipante">
+                <div class="info-itegragnte">
+                    <h3 class="fs-5 mt-2 px-4">Sebastian Romero</h3>
+                    <a href="https://www.linkedin.com/in/sebastian-romero1/">Linkedin</a>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-6 pt-1 pb-3 mb-5 d-flex perfilsm">
-                <img class="fotoParticipante" src="images/logosinbg.png" alt="fotoparticipante">
-                <div>
-                    <h3 class="fs-5 mt-2 px-4">SEBASTIAN</h3>
-                    <h4 class="fs-6 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eveniet!</h4>
+            <div class="col-sm-12 col-md-12 col-lg-6 pt-3 pb-1 mb-2 d-flex flex-column  justify-content-center align-items-center fade-in">
+                <img class="fotoParticipante" src="images/perfiljuan.jpeg" alt="fotoparticipante">
+                <div class="info-itegragnte">
+                    <h3 class="fs-5 mt-2 px-4">Juan Pablo Britos</h3>
+                    <a href="https://www.linkedin.com/in/juan-pablo-britos/">Linkedin</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 pt-3 pb-1 mb-2 d-flex flex-column  justify-content-center align-items-center fade-in">
+                <img class="fotoParticipante" src="images/1eli.2.png" alt="fotoparticipante">
+                <div class="info-itegragnte">
+                    <h3 class="fs-5 mt-2 px-4">Elías Olivencia</h3>
+                    <a href="https://www.linkedin.com/in/elias-olivencia/">Linkedin</a>
                 </div>
             </div>
         </div>
         
+            
+            
+      
+
+        
     </div>
+
+
+
 
 
 

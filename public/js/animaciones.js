@@ -1,5 +1,5 @@
 // Animacion para los integrantes (aparecen mas tarde)
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
     const elements = document.querySelectorAll('.perfilsm');
 
     elements.forEach((el, index) => {
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, index * 300); // Retraso en la aparición de cada elemento
     });
 });
-
+*/
 
 // Efecto para que los vectores se muevan cuando scrolleamos
 window.addEventListener('scroll', function () {

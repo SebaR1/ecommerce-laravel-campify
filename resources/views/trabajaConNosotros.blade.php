@@ -103,6 +103,7 @@
           
       </div>
 
+
       <div class="mb-3">
           <label for="puesto_solicitado" class="form-label">Selecciona una opción:</label>
           <select id="puesto_solicitado" name="puesto_solicitado" class="form-control">
@@ -134,6 +135,7 @@
       
       <button type="submit" class="btn btn-primary btn_form">Cargar Datos</button>
     </form>
+
 </div>
     
 @include('footer')

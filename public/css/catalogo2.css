@@ -33,9 +33,9 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.container_btn_tarjeta a {
+.btn_comprar {
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 20px;
     text-align: center;
     color: #ffff;
     font-weight: 700;
@@ -59,7 +59,7 @@
 
 .btn_Carrito {
     text-decoration: none;
-    padding: 10px;
+    padding: 10px ;
     text-align: center;
     color: rgba(255, 255, 255, 0.89);
     font-weight: 700;
@@ -143,9 +143,17 @@
     transition: all 0.3s ease-in-out;
 }
 
+.productos-titulo{
+    color: #5C5C5C;
+}
+
 /* Cosas del filtro */
 .filtro {
-    margin-top: 80px;
+    padding-top: 80px;
+}
+
+.filtro h2{
+    color: #5C5C5C;
 }
 
 .filtro label,
@@ -153,8 +161,18 @@ input {
     margin-top: 15px;
 }
 
-.boton-filtros{
+.btn-filtros{
     margin-bottom: 70px;
+    text-decoration: none;
+    padding: 10px ;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.89);
+    font-weight: 700;
+    background-color: #a7c5f8;
+    border: #a7c5f8;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 15px;
+    
 }
 
 /* Estilo para bordes de los checkboxes */
@@ -176,16 +194,21 @@ input {
 /* Estilo para pantallas grandes */
 @media (min-width: 1025px) {
     .container_tarjetas {
+        width: 95%;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        padding-left: 60px;
+        padding-bottom: 60px;
         gap: 20px;
     }
+
+    
 }
 
 /* Estilo para tablets*/
 @media (min-width: 768px) and (max-width: 1024px) {
     .container_tarjetas {
+        width: 500px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
