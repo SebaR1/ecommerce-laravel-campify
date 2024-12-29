@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\CarritoController;
 use App\Http\Controllers\MeGustasController;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\FormularioController;
 
 Route::get('/', function () {
     return view('index');
@@ -42,8 +43,9 @@ Route::post('/me-gusta/destroy/{producto_id}', [MeGustasController::class, 'dest
 Route::post('/me-gusta/toggle/{producto_id}', [MeGustasController::class, 'toggle'])->name('me-gusta.toggle');
 
 
-
 Route::post('/producto/{producto_id}', [ComentarioController::class,'store']);
+
+Route::post('/enviar-formulario', [FormularioController::class, 'enviarFormulario'])->name('enviar.formulario');
 
 Route::get('/meGustas', [MeGustasController::class, 'index'])->name('meGustas');
 
@@ -51,5 +53,4 @@ Route::post('/carrito/agregar/{productoId}', [CarritoController::class, 'store']
 Route::get('/carrito', [CarritoController::class, 'index'])->name('carrito.index');
 Route::delete('/carrito/eliminar', [CarritoController::class, 'eliminar'])->name('carrito.eliminar');
 Route::patch('/carrito/disminuir', [CarritoController::class, 'disminuir'])->name('carrito.disminuir');
-
 

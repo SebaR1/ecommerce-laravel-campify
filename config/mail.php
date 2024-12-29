@@ -79,6 +79,17 @@ return [
             'transport' => 'array',
         ],
 
+        'mailgun' => [
+            'transport' => 'mailgun',
+            // 'client' => [
+            //     'timeout' => 5,
+            // ],
+        ],
+
+        'mailersend' => [
+            'transport' => 'mailersend',
+        ],
+
         'failover' => [
             'transport' => 'failover',
             'mailers' => [
@@ -109,7 +120,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'romerosebastian781@gmail.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 

@@ -10,9 +10,9 @@
                 @csrf
                 <div class="mb-3">
                     
-                  <label for="nombre_producto" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="nombre_producto" name="nombre_producto" value="{{old('nombre_producto')}}">
-                    @error('nombre_producto')
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" value="{{old('nombre')}}">
+                    @error('nombre')
                     <div class="error_form">{{$message}}</div>
                     @enderror
                 </div>
