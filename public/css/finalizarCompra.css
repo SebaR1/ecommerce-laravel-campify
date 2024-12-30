@@ -1,0 +1,33 @@
+
+.container{
+    display: flex;
+    padding: 40px 0px;
+    
+}
+.container-form-factura{
+    width: 50%;
+   
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.container-form-factura form{
+    width: 70%;
+}
+
+.container-tabla-carrito{
+    width: 50%;
+   
+    
+}
+
+.container-btn-finalizar-compra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 30px;
+   
+    
+}
