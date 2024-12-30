@@ -5,7 +5,7 @@
 </h1>
 
 
-<div id="" class="container-fluid w-correccionMegustas my-5">
+<div id="" class="carrito-container container-fluid w-correccionMegustas my-5">
     <div class="row border bg-light pt-2 pb-2">
         <div class="col-3 px-2 text-center">Producto</div>
         <div class="col-2 px-2 text-center">Cantidad</div>

@@ -1,7 +1,7 @@
 .carrito-container {
     display: flex;
     flex-direction: column;
-    min-height: 49.2vh;
+    min-height: 46.2vh;
 }
 
 .container-fluid.w-correccionMegustas {
