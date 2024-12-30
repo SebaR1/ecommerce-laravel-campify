@@ -17,7 +17,7 @@ $(".formAgregarProducto").submit(function (event) {
         method: "POST",
         data: JSON.stringify({ producto_id: productoId }),
         success: function () {
-            alert("Producto agregado al carrito");
+            //alert("Producto agregado al carrito");
         },
         error: function () {
             alert("Hubo un error.");

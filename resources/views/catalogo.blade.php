@@ -78,7 +78,7 @@
                                             <button
                                                 type="submit"
                                                 data-producto-id="{{ $producto->id_producto }}"
-                                                class="btn_Carrito d-flex justify-content-center align-items-center">
+                                                class="btn_Carrito d-flex justify-content-center align-items-center animacion-carrito">
                                                 <i class="fa-solid fa-cart-shopping"></i>
                                             </button>
                                         </form>
@@ -98,3 +98,12 @@
 
 
 @include('footer')
+
+<script>
+    document.querySelectorAll(".btn_Carrito").forEach((btn) => {
+        btn.addEventListener("click", function () {
+            // Agregar clase de animación
+            this.classList.add("active");
+        });
+    });
+</script>

@@ -44,7 +44,7 @@
         <script src="/js/scriptsMeGustas.js"></script>
 
         <!-- Animaciones con JS -->
-        <script src="js/animaciones.js"></script>
+        <script src="/js/animaciones.js"></script>
 
     </body>
     

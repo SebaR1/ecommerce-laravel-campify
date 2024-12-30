@@ -197,6 +197,33 @@ input {
     border-width: 0.2em;
 }
 
+/* Animación de subir y bajar con color dorado */
+@keyframes carritoAnimacion {
+    0% {
+        transform: translateY(0);
+        color: #000; /* Color inicial (negro) */
+    }
+    50% {
+        transform: translateY(-10px);
+        color: #ffd700; /* Color dorado */
+    }
+    100% {
+        transform: translateY(0);
+        color: #ffd700; /* Mantener el color dorado */
+    }
+}
+
+/* Clase para animar el carrito */
+.animacion-carrito {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Clase activa para mantener el color dorado */
+.animacion-carrito.active {
+    animation: carritoAnimacion 0.6s ease-in-out;
+    color: #ffd700; /* Color dorado permanece */
+}
+
 
 
 /* Estilo para pantallas grandes */
