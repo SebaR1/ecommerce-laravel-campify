@@ -5,18 +5,18 @@
         <div class="container_form_agregar_producto">
             <h2 class="titulo_form">AGREGA TU PRODUCTO</h2>
 
-            <form class="form_agregar_producto" action="{{route('catalogo')}}" method="post" enctype="multipart/form-data">
+            <form class="form_agregar_producto" action="{{route('catalogo.agregar')}}" method="post" enctype="multipart/form-data">
 
                 @csrf
                 <div class="mb-3">
-                    
+
                   <label for="nombre_producto" class="form-label">Nombre</label>
                   <input type="text" class="form-control" id="nombre_producto" name="nombre_producto" value="{{old('nombre_producto')}}">
                     @error('nombre')
                     <div class="error_form">{{$message}}</div>
                     @enderror
                 </div>
-    
+
                 <div class="mb-3">
     
                     <label for="precio_producto" class="form-label">Precio</label>
@@ -57,7 +57,6 @@
                         <option value="4">Travel</option>
                         <option value="5">Accesorios para vehiculos</option>
                         <option value="6">Hogar y herramientas</option>
-
                     </select>
                     @error('categoria_id')
                     <div class="error_form">{{$message}}</div>
