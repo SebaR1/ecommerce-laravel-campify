@@ -2,6 +2,7 @@
 .container{
     display: flex;
     padding: 40px 0px;
+    
 }
 .container-form-factura{
     width: 50%;

@@ -26,6 +26,8 @@
     <link rel="stylesheet" href={{ asset('css/vistaProducto.css') }}>
     <link rel="stylesheet" href={{ asset('css/agregarProducto.css') }}>
     <link rel="stylesheet" href={{ asset('css/finalizarCompra.css') }}>
+    <link rel="stylesheet" href={{ asset('css/agradecimiento.css') }}>
+
 
 
     <!-- Fuente de Iconos -->

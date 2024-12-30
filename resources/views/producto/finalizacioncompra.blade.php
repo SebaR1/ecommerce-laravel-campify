@@ -4,50 +4,57 @@
 
         <div class="container">
             <div class="container-form-factura">
-                <form class="form_agregar_producto" action="{{ route('enviar.formulario') }}" method="POST" enctype="multipart/form-data">
+                <form class="form_agregar_producto" action="{{ route('finalizarcompra.agradecimiento') }}" method="POST" id="form_factura">
     
                     @csrf
                     <div class="mb-3">
                         
-                      <label for="nombre_postulado" class="form-label">Nombre</label>
-                      <input type="text" class="form-control" id="nombre_postulado" name="nombre_postulado" value="{{old('nombre_postulado')}}">
-                        @error('nombre_postulado')
+                      <label for="nombre_factura" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="nombre_factura" name="nombre_factura" value="{{old('nombre_factura')}}">
+                        @error('nombre_factura')
                         <div class="error_form">{{$message}}</div>
                         @enderror
                     </div>
               
                     <div class="mb-3">
               
-                        <label for="apellido_postulado" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="apellido_postulado" name="apellido_postulado" value="{{old('apellido_postulado')}}">
+                        <label for="apellido_factura" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido_factura" name="apellido_factura" value="{{old('apellido_factura')}}">
                        
-                        @error('apellido_postulado')
+                        @error('apellido_factura')
                         <div class="error_form">{{$message}}</div>
                         @enderror
                     </div>
               
                     <div class="mb-3">
               
-                        <label for="email_postulado" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="email_postulado" name="email_postulado" value="{{old('email_postulado')}}">
-                        @error('email_postulado')
+                        <label for="email_factura" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email_factura" name="email_factura" value="{{old('email_factura')}}">
+                        @error('email_factura')
                         <div class="error_form">{{$message}}</div>
                         @enderror
                         
                     </div>
                     <div class="mb-3">
               
-                        <label for="telefono_postulado" class="form-label">Celular</label>
-                        <input type="text" class="form-control" id="telefono_postulado" name="telefono_postulado" value="{{old('telefono_postulado')}}">
-                        @error('telefono_postulado')
+                        <label for="telefono_factura" class="form-label">Celular</label>
+                        <input type="number" class="form-control" id="telefono_factura" name="telefono_factura" value="{{old('telefono_factura')}}">
+                        @error('telefono_factura')
+                        <div class="error_form">{{$message}}</div>
+                        @enderror
+                        
+                    </div>
+
+                     <div class="mb-3">
+              
+                        <label for="direccion_factura" class="form-label">Direccion</label>
+                        <input type="text" class="form-control" id="direccion_factura" name="direccion_factura" value="{{old('direccion_factura')}}">
+                        @error('direccion_factura')
                         <div class="error_form">{{$message}}</div>
                         @enderror
                         
                     </div>
               
-                      
-                
-                    
                     
                   </form>
     
@@ -94,7 +101,7 @@
                     </div>
 
                     <div class="container-btn-finalizar-compra">
-                        <button type="submit" class="btn btn-primary btn_form boton-enviar">Finalizar compra</button>
+                        <button type="submit" class="btn btn-primary btn_form boton-enviar" form="form_factura">Finalizar compra</button>
                     </div>
                     
             </div>

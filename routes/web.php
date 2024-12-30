@@ -54,6 +54,11 @@ Route::get('/carrito', [CarritoController::class, 'index'])->name('carrito.index
 Route::delete('/carrito/eliminar', [CarritoController::class, 'eliminar'])->name('carrito.eliminar');
 Route::patch('/carrito/disminuir', [CarritoController::class, 'disminuir'])->name('carrito.disminuir');
 
-Route::get('/finalizarcompra', [FinalizarCompraController::class, 'finalizarCompra']);
+
+Route::get('/finalizarcompra', [FinalizarCompraController::class, 'finalizarCompra'])->name('finalizarcompra');
+Route::post('/finalizarcompra/agradecimiento', [FinalizarCompraController::class, 'compraFinalizada'])->name('finalizarcompra.agradecimiento');
+// Route::get('/agradecimiento', [FinalizarCompraController::class, 'mostrarAgradecimiento'])->name('agradecimiento');
+
+
 
 
