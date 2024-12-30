@@ -77,6 +77,15 @@
     transform: scale(1.1); 
     color: white;
 }
+
+.aviso-sin-comentario{
+    padding: 20px;
+    background-color: #A7C5F8;
+    color: white;
+    font-weight: 700;
+    border-radius: 15px;
+    text-align: center;
+}
 /* Estilo para pantallas grandes */
 @media (min-width: 1025px) {
     .contenedor-contenedor-gral{
