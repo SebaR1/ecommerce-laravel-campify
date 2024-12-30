@@ -60,8 +60,9 @@
                 </div>
             </div>
             <div class="contenedor-btn-comprar">
-                
-                <button class="btn-comprar btn ">Comprar</button>
+                <a href="{{route('finalizarcompra')}}">
+                    <button class="btn-comprar btn w-100">Comprar</button>
+                </a>
             </div>
             
         </div>
