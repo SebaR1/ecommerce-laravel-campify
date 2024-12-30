@@ -47,14 +47,14 @@ class LoginController extends Controller
         ]
         );
 
-        if(Auth::attempt(["username" => $data["loginUsername"], "password" => $data["loginPassword"]]))
+        if(Auth::attempt(["email" => $data["loginUsername"], "password" => $data["loginPassword"]]) || Auth::attempt(["username" => $data["loginUsername"], "password" => $data["loginPassword"]]))
         {
             $request->session()->regenerate();
-            return response()->redirectTo("/")->with("success", "FUNCIONOOOOOOOO");
+            return response()->redirectTo("/");
         }
         else{
             //fallo!
-            return response()->redirectTo("/")->with("fail", "NO FUNCIONOOOOOOOO, OSEA SI PERO NO LO ENCONTRO!");
+            return response()->redirectTo("inicioSesion")->withErrors(["fail" => "No se encontro el usuario!"]);
         }
     }
     
