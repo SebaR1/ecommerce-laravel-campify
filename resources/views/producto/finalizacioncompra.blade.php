@@ -2,7 +2,7 @@
 
     <body>
 
-        <div class="container">
+        <div class="container-finalizar-compra">
             <div class="container-form-factura">
                 <form class="form_agregar_producto" action="{{ route('finalizarcompra.agradecimiento') }}" method="POST" id="form_factura">
     
