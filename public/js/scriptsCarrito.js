@@ -121,3 +121,35 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Función para calcular la suma total
+    function calcularTotalGeneral() {
+        let totalGeneral = 0;
+        const totales = document.querySelectorAll('.total-producto'); // Selecciona todas las celdas de la columna "Total"
+        
+        // Itera sobre los valores y suma
+        totales.forEach((total) => {
+            const valor = parseFloat(total.textContent.replace('$', '')); // Elimina el símbolo "$" y convierte a número
+            if (!isNaN(valor)) {
+                totalGeneral += valor;
+            }
+        });
+        
+        // Actualiza el total general en la fila correspondiente
+        const totalGeneralElemento = document.getElementById('total-general');
+        totalGeneralElemento.textContent = `$${totalGeneral.toFixed(2)}`; // Formato con dos decimales
+    }
+
+    // Calcula el total general al cargar la página
+    calcularTotalGeneral();
+
+    // Opcional: recalcular cuando se actualicen los valores dinámicamente
+    document.addEventListener('click', function(event) {
+        if (event.target.classList.contains('btn_disminuir') || 
+            event.target.classList.contains('btn_eliminar')) {
+            setTimeout(calcularTotalGeneral, 100); // Recalcula después de que se modifiquen los valores
+        }
+    });
+});

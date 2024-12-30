@@ -10,8 +10,8 @@
                 @csrf
                 <div class="mb-3">
 
-                  <label for="nombre" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="nombre_producto" name="nombre_producto" value="{{old('nombre')}}">
+                  <label for="nombre_producto" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre_producto" name="nombre_producto" value="{{old('nombre_producto')}}">
                     @error('nombre')
                     <div class="error_form">{{$message}}</div>
                     @enderror
@@ -39,7 +39,8 @@
                 <div class="mb-3">
     
                     <label for="descripcion_producto" class="form-label">Descripcion</label>
-                    <textarea class="form-control" name="descripcion_producto" id="descripcion_producto" value="{{old('descripcion_producto')}}" cols="30" rows="10"></textarea>
+                    <textarea name="descripcion_producto" id="descripcion_producto" cols="30" rows="10" class="form-control" value="{{old('descripcion_producto')}}"></textarea>
+
                     @error('descripcion_producto')
                     <div class="error_form">{{$message}}</div>
                     @enderror
