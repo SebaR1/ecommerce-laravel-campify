@@ -1,7 +1,7 @@
 @include ('header');
 <body>
     <div class="container-gral-resumen-compra">
-        <h1>Resumen de tu compra</h1>
+        <h1>¡Gracias por su compra!</h1>
        
         <div class="container-datos-gral">
             <div class="container-datos-factura">
@@ -38,7 +38,7 @@
             
         </div>
         <div class="container-btn-finalizar-compra">
-            <a href="" class="btn btn-primary btn_form boton-enviar">Finalizar compra</a>
+            <a href="{{route ('/')}}" class="btn btn-primary btn_form boton-enviar">Volver a inicio</a>
         </div>
     </div>
     

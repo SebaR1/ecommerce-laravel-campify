@@ -8,7 +8,7 @@
     width: 50%;
    
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -22,6 +22,10 @@
     
 }
 
+.container-tabla-carrito{
+    padding-right: 20px;
+}
+
 .container-btn-finalizar-compra {
     display: flex;
     justify-content: center;
@@ -30,4 +34,38 @@
     padding-top: 30px;
    
     
+}
+
+
+@media (min-width: 1025px){
+   
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+   
+}
+
+
+@media (max-width: 767px){
+
+    .container-form-factura{
+        width: 90%;
+       
+        
+    }
+   .container-finalizar-compra{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .container-form-factura form{
+    width: 100%;
+    }
+    .container-tabla-carrito{
+        width: 90%;
+       
+        
+    }
 }
