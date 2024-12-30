@@ -23,7 +23,7 @@ class FormularioController extends Controller
         // Subir el archivo al sistema
         $cvPath = $cv->store('cvs'); // Guardar en `storage/app/cvs`
 
-        Mail::to("byboxer09@gmail.com")->send(new OrderShipped($nombre, $apellido, $telefono, $email, $puesto, $cvPath));
+        Mail::to("romerosebastian781@gmail.com")->send(new OrderShipped($nombre, $apellido, $telefono, $email, $puesto, $cvPath));
 
         // Redirigir al formulario
         return response()->redirectTo('/');
