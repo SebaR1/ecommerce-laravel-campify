@@ -67,7 +67,7 @@
     </div>
     <div class="container contenedor-descripcion">
         <h1>Descripcion:</h1>
-        <p>{{$producto->descripcion_producto}}</p>
+        <p>{!! nl2br(e($producto->descripcion_producto)) !!}</p> 
     </div>
 
     <div class="contenedor-comentarios">
