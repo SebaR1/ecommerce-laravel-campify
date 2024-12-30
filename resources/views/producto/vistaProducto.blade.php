@@ -60,6 +60,7 @@
                 </div>
             </div>
             <div class="contenedor-btn-comprar">
+                
                 <button class="btn-comprar btn ">Comprar</button>
             </div>
             
@@ -82,7 +83,7 @@
                     </p>
                 </div>
                 @empty
-                <p>No hay comentarios aún. ¡Sé el primero en comentar!</p>
+                <p class="aviso-sin-comentario">No hay comentarios aún. ¡Sé el primero en comentar!</p>
             @endforelse
 
             @auth
