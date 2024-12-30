@@ -57,7 +57,8 @@
                             <div class="container_datos_tarjeta">
                                 <h3>{{$producto->nombre_producto}}</h3>
                                 <p>{{$producto->categoria->nombre_categoria}}</p>
-                                <p>{{$producto->descripcion_producto}}</p>
+                                <p>{{ \Str::limit($producto->descripcion_producto, 30, '...') }}</p>
+
                                 <p>
                                     ${{$producto->precio_producto}}
                                 </p>
