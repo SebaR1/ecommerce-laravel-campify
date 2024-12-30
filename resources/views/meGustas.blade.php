@@ -9,21 +9,19 @@
     <!-- Vista de la tabla -->
     <div id="listaMeGustas" class="container-fluid w-correccionMegustas my-5">
         <div class="row border bg-light">
-            <div class="col-3 px-2 text-center">Imagen</div>
-            <div class="col-2 px-2 text-center">Nombre</div>
-            <div class="col-2 px-2 text-center">Categoría</div>
-            <div class="col-3 px-2 text-center">Descripción</div>
+            <div class="col-2 px-2 text-center">Imagen</div>
+            <div class="col-3 px-2 text-center">Nombre</div>
+            <div class="col-3 px-2 text-center">Categoría</div>
+            <div class="col-4 px-2 text-center">Acciones</div>
         </div>
         @foreach ($productos as $meGusta)
             <div class="row border align-items-center productoMegustas-{{$meGusta->producto_id}}">
-                <div class="col-3 text-center">
+                <div class="col-2 text-center">
                     <img src="{{ asset('storage/' . $meGusta->producto->imagen_producto) }}" alt="Imagen del producto" style="width: 80px; height: 80px;">
                 </div>
-                <div class="col-2 text-center">{{ $meGusta->producto->nombre_producto }}</div>
-                <div class="col-2 text-center">{{ $meGusta->producto->categoria->nombre_categoria }}</div>
-                <div class="col-3 text-center">{{ $meGusta->producto->descripcion_producto }}</div>
-
-                <div class="botonMeGusta col-2 text-center">
+                <div class="col-3 text-center">{{ $meGusta->producto->nombre_producto }}</div>
+                <div class="col-3 text-center">{{ $meGusta->producto->categoria->nombre_categoria }}</div>
+                <div class="botonMeGusta col-4 text-center justify-content-center d-flex">
                     <form method="post" action="{{ route('me-gusta.destroy') }}">
                         @csrf
                         @method("DELETE")
@@ -46,7 +44,6 @@
                     <div class="container_datos_tarjeta">
                         <h3>{{$meGusta->producto->nombre_producto}}</h3>
                         <p>{{$meGusta->producto->categoria->nombre_categoria}}</p>
-                        <p>{{$meGusta->producto->descripcion_producto}}</p>
                         <div class="d-flex justify-content-evenly align-items-center">
                             <div class="botonMeGusta me-1">
                                 <form method="post" action="{{ route('me-gusta.destroy') }}">
