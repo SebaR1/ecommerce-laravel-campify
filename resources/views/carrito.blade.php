@@ -5,7 +5,7 @@
 </h1>
 
 <div id="" class="container-fluid w-correccionMegustas my-5">
-    <div class="row border bg-light">
+    <div class="row border bg-light pt-2 pb-2">
         <div class="col-3 px-2 text-center">Producto</div>
         <div class="col-2 px-2 text-center">Cantidad</div>
         <div class="col-2 px-2 text-center">Precio</div>
@@ -13,7 +13,7 @@
         <div class="col-3 px-2 text-center">Acciones</div>
     </div>
     @foreach($productosEnCarrito as $item)
-        <div class="row border align-items-center" id="producto-{{ $item['producto']->id_producto }}">
+        <div class="row border align-items-center pt-2 pb-2" id="producto-{{ $item['producto']->id_producto }}">
             <div class="col-3 text-center">{{ $item['producto']->nombre_producto }}</div>
             <div class="col-2 text-center d-flex justify-content-center align-items-center gap-2">
                 <p style="width:10px; margin:0px;" class="">{{ $item['cantidad'] }}</p>
@@ -35,6 +35,10 @@
         </div>
         
     @endforeach
+
+    <div class="container-btn-finalizar-compra">
+        <a href="{{route ('finalizarcompra')}}" class="btn btn-primary btn_form boton-enviar">Finalizar compra</a>
+    </div>
 </div>
 
 @include('footer')

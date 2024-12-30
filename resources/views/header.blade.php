@@ -53,7 +53,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul id="linksAdicionales" class="navbar-nav me-auto mb-2 mb-lg-0 border-top-ajuste">
                         <li class="nav-item ajuste-item-nav-md">
-                            <a class="nav-link" aria-current="page" href="{{ route('/') }}">Home</a>
+                            <a class="nav-link" aria-current="page" href="{{ route('/') }}">inicio</a>
                         </li>
                         <li class="nav-item ajuste-item-nav-md">
                             <a class="nav-link" href="{{ route('sobreNosotros') }}">Sobre Nosotros</a>
@@ -135,7 +135,7 @@
                     <!-- Contenido del menú -->
                     <div class="collapse navbar-collapse" >
                         <ul class="navbar-nav d-flex align-items-center justify-content-center">
-                            <li class="nav-item"><a class="nav-link" href="">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('/') }}">Inicio</a></li>
                             <li class="nav-item dropdown bg-nav2">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   Categorias
