@@ -35,6 +35,7 @@ Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::post('/catalogo', [ProductoController::class,'store'])->name('catalogo');
+Route::get('/catalogo/buscar', [ProductoController::class,'search'])->name('catalogo.busqueda');
 Route::get('/catalogo', [ProductoController::class,'index'])->name('catalogo');
 
 Route::get('/agregarproducto',[ProductoController::class, 'create'])->name('agregarproducto');
@@ -46,7 +47,6 @@ Route::post('/me-gusta/toggle', [MeGustasController::class, 'toggle'])->name('me
 Route::post('/producto/{producto_id}', [ComentarioController::class,'store']);
 
 Route::post('/enviar-formulario', [FormularioController::class, 'enviarFormulario'])->name('enviar.formulario');
-
 
 Route::post('/carrito/agregar/{productoId}', [CarritoController::class, 'store'])->name('carrito.agregar');
 Route::get('/carrito', [CarritoController::class, 'index'])->name('carrito.index');
