@@ -63,6 +63,10 @@
     color: #4e8be0 !important;
 }
 
+.m-correccion {
+    margin-top: 0px !important;
+}
+
 @media (max-width: 620px) {
     #menuArticulos {
         display: none !important;

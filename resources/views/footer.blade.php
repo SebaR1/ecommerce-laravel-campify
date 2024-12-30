@@ -33,6 +33,19 @@
     
         <!-- Scripts de Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
+
+        <!-- Scripts de Carrousel-->
+        <script src="/js/carrousel.js"></script>
+
+        <!-- Scripts de Carrito-->
+        <script src="/js/scriptsCarrito.js"></script>
+
+        <!-- Scripts de MeGustas-->
+        <script src="/js/scriptsMeGustas.js"></script>
+
+        <!-- Animaciones con JS -->
+        <script src="js/animaciones.js"></script>
+
     </body>
-    </html>
+    
+</html>
