@@ -64,17 +64,22 @@ class OrderShipped extends Mailable
      */
     public function attachments(): array
     {
-        $cvFullPath = storage_path('app/private/cvs/' . $this->cvPath); // Ruta completa del archivo
-
+        // Remueve cualquier prefijo de ruta redundante
+        $cvFileName = basename($this->cvPath); // Asegura que solo sea el nombre del archivo
+        $cvFullPath = storage_path('app/private/cvs/' . $cvFileName);
+    
+        // Verifica si el archivo existe
         if (!file_exists($cvFullPath)) {
             throw new \Exception("El archivo no existe: " . $cvFullPath);
         }
-
+    
+        // Retorna el adjunto con los detalles necesarios
         return [
             Attachment::fromPath($cvFullPath)
                 ->as('CV_' . $this->nombre . '_' . $this->apellido . '.pdf') // Nombre del archivo en el correo
                 ->withMime('application/pdf'), // Especificación del tipo MIME
         ];
     }
+    
 
 }
