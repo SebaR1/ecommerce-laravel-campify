@@ -34,7 +34,7 @@ Route::post('/registro', [LoginController::class, 'registro'])->name('registro')
 Route::post('/login', [LoginController::class, 'login'])->name('login'); 
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::post('/catalogo', [ProductoController::class,'store'])->name('catalogo');
+Route::post('/catalogo', [ProductoController::class,'store'])->name('catalogo.agregar');
 Route::get('/catalogo', [ProductoController::class,'index'])->name('catalogo');
 
 Route::get('/agregarproducto',[ProductoController::class, 'create'])->name('agregarproducto');
