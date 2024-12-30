@@ -4,6 +4,7 @@ use App\Http\Controllers\ComentarioController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\CarritoController;
+use App\Http\Controllers\FinalizarCompraController;
 use App\Http\Controllers\MeGustasController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\FormularioController;
@@ -52,4 +53,7 @@ Route::post('/carrito/agregar/{productoId}', [CarritoController::class, 'store']
 Route::get('/carrito', [CarritoController::class, 'index'])->name('carrito.index');
 Route::delete('/carrito/eliminar', [CarritoController::class, 'eliminar'])->name('carrito.eliminar');
 Route::patch('/carrito/disminuir', [CarritoController::class, 'disminuir'])->name('carrito.disminuir');
+
+Route::get('/finalizarcompra', [FinalizarCompraController::class, 'finalizarCompra']);
+
 
