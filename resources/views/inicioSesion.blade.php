@@ -1,14 +1,15 @@
 @include('header')
 
-<div class="login-container">
-  @if (session()->has("success"))
-  <div class="container">
-    <div class="alert alert-success text-center"> {{ session("success") }} </div>
-  </div>
-  @endif
-  @error('noSession')
-<div class="alert alert-danger"> {{$message}} </div>
+@if (session()->has("success"))
+<div class="">
+  <div class="alert alert-success mb-0 text-center py-1"> {{ session("success") }} </div>
+</div>
+@endif
+@error('fail')
+<div class="alert alert-danger text-center py-1"> {{$message}} </div>
 @enderror
+
+<div class="login-container">
     <div class="logo-container vertical-center">
       <img src="images/logosinbg.png" alt="">
     </div>

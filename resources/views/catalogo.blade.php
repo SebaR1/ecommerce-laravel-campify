@@ -8,34 +8,34 @@
             <form action="{{ route('catalogo') }}" method="GET"">
                 @csrf
                 <label class="form-check">
-                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Campamentos"
+                    <input class="form-check-input" type="checkbox" name="categorias[]" value="Campamento"
                            {{ in_array('Campamento', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">CAMPAMENTOS</span>
+                    <span class="form-check-label">Campamento</span>
                 </label>
                 <label class="form-check">
                     <input class="form-check-input" type="checkbox" name="categorias[]" value="Accesorios para bicicletas"
                            {{ in_array('Accesorios para bicicletas', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">ACCESORIOS PARA BICICLETAS</span>
+                    <span class="form-check-label">Accesorios para bicicletas</span>
                 </label>
                 <label class="form-check">
                     <input class="form-check-input" type="checkbox" name="categorias[]" value="Reposeras y sombrillas"
                            {{ in_array('Reposeras y sombrillas', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">REPOSERAS Y SOMBRILLAS</span>
+                    <span class="form-check-label">Reposeras y sombrillas</span>
                 </label>
                 <label class="form-check">
                     <input class="form-check-input" type="checkbox" name="categorias[]" value="Accesorios para vehiculos"
                            {{ in_array('Accesorios para vehiculos', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">ACCESORIOS PARA VEHICULOS</span>
+                    <span class="form-check-label">Accesorios para vehiculos</span>
                 </label>
                 <label class="form-check">
                     <input class="form-check-input" type="checkbox" name="categorias[]" value="Hogar y Herramientas"
                            {{ in_array('Hogar y Herramientas', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">HOGAR Y HERRAMIENTAS</span>
+                    <span class="form-check-label">Hogar y herramientas</span>
                 </label>
                 <label class="form-check">
                     <input class="form-check-input" type="checkbox" name="categorias[]" value="Travel"
                            {{ in_array('Travel', request()->input('categorias', [])) ? 'checked' : '' }}>
-                    <span class="form-check-label">TRAVEL</span>
+                    <span class="form-check-label">Travel</span>
                 </label>
                 
 
@@ -58,7 +58,6 @@
                                 <h3>{{$producto->nombre_producto}}</h3>
                                 <p>{{$producto->categoria->nombre_categoria}}</p>
                                 <p>{{ \Str::limit($producto->descripcion_producto, 30, '...') }}</p>
-
                                 <p>
                                     ${{$producto->precio_producto}}
                                 </p>

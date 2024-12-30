@@ -25,7 +25,7 @@
     
     <div class="custom-carousel-container">
 
-        <h2>NUESTAS CATEGORIAS</h2>
+        <h2>NUESTRAS CATEGORIAS</h2>
         <button class="custom-carousel-btn prev">&lt;</button>
         <div class="custom-carousel-track-container">
             <ul class="custom-carousel-track">

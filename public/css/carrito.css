@@ -1,0 +1,11 @@
+.carrito-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 49.2vh;
+}
+
+.container-fluid.w-correccionMegustas {
+    flex-grow: 1; 
+    padding-bottom: 20px; 
+}
+
