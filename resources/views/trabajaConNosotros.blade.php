@@ -27,7 +27,7 @@
                 <img class="vecTam opacity-75 ms-2 position-absolute" src="images/sobreNosotros/vector2.png" alt="vector" />
                 <img class="vecTam opacity-50 me-4 position-absolute" src="images/sobreNosotros/vector2.png" alt="vector" />    
             </div>
-       
+
         <h1 class="text-white fs-1 position-absolute text-shadow">Trabaja con Nosotros</h1> 
     </div>
 </div>
@@ -35,9 +35,9 @@
 <!-- Texto -->
 <div class="container d-flex justify-content-center text-center mt-5">
     <p class="lead text-muted" style="font-family: 'Arial', sans-serif;">
-        En Campify somos más que una empresa, somos una familia. Desde nuestros inicios, hace más de 10 años,
-        hemos crecido y evolucionado gracias a la dedicación y pasión de nuestro equipo.
-        <span class="font-weight-bold negrita">Dejanos tu CV y descubrí cómo podés contribuir al éxito de Campify, ¡Te esperamos!</span>
+      En Campify, creemos en el talento joven y en el poder de las nuevas ideas. Si estás estudiando y querés adquirir experiencia laboral en un ambiente dinámico y en constante crecimiento, 
+      este es el lugar para vos. 
+      <span class="font-weight-bold negrita">¡Dejanos tu CV y descubrí cómo podés dar tus primeros pasos profesionales con nosotros! ¡Te esperamos!</span>
     </p>
 </div>
 

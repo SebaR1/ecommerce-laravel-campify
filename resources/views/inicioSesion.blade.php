@@ -6,7 +6,7 @@
 </div>
 @endif
 @error('fail')
-<div class="alert alert-danger text-center py-1"> {{$message}} </div>
+<div class="alert alert-danger mb-0 text-center py-1"> {{$message}} </div>
 @enderror
 
 <div class="login-container">
