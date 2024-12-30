@@ -78,12 +78,18 @@
 
                     <ul class="navbar-nav mb-lg-0 order-md-3 d-flex border-top-ajuste m-ajuste-sesion">
                     @auth
+                        @if (auth()->user()->rol === 'Cliente')
                             <li class="nav-item ajuste-item-nav-md">
-                                <a class="nav-link active colorLetras" href=" {{ route('carrito.index') }} ">Carrito</a>
+                                <a class="nav-link active colorLetras" href="{{ route('carrito.index') }}">Carrito</a>
                             </li>
                             <li class="nav-item ajuste-item-nav-md">
-                                    <a class="nav-link active colorLetras" href=" {{ route('meGustas') }} ">Me gustas</a>
+                                <a class="nav-link active colorLetras" href="{{ route('meGustas') }}">Me gustas</a>
                             </li>
+                        @elseif (auth()->user()->rol === 'Admin')
+                            <li class="nav-item ajuste-item-nav-md">
+                                <a class="nav-link active colorLetras" href="{{ route('agregarproducto') }}">Admin</a>
+                            </li>
+                        @endif
                             <li>
                                 <form action="/logout" method="POST" class="nav-item ajuste-item-nav-md">
                                     @csrf
@@ -91,13 +97,14 @@
                                 </form>
                             </li>
                     @else
-                            <li class="nav-item ajuste-item-nav-md">
-                                <a class="nav-link active colorLetras" href=" {{ route('crearCuenta') }} ">Crear Cuenta</a>
-                            </li>
-                            <li class="nav-item ajuste-item-nav-md">
-                                <a class="nav-link active colorLetras" href=" {{ route('inicioSesion') }} ">Iniciar Sesion</a>
-                            </li>
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link active colorLetras" href="{{ route('crearCuenta') }}">Crear Cuenta</a>
+                        </li>
+                        <li class="nav-item ajuste-item-nav-md">
+                            <a class="nav-link active colorLetras" href="{{ route('inicioSesion') }}">Iniciar Sesion</a>
+                        </li>
                     @endauth
+                    
                     </ul>
                     <form class="d-flex justify-content-center align-items-center mx-auto m-ajuste-form correccion w-ajuste" role="search">
                         <input class="form-control me-2 correccion m-correccion" type="search" placeholder="Search" aria-label="Search">
