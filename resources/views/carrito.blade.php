@@ -4,6 +4,7 @@
     CARRITO
 </h1>
 
+
 <div id="" class="container-fluid w-correccionMegustas my-5">
     <div class="row border bg-light pt-2 pb-2">
         <div class="col-3 px-2 text-center">Producto</div>
@@ -38,6 +39,7 @@
 
     <div class="container-btn-finalizar-compra">
         <a href="{{route ('finalizarcompra')}}" class="btn btn-primary btn_form boton-enviar">Finalizar compra</a>
+
     </div>
 </div>
 

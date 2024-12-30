@@ -25,9 +25,9 @@
     <link rel="stylesheet" href={{ asset('css/catalogo2.css') }}>
     <link rel="stylesheet" href={{ asset('css/vistaProducto.css') }}>
     <link rel="stylesheet" href={{ asset('css/agregarProducto.css') }}>
+    <link rel="stylesheet" href={{ asset('css/carrito.css') }}>
     <link rel="stylesheet" href={{ asset('css/finalizarCompra.css') }}>
     <link rel="stylesheet" href={{ asset('css/agradecimiento.css') }}>
-
 
 
     <!-- Fuente de Iconos -->
@@ -110,10 +110,10 @@
                     @endauth
                     
                     </ul>
-                    <form class="d-flex justify-content-center align-items-center mx-auto m-ajuste-form correccion w-ajuste" role="search">
-                        <input class="form-control me-2 correccion m-correccion" type="search" placeholder="Search" aria-label="Search">
+                    <form action="{{route('catalogo.busqueda')}}" method="GET" class="d-flex justify-content-center align-items-center mx-auto m-ajuste-form correccion w-ajuste" role="search">
+                        <input class="form-control me-2 correccion m-correccion" name="busqueda" id="busqueda" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn" type="submit" style="border: 2px solid #a6c4f7; background-color: white; color: #a6c4f7;">
-                            <i class="fa-solid fa-magnifying-glass" style="color: #a6c4f7;"></i>
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </button>                   
                     </form>             
                 </div>

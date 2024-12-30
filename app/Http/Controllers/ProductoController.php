@@ -70,18 +70,14 @@ class ProductoController extends Controller
        return response()->redirectTo("catalogo")->with('success', 'Producto creado exitosamente!');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    /*public function show(string $id)
+    public function search(Request $request)
     {
-        $producto = ProductoModel::findOrFail($id);
+        $busqueda = $request->input("busqueda");
 
-        
+        $productos = ProductoModel::where('nombre_producto', 'LIKE', '%' . $busqueda . '%')->get();
 
-        return view('producto.vistaProducto', compact('producto'));
-    }*/
-
+        return view('catalogo', ['productos' => $productos, 'busqueda' => $busqueda]);
+    }
 
     public function show(string $id)
     {

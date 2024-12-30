@@ -127,7 +127,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 90vh;
         width: 100%;
         
         padding: 0px 20px;
@@ -213,7 +213,6 @@ body {
         text-align: center;
         padding: 80px 20px;
         gap: 60px;
-        height: 100%;
         color: #5C5C5C;
     }
 
@@ -588,7 +587,6 @@ body {
     text-align: center;
     padding: 80px 0px;
     gap: 60px;
-    height: 100%;
     color: #5C5C5C;
 }
 

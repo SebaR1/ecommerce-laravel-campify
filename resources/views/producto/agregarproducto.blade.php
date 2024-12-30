@@ -39,8 +39,8 @@
                 <div class="mb-3">
     
                     <label for="descripcion_producto" class="form-label">Descripcion</label>
-                    
-                    <input type="text" class="form-control" id="descripcion_producto" name="descripcion_producto" value="{{old('descripcion_producto')}}">
+                    <textarea name="descripcion_producto" id="descripcion_producto" cols="30" rows="10" class="form-control" value="{{old('descripcion_producto')}}"></textarea>
+
                     @error('descripcion_producto')
                     <div class="error_form">{{$message}}</div>
                     @enderror
@@ -51,12 +51,12 @@
                     <label for="categoria_id" class="form-label">Selecciona una opción:</label>
                     <select id="categoria_id" name="categoria_id" class="form-control">
                         <option value="">--Seleccionar una opcion--</option>
-                        <option value="1">Accesorios para bicicletas</option>
-                        <option value="2">Accesorios para vehiculos</option>
-                        <option value="3">Bebes</option>
-                        <option value="4">Camping</option>
-                        <option value="5">Hogar y herramientas</option>
-                        <option value="6">Travel</option>
+                        <option value="1">Campamento</option>
+                        <option value="2">Reposeras y sombrillas</option>
+                        <option value="3">Accesorios para bicicletas</option>
+                        <option value="4">Travel</option>
+                        <option value="5">Accesorios para vehiculos</option>
+                        <option value="6">Hogar y herramientas</option>
 
                     </select>
                     @error('categoria_id')
