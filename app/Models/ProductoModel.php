@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\MeGustaModel;
 use App\Models\ComentarioModel;
+use App\Models\CategoriaModel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

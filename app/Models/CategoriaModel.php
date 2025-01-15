@@ -10,6 +10,6 @@ class CategoriaModel extends Model
     protected $primaryKey="id_categoria";
     public $timestamps = false;
 
-   // protected $fillable = ["id_categoria","nombre_categoria"];
+    protected $fillable = ["id_categoria","nombre_categoria"];
     
 }
