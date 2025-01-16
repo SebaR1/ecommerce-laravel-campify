@@ -35,7 +35,7 @@ class OrderShipped extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: 'byboxer09@gmail.com', // Cambia este correo si necesitas otro remitente
+            from: 'romerosebastian781@gmail.com', // Cambia este correo si necesitas otro remitente
             subject: 'Nuevo CV enviado - ' . $this->puesto,
         );
     }
