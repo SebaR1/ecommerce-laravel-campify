@@ -70,12 +70,11 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Campamentos">Campamento</a></li>
-                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Reposeras+y+sombrillas">Reposeras y sombrillas</a></li>
-                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+bicicletas">Accesorios para bicicletas</a></li>
-                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Travel">Travel</a></li>
-                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+vehiculos">Accesorios para vehiculos</a></li>
-                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
-                                
+                                <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Reposeras+y+sombrillas">Reposeras y sombrillas</a></li>
+                                <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+bicicletas">Accesorios para bicicletas</a></li>
+                                <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Travel">Travel</a></li>
+                                <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+vehiculos">Accesorios para vehiculos</a></li>
+                                <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -141,13 +140,12 @@
                                   Categorias
                                 </a>
                                 <ul class="dropdown-menu bg-nav2">
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Campamentos">Campamento</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Reposeras+y+sombrillas">Reposeras y sombrillas</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Accesorios+para+bicicletas">Accesorios para bicicletas</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">Travel</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">Accesorios para vehiculos</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
-                                </ul>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Campamentos">Campamento</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Reposeras+y+sombrillas">Reposeras y sombrillas</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+bicicletas">Accesorios para bicicletas</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Travel">Travel</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+vehiculos">Accesorios para vehiculos</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
                               </li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('sobreNosotros') }}">Sobre nosotros</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('trabajaConNosotros') }}">Trabaja con nosotros</a></li>
