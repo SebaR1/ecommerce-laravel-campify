@@ -70,11 +70,11 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Campamentos">Campamento</a></li>
-                                <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Reposeras+y+sombrillas">Reposeras y sombrillas</a></li>
-                                <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+bicicletas">Accesorios para bicicletas</a></li>
-                                <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Travel">Travel</a></li>
-                                <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+vehiculos">Accesorios para vehiculos</a></li>
-                                <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Reposeras+y+sombrillas">Reposeras y sombrillas</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+bicicletas">Accesorios para bicicletas</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Travel">Travel</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+vehiculos">Accesorios para vehiculos</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -146,6 +146,7 @@
                                     <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Travel">Travel</a></li>
                                     <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+vehiculos">Accesorios para vehiculos</a></li>
                                     <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
+                                </ul>
                               </li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('sobreNosotros') }}">Sobre nosotros</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('trabajaConNosotros') }}">Trabaja con nosotros</a></li>
