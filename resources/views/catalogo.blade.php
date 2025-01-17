@@ -50,7 +50,7 @@
             <div class="row container_tarjetas pt-4">
                 @foreach ($productos as $producto)
                         <div class="tarjeta-producto">
-                            <img src="{{ asset('storage/' . $producto->imagen_producto) }}" alt="Imagen del producto">
+                            <img src="{{ secure_asset('storage/' . $producto->imagen_producto) }}" alt="Imagen del producto">
                             <div class="container_datos_tarjeta">
                                 <h3>{{$producto->nombre_producto}}</h3>
                                 <p>{{$producto->categoria->nombre_categoria}}</p>
