@@ -16,18 +16,18 @@
     <!-- CSS  -->
     <link rel="icon" href={{ asset('images/logosinbg.png') }} type="image/png">
 
-    <link rel="stylesheet" href={{ asset('css/style.css') }}>
-    <link rel="stylesheet" href={{ asset('css/footer-style.css') }}>
-    <link rel="stylesheet" href={{ asset('css/header-style.css') }}>
-    <link rel="stylesheet" href={{ asset('css/sobreNosotros.css') }}>
-    <link rel="stylesheet" href={{ asset('css/trabajaConNosotros.css') }}>
-    <link rel="stylesheet" href={{ asset('css/inicioSesion.css') }}>
-    <link rel="stylesheet" href={{ asset('css/catalogo2.css') }}>
-    <link rel="stylesheet" href={{ asset('css/vistaProducto.css') }}>
-    <link rel="stylesheet" href={{ asset('css/agregarProducto.css') }}>
-    <link rel="stylesheet" href={{ asset('css/carrito.css') }}>
-    <link rel="stylesheet" href={{ asset('css/finalizarCompra.css') }}>
-    <link rel="stylesheet" href={{ asset('css/agradecimiento.css') }}>
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/footer-style.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/header-style.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/sobreNosotros.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/trabajaConNosotros.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/inicioSesion.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/catalogo2.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/vistaProducto.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/agregarProducto.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/carrito.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/finalizarCompra.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/agradecimiento.css') }}">
 
 
     <!-- Fuente de Iconos -->
@@ -69,13 +69,12 @@
                                 Categorias
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Campamentos">Campamento</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Reposeras+y+sombrillas">Reposeras y sombrillas</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Accesorios+para+bicicletas">Accesorios para bicicletas</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">Travel</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">Accesorios para vehiculos</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
-                                
+                                <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Campamentos">Campamento</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Reposeras+y+sombrillas">Reposeras y sombrillas</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+bicicletas">Accesorios para bicicletas</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Travel">Travel</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+vehiculos">Accesorios para vehiculos</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -141,12 +140,12 @@
                                   Categorias
                                 </a>
                                 <ul class="dropdown-menu bg-nav2">
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Campamentos">Campamento</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Reposeras+y+sombrillas">Reposeras y sombrillas</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Accesorios+para+bicicletas">Accesorios para bicicletas</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">Travel</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Travel">Accesorios para vehiculos</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost:8000/catalogo?_token=fRCoCOHqUa8f7cgufzFWgzUg6sjFfijr9UqM27zm&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Campamentos">Campamento</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Reposeras+y+sombrillas">Reposeras y sombrillas</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+bicicletas">Accesorios para bicicletas</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Travel">Travel</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Accesorios+para+vehiculos">Accesorios para vehiculos</a></li>
+                                    <li><a class="dropdown-item" href="https://ecommerce-laravel-campify-production.up.railway.app/catalogo?_token=QEGYl8Q1lIXk3WNUA1ttCQFzDsrduIdDbED63jBV&categorias%5B%5D=Hogar+y+Herramientas">Hogar y herramientas</a></li>
                                 </ul>
                               </li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('sobreNosotros') }}">Sobre nosotros</a></li>

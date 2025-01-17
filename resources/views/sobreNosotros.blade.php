@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6 pt-3 pb-1 mb-2 d-flex flex-column  justify-content-center align-items-center fade-in">
-                <img class="fotoParticipante" src="images/perfiljuan.jpeg" alt="fotoparticipante">
+                <img class="fotoParticipante" src="images/perfilJuan.jpeg" alt="fotoparticipante">
                 <div class="info-itegragnte">
                     <h3 class="fs-5 mt-2 px-4">Juan Pablo Britos</h3>
                     <a href="https://www.linkedin.com/in/juan-pablo-britos/" target="_blank">Linkedin</a>
