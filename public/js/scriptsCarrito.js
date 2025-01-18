@@ -16,12 +16,18 @@ $(".formAgregarProducto").submit(function (event) {
         url: "carrito/agregar/" + productoId,
         method: "POST",
         data: JSON.stringify({ producto_id: productoId }),
-        success: function () {
-            alert("Producto agregado al carrito");
+        success: function (response) 
+        {
+            if (response.session) {
+                alert("Producto agregado al carrito");
+            } else {
+                window.location.href = "/inicioSesion";
+            }
         },
         error: function () {
             alert("Hubo un error.");
         },
+        
     });
 });
 

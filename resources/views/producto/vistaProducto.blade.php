@@ -6,7 +6,7 @@
         <div class="contenedor-imagenes">
             <!-- Imagen -->
             <div class="contenedor-imagen-principal">
-                <img src={{ asset('storage/' . $producto->imagen_producto) }} alt="" class="img-fluid">
+                <img src="data:image/jpeg;base64,{{ $producto->imagen_producto }}" alt="Imagen del producto " class="img-fluid">
             </div> 
             <!-- Sub imágenes -->
             <div class="">

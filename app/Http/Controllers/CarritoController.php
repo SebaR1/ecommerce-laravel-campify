@@ -5,11 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\ProductoModel;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Auth;
 
 class CarritoController extends Controller
 {
     public function store(Request $request)
     {
+        $userId = Auth::id();
+        if (!$userId) {
+            return response()->json(['session' => false]);
+        }
+        
         $productoId = $request->json('producto_id');
         $cantidad = 1;
         
@@ -21,7 +27,7 @@ class CarritoController extends Controller
             $producto = ProductoModel::find($productoId);
 
             if (!$producto) {
-                return response()->json(['message' => 'Producto no encontrado']);
+                return response()->json(['message' => 'Producto no encontrado', 'session' => true]);
             }
 
             $carrito[$productoId] = [
@@ -35,7 +41,7 @@ class CarritoController extends Controller
 
         session()->put('carrito', $carrito);
 
-        return response()->json(['mensaje' => 'Producto agregado al carrito']);
+        return response()->json(['mensaje' => 'Producto agregado al carrito', 'session' => true]);
     }
 
     public function index()
