@@ -43,6 +43,9 @@
         <!-- Scripts de MeGustas-->
         <script src="/js/scriptsMeGustas.js"></script>
 
+        <!-- Scripts de Admin-->
+        <script src="/js/scriptsAdminCatalogo.js"></script>
+
         <!-- Animaciones con JS -->
         <script src="js/animaciones.js"></script>
 

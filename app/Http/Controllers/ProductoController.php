@@ -40,7 +40,6 @@ class ProductoController extends Controller
      */
     public function store(Request $request)
     {
-        
         $data = $request->validate([
             "nombre_producto" => ['required'],
             "precio_producto" => ['required'],
@@ -60,15 +59,17 @@ class ProductoController extends Controller
             "imagen_producto.mimes" => "La imagen debe estar en formato jpeg, png, jpg o gif!",
             "imagen_producto.max" => "La imagen no puede superar los 2 MB!",
         ]);
-        
-        // Establecemos donde va a estar la direccion de la foto
-        $rutaImagen = $request->file('imagen_producto')->store('imagenes.Productos', 'public'); // Almacena en storage/app/public/images/Productos
-        $data['imagen_producto'] = $rutaImagen;
-
+    
+        $imagen = $request->file('imagen_producto');
+        $base64Imagen = base64_encode(file_get_contents($imagen));
+    
+        $data['imagen_producto'] = $base64Imagen;
+    
         ProductoModel::create($data);
-
-       return response()->redirectTo("catalogo")->with('success', 'Producto creado exitosamente!');
+    
+        return response()->redirectTo("catalogo")->with('success', 'Producto creado exitosamente!');
     }
+    
 
     public function search(Request $request)
     {
@@ -106,10 +107,30 @@ class ProductoController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Request $request)
     {
-        //
+        // Obtenemos el id del producto del JSON enviado
+        $producto_id = $request->json('producto_id'); 
+    
+        // Verificamos si el producto existe
+        $producto = ProductoModel::find($producto_id);
+    
+        if ($producto) {
+            // Eliminamos el producto
+            $producto->delete();
+    
+            // Respuesta de éxito
+            return response()->json([
+                'mensaje' => 'Producto eliminado exitosamente!'
+            ], 200);
+        } else {
+            // Respuesta de error si el producto no existe
+            return response()->json([
+                'error' => 'Producto no encontrado!'
+            ], 404);
+        }
     }
+    
 
     
 }
