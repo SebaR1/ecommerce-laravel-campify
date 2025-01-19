@@ -38,7 +38,10 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::post('/catalogo', [ProductoController::class,'store'])->name('catalogo.agregar');
 Route::get('/catalogo/buscar', [ProductoController::class,'search'])->name('catalogo.busqueda');
 Route::get('/catalogo', [ProductoController::class,'index'])->name('catalogo');
-Route::delete('/catalogo/destroy', [ProductoController::class, 'destroy'])->name('destruirProducto');
+Route::delete('/catalogo/destroy', [ProductoController::class, 'destroy'])->name('catalogo.destruir');
+Route::get('/catalogo/editar/{id}', [ProductoController::class, 'edit'])->name('catalogo.editar');
+Route::patch('/catalogo/modificar/{id}', [ProductoController::class, 'update'])->name('catalogo.modificar');
+
 
 Route::get('/agregarproducto',[ProductoController::class, 'create'])->name('agregarproducto');
 

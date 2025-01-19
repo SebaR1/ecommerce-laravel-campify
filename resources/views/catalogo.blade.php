@@ -69,17 +69,17 @@
                                 @auth
                                 @if (auth()->user()->rol === 'Admin')
                                     <div class="botonMeGusta">
-                                        <button data-producto-id="{{ $producto->id_producto }}" 
-                                                class="btn_meGusta d-flex justify-content-center align-items-center {{ $producto->meGustas->contains('usuario_id', auth()->id()) ? 'active' : '' }}">
-                                            MO
-                                        </button>
+                                        <a href="{{ route('catalogo.editar', $producto->id_producto) }}" class="btn_admin_modificar d-flex justify-content-center align-items-center">
+                                            <i class="fa-solid fa-sliders"></i>
+                                        </a>
                                     </div>
                                     <div class="container_btn_tarjeta">
                                         <a href="{{ route('producto.vistaProducto', $producto->id_producto) }}" class="btn_comprar">Ver</a>
                                     </div>
                                     <div class="botonMeGusta">
-                                        <button data-producto-id="{{ $producto->id_producto }}" 
-                                                class="btn_admin_eliminar d-flex justify-content-center align-items-center">
+                                        <button 
+                                        data-producto-id="{{ $producto->id_producto }}" 
+                                        class="btn_admin_eliminar d-flex justify-content-center align-items-center">
                                             <i class="fa-solid fa-trash"></i>
                                         </button>
                                     </div>
@@ -133,6 +133,9 @@
                         </div>
                     </div>
                 @endforeach
+                <div class="d-flex justify-content-center">
+                    {{ $productos->links('pagination::bootstrap-4') }}
+                </div>
             </div>            
         </div>
     </div>
