@@ -13,18 +13,18 @@ class ProductoController extends Controller
     public function index(Request $request)
     {
         $categorias = $request->input('categorias', []); // Obtiene las categorías seleccionadas
-
+    
         if (!empty($categorias)) {
-            // Filtra los productos por las categorías seleccionadas
+            // Filtra los productos por las categorías seleccionadas y aplica paginación
             $productos = ProductoModel::whereHas('categoria', function ($query) use ($categorias) {
                 $query->whereIn('nombre_categoria', $categorias);
-            })->get();
+            })->paginate(2);
         } else {
-            // Si no hay filtros, devuelve todos los productos
-            $productos = ProductoModel::all();
+            // Si no hay filtros, devuelve todos los productos con paginación
+            $productos = ProductoModel::paginate(2);
         }
-
-        return view('catalogo', compact('productos'));  // ["productos"=>$productros] es lo mismo
+    
+        return view('catalogo', compact('productos'));  // ["productos"=>$productos] es lo mismo
     }
 
     /**
@@ -93,33 +93,67 @@ class ProductoController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $producto = ProductoModel::findOrFail($id);
+        return view('producto.editar', compact('producto'));
     }
+    
 
     /**
      * Update the specified resource in storage.
      */
     public function update(Request $request, string $id)
     {
-        //
+        $data = $request->validate([
+            "nombre_producto" => ['required'],
+            "precio_producto" => ['required'],
+            "stock_producto" => ['required'],
+            "descripcion_producto" => ['required'],
+            'categoria_id' => ['required', 'integer', 'not_in:""'],
+            "imagen_producto" => ['image', 'mimes:jpeg,png,jpg,gif', 'max:2048'],
+        ], [
+            "nombre_producto.required" => "Falta completar este campo!",
+            "precio_producto.required" => "Falta completar este campo!",
+            "stock_producto.required" => "Falta completar este campo!",
+            "descripcion_producto.required" => "Falta completar este campo!",
+            "categoria_id.required" => "Falta completar este campo!",
+            "categoria_id.not_in" => "Falta completar este campo!",
+            "imagen_producto.image" => "El archivo debe ser una imagen!",
+            "imagen_producto.mimes" => "La imagen debe estar en formato jpeg, png, jpg o gif!",
+            "imagen_producto.max" => "La imagen no puede superar los 2 MB!",
+        ]);
+    
+        $producto = ProductoModel::findOrFail($id);
+    
+        $producto->nombre_producto = $data['nombre_producto'];
+        $producto->precio_producto = $data['precio_producto'];
+        $producto->stock_producto = $data['stock_producto'];
+        $producto->descripcion_producto = $data['descripcion_producto'];
+        $producto->categoria_id = $data['categoria_id'];
+    
+        //Hay que manejar la imagen si es que se cambio y convertirla al estandar de la base, es decir en base64
+        if ($request->hasFile('imagen_producto')) {
+            //$imagePath = $request->file('imagen_producto')->store('images', 'public'); // Si quisiera podria guardarlo en la carpeta public/images, y tendria sus ventajas y desventajas.
+            $producto->imagen_producto = base64_encode(file_get_contents($request->file('imagen_producto')->getRealPath()));
+        }
+    
+        $producto->save();
+    
+        return response()->redirectTo("catalogo")->with('success', 'Producto modificado exitosamente!');
     }
+    
 
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(Request $request)
     {
-        // Obtenemos el id del producto del JSON enviado
         $producto_id = $request->json('producto_id'); 
     
-        // Verificamos si el producto existe
         $producto = ProductoModel::find($producto_id);
     
         if ($producto) {
-            // Eliminamos el producto
             $producto->delete();
     
-            // Respuesta de éxito
             return response()->json([
                 'mensaje' => 'Producto eliminado exitosamente!'
             ], 200);
@@ -130,7 +164,5 @@ class ProductoController extends Controller
             ], 404);
         }
     }
-    
-
     
 }
