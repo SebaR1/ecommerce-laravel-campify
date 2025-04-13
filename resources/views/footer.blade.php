@@ -23,8 +23,8 @@
                 <!-- Información de Contacto -->
                 <div class="row">
                     <div class="col-12">
-                        <p class="mb-1">Tel: <a href="tel:+123456789">+1 234 567 89</a></p>
-                        <p>Email: <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a></p>
+                        <p class="mb-1">Tel: <a href="tel:+54 1140659699">+54 1140659699</a></p>
+                        <p>Email: <a href="mailto:romerosebastian781@gmail.com">romerosebastian781@gmail.com</a></p>
                         <p>&copy; 2024 Campify. Todos los derechos reservados.</p>
                     </div>
                 </div>
