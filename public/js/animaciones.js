@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }, {
-        threshold: 0.1, // Ajusta este valor para cambiar el momento de la animación
+        threshold: 0.25, // Ajusta este valor para cambiar el momento de la animación
     });
 
     const fadeElements = document.querySelectorAll('.fade-in');
