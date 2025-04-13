@@ -23,7 +23,7 @@
                 <img class="fotoParticipante" src="images/perfilsebastian.jpeg" alt="fotoparticipante">
                 <div class="info-itegragnte">
                     <h3 class="fs-5 mt-2 px-4">Sebastian Romero</h3>
-                    <a href="https://www.linkedin.com/in/sebastian-romero1/">Linkedin</a>
+                    <a href="https://www.linkedin.com/in/sebastian-romero1/" target="_blank">Linkedin</a>
                 </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6 pt-3 pb-1 mb-2 d-flex flex-column  justify-content-center align-items-center fade-in">
